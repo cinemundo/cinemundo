@@ -1,10 +1,10 @@
 # projeto_CineMundo
 
-Link:
+Link: https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1
 
-Faremos um blog interativo sobre cinema, afim de abranger os mecanismos de busca (Google Search, Yahoo, etc.) para redirecionar à filmes e séries dispostos nas plataformas de streaming, cinema, festivais de cinema e etc., aumentando o número de consumo e interesse por usuário a partir do conteúdo gerado no Blog.
+Faremos um blog interativo sobre cinema, afim de abranger os mecanismos de busca (Google Search, Yahoo, Bing...) para redirecionar à filmes e séries dispostos nas plataformas de streaming, cinema, festivais de cinema e etc., aumentando o número de consumo e interesse por usuário a partir do conteúdo gerado no Blog.
 
-O usuário poderá ver e avaliar resenhas da equipe de analistas do blog, acompanhar os quizes sobre seus filmes e séries favoritos e subir no ranking mensal e diário para ganhar prêmios. Poderá também personalizar o seu perfil de usuário, assim como seguir outros usuários que comentam e avaliam resenhas.
+O usuário poderá ver e avaliar resenhas da equipe de analistas do blog, acompanhar os quizes sobre seus filmes e séries favoritos e subir no ranking mensal e diário referente aos quizes para ganhar prêmios. Poderá também personalizar o seu perfil de usuário, assim como seguir outros usuários que comentam e avaliam resenhas.
 
 Abaixo um pouco sobre cada uma das 5 páginas criadas.
 
@@ -28,6 +28,7 @@ Além disso, o usuário poderá acessar as resenhas escritas por um autor espec�
 A página do Quiz inicia dando ao usuário duas opções (quizes baseados em conhecimentos gerais ou obras específicas). Logo abaixo está o menu carrossel, cujas temáticas dos quizes são personalizadas de acordo com a opção escolhida anteriormente. Na página é possível ver apenas um card do quiz por vez, o qual é atualizado conforme a marcação das respostas avança (status da pergunta acima e pontuação em tempo real abaixo). Ao final do quiz é dada a opção de compartilhamento do resultado em alguma rede social. Ao lado do card, um ranking diário e outro mensal com as quatro primeiras posições, além da posição do usuário logado. Na parte inferior algumas imagens para ilustrar e personalizar, de acordo com a obra escolhida, e um link para a premiação por período (ingressos para cinema, descontos nos serviços de streaming, etc).
 
 4- Nosso time
+
 Nesta seção o usuário visualizará os perfis dos autores do site, cada qual com um breve resumo do seu gosto pessoal, além das informações de contato, como e-mail e redes sociais.
 
 5-Perfil do Usuário
