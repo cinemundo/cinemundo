@@ -1,31 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
 header{
     background-color: black;
     color:white;
-    font-family: 'Open Sans', sans-serif;
 
 }
 
 footer{
     background-color: black;
     color: white;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #menu-principal {
     list-style: none;
     padding: 0;
-    background-color: blueviolet;
+    background-color: #080327;
 }
-#menu-principal li{
+#menu-principal ul li{
     display: inline;
 }
 
-#menu-principal li a{
+#menu-principal ul li a{
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
-    display: inline;
+    padding: 20px;
+    transition: background .4s;
+}
+
+#menu-principal ul li a:hover{
+    background-color: #BD4CF7;
+}
+
+#menu-principal ul li:last-child a{
+    float: right;
+    background-color: #171445;
+}
+
+#menu-principal ul li:last-child a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    transition: background .4s;
+}
+
+#menu-principal ul li:last-child a:hover{
+    background-color: #BD4CF7;
+}
+
+#menu-principal ul li:last-child img{
+    float: right;
 }
