@@ -1,26 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+header{
+    background-color: black;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
-h1 {
-  color: white;
-  text-align: center;
+footer{
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+#menu-principal {
+    list-style: none;
+    padding: 0;
+    background-color: blueviolet;
 }
-</style>
-</head>
-<body>
+#menu-principal li{
+    display: inline;
+}
 
-<h1>My First CSS Example</h1>
-<p>This is a paragraph.</p>
-
-</body>
-</html>
+#menu-principal li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    display: inline;
+}
