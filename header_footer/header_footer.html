@@ -11,22 +11,26 @@
 
 <body>
     <header href background-header>
-        <section>
+        <div>
             <a href="home.html">
-                CineMundo
+                <h1>
+                CINEMUNDO
+                </h1>
                 <img src="assets/estrelas.png" alt="Estrelas CineMundo" width="200">
             </a>
-        </section>
-        <nav id="menu-principal">
+        </div>
+        <nav>
+            <form action="#" method="post">
             <label for="busca">
-                BUSCAR:
+                <img src="assets/lupa.png" alt="Busca CineMundo" width="50">
             </label>
-            <input type="text" placeholder="Quiz Harry Potter" id="busca" name="search">
+            <input type="text" placeholder="Quiz Harry Potter" id="busca" name="search" required>
             <button type="submit">
                 Buscar
             </button>
+            </form>
 
-            <ul>
+            <ul id="menu-principal">
                 <li>
                     <a href="home.html">
                         HOME
@@ -80,16 +84,20 @@
         </button>
         <ul>
             <section>
-                <b>SUPORTE</b>
-                CHAT 24h
-                <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="CHAT">
-                CONTATO: CONTATO@CINEMUNDO.COM.BR
+                <h1>
+                    SUPORTE
+                </h1>
+                <h2>
+                    CHAT 24h
+                    <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="CHAT">
+                    CONTATO: CONTATO@CINEMUNDO.COM.BR
+                </h2>
             </section>
         </ul>
         <section>
-            <p>
+            <h2>
                 REDES SOCIAIS:
-            </p>
+            </h2>
             <ol>
                 <img src="assets/twitter.png" alt="twitter" width="30">
                 <img src="assets/facebook.png" alt="facebook" width="30">

@@ -23,11 +23,11 @@ footer{
     padding: 0;
     background-color: #080327;
 }
-#menu-principal ul li{
+#menu-principal li{
     display: inline;
 }
 
-#menu-principal ul li a{
+#menu-principal li a{
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -35,16 +35,16 @@ footer{
     transition: background .4s;
 }
 
-#menu-principal ul li a:hover{
+#menu-principal li a:hover{
     background-color: #BD4CF7;
 }
 
-#menu-principal ul li:last-child a{
+#menu-principal li:last-child a{
     float: right;
     background-color: #171445;
 }
 
-#menu-principal ul li:last-child a{
+#menu-principal li:last-child a{
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -52,10 +52,10 @@ footer{
     transition: background .4s;
 }
 
-#menu-principal ul li:last-child a:hover{
+#menu-principal li:last-child a:hover{
     background-color: #BD4CF7;
 }
 
-#menu-principal ul li:last-child img{
+#menu-principal li:last-child img{
     float: right;
 }
