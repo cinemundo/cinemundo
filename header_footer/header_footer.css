@@ -18,10 +18,28 @@ footer{
     color: white;
 }
 
+.header_title {
+    list-style: none;
+    display:flex;
+    padding: 0;
+    width: 100%;
+}
+
+.header_title a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    color: white;
+}
+
+.header_search {
+    display:grid;
+}
+
 #menu-principal {
     list-style: none;
     padding: 0;
-    background-color: #080327;
+    background-color: black;
 }
 #menu-principal li{
     display: inline;

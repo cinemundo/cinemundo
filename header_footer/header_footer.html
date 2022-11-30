@@ -11,7 +11,7 @@
 
 <body>
     <header href background-header>
-        <div>
+        <div class="header_title">
             <a href="home.html">
                 <h1>
                 CINEMUNDO
@@ -20,7 +20,7 @@
             </a>
         </div>
         <nav>
-            <form action="#" method="post">
+            <form action="#" method="post" class="header_search">
             <label for="busca">
                 <img src="assets/lupa.png" alt="Busca CineMundo" width="50">
             </label>
@@ -69,19 +69,37 @@
         <section>
             <nav>
                 <ul>
-                    <li><a href="home.html"> HOME </a></li>
-                    <li><a href="resenhas.html"> RESENHAS </a></li>
-                    <li><a href="quiz.html"> QUIZ </a></li>
-                    <li><a href="time.html"> NOSSO TIME </a></li>
+                    <li>
+                        <a href="home.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resenhas.html">
+                            RESENHAS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html">
+                            QUIZ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="time.html">
+                            NOSSO TIME
+                        </a>
+                    </li>
                 </ul>
         </section>
+        <form action="#" method="post">
         <label for="busca">
-            BUSCAR:
+            <img src="assets/lupa.png" alt="Busca CineMundo" width="50">
         </label>
-        <input type="text" placeholder="Minha série favorita" id="busca" name="search">
+        <input type="text" placeholder="Minha série favorita" id="busca" name="search" required>
         <button type="submit">
             Buscar
         </button>
+        </form>
         <ul>
             <section>
                 <h1>
