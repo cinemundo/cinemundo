@@ -33,7 +33,21 @@ footer{
 }
 
 .header_search {
-    display:grid;
+    align-items: center;    
+}
+
+.header_search input{
+    border: 1px solid whitesmoke;
+    border-radius: 0.3em;
+    padding: 0.3cm;
+    font-size: 1.2em;
+}
+
+.header_search button{
+    border: 1px solid whitesmoke;
+    border-radius: 0.2em;
+    padding: 0.1cm;
+    font-size: 1.0em;
 }
 
 #menu-principal {
@@ -76,4 +90,5 @@ footer{
 
 #menu-principal li:last-child img{
     float: right;
+    align-items: center;
 }
