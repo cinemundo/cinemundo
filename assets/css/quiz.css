@@ -1,0 +1,114 @@
+* {
+    font-family: 'Nerko One', cursive;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    /* color: black; */
+    list-style: none;
+  }
+
+.topo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: ; */
+    gap: 75px;
+    padding: 15px;
+    border-left: 0px;
+  }
+
+.titulos:hover {
+    scale: 1.04;
+    /* color: white; */
+  }
+  
+#quizTitulos {
+  display: flex;
+  justify-content: space-around;
+  background-color: #171445;
+  color: black;
+  padding: 20px;
+  gap: 20px;
+  /* width: 1175px; */
+}
+
+.topico {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 200px;
+}
+
+#card {
+  margin: 20px;
+  border-radius: 10px;
+  /* width: 150px; */
+}
+
+.Rankings {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 200px;
+  background-color: #171445;
+  border-radius: 10px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+#RankingDiario {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 175px;
+  background-color: #171445;
+  border-radius: 10px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+#RankingMensal {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 175px;
+  background-color: #BD4CF7;
+  border-radius: 10px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+#DoisRankings {
+  display: flex;
+  gap: 15px;  
+}
+
+.CardRankings {
+  display: flex;
+  flex-direction: ;
+  /* background: yellow; */
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.jogadores {
+  display: flex;
+  /* flex-direction: r; */
+  color: white;
+  justify-content: space-around;
+}
+
+.filmes_e_series {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 15px;
+  gap: 50px;
+  /* background-color: #BD4CF7; */
+}
+
+.obras {
+  display: flex;
+  gap: 15px;
+  /* background-color: #BD4CF7; */
+}
