@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background: #000;
+  height: 201px;
+  width: 1161px;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+main .title {
+  margin: 61px 0 55px 0;
+}
+
+main .colaboratorleft {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 55px;
+}
+
+main .colaboratorleft .photoleft {
+  width: 190px;
+  height: 190px;
+  border: 10px solid #bd4cf7;
+  border-radius: 50%;
+}
+
+main .colaboratorleft .descriptionleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 576px;
+  height: 171px;
+  padding: 24px 24px 8px 24px;
+  background: #bd4cf7;
+  color: #fff;
+  border-radius: 20px;
+  margin-right: 160px;
+}
+
+main .colaboratorleft .descriptionleft h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+main .colaboratorleft .descriptionleft p {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+main .link {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+main .link .circulo {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+main .link .envelope {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+main .colaboratorright {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 55px;
+}
+
+main .colaboratorright .photoright {
+  width: 190px;
+  height: 190px;
+  border: 10px solid #352052;
+  border-radius: 50%;
+}
+
+main .colaboratorright .descriptionright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 576px;
+  height: 171px;
+  padding: 24px 24px 8px 24px;
+  background: #352052;
+  color: #fff;
+  border-radius: 20px;
+  margin-left: 160px;
+}
+
+main .colaboratorright .descriptionright h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+main .colaboratorright .descriptionright p {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+footer {
+  background: #000;
+  height: 201px;
+  width: 1161px;
+  margin-top: 100px;
+  color: #fff;
+}
