@@ -7,13 +7,19 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-header{
+header {
+    /*height: 201px;*/
+    margin-left: 30px;
+    margin-right: 30px;
     background-color: black;
     color:white;
 
 }
 
 footer{
+    /*height: 201px;*/
+    margin-left: 30px;
+    margin-right: 30px;
     background-color: black;
     color: white;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Últimas Resenhas Cinemundo</title>
     <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="resenhas.css">
 </head>
 <body>
     <header href background-header>
@@ -58,71 +59,106 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main_resenhas">
         <div>
-            <h1>Últimas Resenhas Cinemundo</h1>
+            <h1 class="titulo_index_resenhas">Últimas Resenhas Cinemundo</h1>
         </div>
-        <div>
+        <section class="section_index_resenhas">
             <div>
-                <h3><a href="terra-dos-sonhos.html">Terra dos Sonhos</a></h3>
-                <img src="assets/Banner Terra dos Sonhos.jpeg">
-                <p>Mais do que admirar o brilho de Jason Momoa, Terra dos Sonhos é um filme para se amar.</p>
-                <p>Por Viviane Favato</p>
-                <img src="assets/4.5 estrelas.png">
+                <div class="banner_index_resenhas">
+                    <div>
+                        <img class="img_banner_principal_resenhas" src="assets/Banner Terra dos Sonhos.jpeg">
+                    </div>
+                    <div class="resumo_banner_index_resenhas">
+                        <h3 class="titulo_banner_index_resenhas"><a href="terra-dos-sonhos.html">Terra dos Sonhos</a></h3>
+                        <p>Mais do que admirar o brilho de Jason Momoa, Terra dos Sonhos é um filme para se amar.</p>
+                        <p class="nome_autor_banner_resenhas">Por Viviane Favato</p>
+                        <img class="img_banner_estrelas_resenhas" src="assets/4.5 estrelas.png">
+                    </div>
+                </div>
+                <div class="banner_index_resenhas">
+                    <div>
+                        <img class="img_banner_principal_resenhas" src="assets/Escola do Bem e do Mal.jpeg">
+                    </div>
+                    <div class="resumo_banner_index_resenhas">
+                        <h3 class="titulo_banner_index_resenhas"><a>Escola do Bem e do Mal</a></h3>
+                        <p>Um filme sobre a amizade e os seus desafios. Será que vale a pena arriscar tudo por poder?</p>
+                        <p class="nome_autor_banner_resenhas">Por Edvan Sabino</p> 
+                        <img class="img_banner_estrelas_resenhas" src="assets/4 estrelas.png">
+                    </div>
+                </div>
+                <div class="banner_index_resenhas">
+                    <div>
+                        <img class="img_banner_principal_resenhas" src="assets/O milagre.jpeg">
+                    </div>
+                    <div div class="resumo_banner_index_resenhas">
+                        <h3 class="titulo_banner_index_resenhas"><a>O Milagre</a></h3>
+                        <p>Um suspense de época que traz uma ótica interessante sobre os costumes e temores de um povo.</p>
+                        <p class="nome_autor_banner_resenhas">Por Por Vinícius Marques</p>
+                        <img class="img_banner_estrelas_resenhas" src="assets/3 estrelas.png">
+                    </div>
+                </div>
+                <div class="banner_index_resenhas">
+                    <div>
+                        <img class="img_banner_principal_resenhas" src="assets/Amor em Verona.jpeg">
+                    </div>
+                    <div div class="resumo_banner_index_resenhas">
+                        <h3 class="titulo_banner_index_resenhas"><a>Amor em Verona</a></h3>
+                        <p>As peripécias de uma jovem controladora em sua viagem dos sonhos. O que poderia dar errado?</p>
+                        <p class="nome_autor_banner_resenhas">Por Por Rosângela Melanias</p>
+                        <img class="img_banner_estrelas_resenhas" src="assets/4 estrelas.png">
+                    </div>
+                </div>
             </div>
             <div>
-                <h3>Escola do Bem e do Mal</h3>
-                <img src="assets/Escola do Bem e do Mal.jpeg">
-                <p>Um filme sobre a amizade e os seus desafios. Será que vale a pena arriscar tudo por poder?</p>
-                <p>Por Edvan Sabino</p> 
-                <img src="assets/4.0 estrelas.png">
+                <div class="secao_selecao_autores_resenhas">
+                    <div>
+                        <h2 class="titulo_selecao_autores_resenhas">Confira mais resenhas</h2>
+                    </div>
+                    <br>
+                    <div class="espaco_selecao_autor_resenhas">
+                        <div>
+                            <h3 class="selecione_autor_resenhas">Selecione um autor</h3>
+                        </div>
+                        <div>
+                            <select class="select_autores_resenhas" name="autores" id="autores">
+                                <option value="-"></option>
+                                <option value="Edvan Sabino">Edvan Sabino</option>
+                                <option value="Roberto Zanin">Roberto Zanin</option>
+                                <option value="Rosângela Melanias">Rosângela Melanias</option>
+                                <option value="Thiago Manfredi">Thiago Manfredi</option>
+                                <option value="Vinícius Marques">Vinícius Marques</option>
+                                <option value="Viviane Favato">Viviane Favato</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="secao_redes_sociais_resenhas">
+                    <a><h2 class="titulo_redes_sociais_resenhas">Siga o Cinemundo</h2></a>
+                    <img class="img_redes_sociais_resenhas" src="assets/instagram.jpg">
+                </div>
+            </div>
+        </section>
+        <section class="section_inferior_index_resenhas">
+            <div>
+                <a><h2 class="titulo_secao_inferior_resenhas">Leia também</h2></a>
             </div>
             <div>
-                <h3>O Milagre</h3>
-                <img src="assets/O milagre.jpeg">
-                <p>Um suspense de época que traz uma ótica interessante sobre os costumes e temores de um povo.</p>
-                <p>Por Por Vinícius Marques</p>
-                <img src="assets/3.0 estrelas.png">
+                <div>
+                    <img class="secao_inferior_fotomaior_resenhas" src="assets/1899.jpeg">
+                </div>
+                <div class="secao_inferior_fotos_resenhas">
+                    <img class="img_leiatambem_index_resenhas" src="assets/Rebellion.jpeg">
+                    <img class="img_leiatambem_index_resenhas" src="assets/Se eu soubesse.jpeg">
+                    <img class="img_leiatambem_index_resenhas" src="assets/The Crown.jpeg">
+                </div>
+                <div class="secao_inferior_fotos_resenhas">
+                    <img class="img_leiatambem_index_resenhas" src="assets/Enola Holmes.jpeg">
+                    <img class="img_leiatambem_index_resenhas" src="assets/Outlander.jpeg">
+                    <img class="img_leiatambem_index_resenhas" src="assets/Holidate.jpeg">
+                </div>
             </div>
-            <div>
-                <h3>Amor em Verona</h3>
-                <img src="assets/Amor em Verona.jpeg">
-                <p>As peripécias de uma jovem controladora em sua viagem dos sonhos. O que poderia dar errado?</p>
-                <p>Por Por Rosângela Melanias</p>
-                <img src="assets/4.0 estrelas.png">
-            </div>
-        </div>
-        <div>
-            <h2>Leia também</h2>
-            <img src="assets/1899.jpeg">
-            <br>
-            <img src="assets/Rebellion.jpeg">
-            <img src="assets/Se eu soubesse.jpeg">
-            <img src="assets/The Crown.jpeg">
-            <br>
-            <img src="assets/Enola Holmes.jpeg">
-            <img src="assets/Outlander.jpeg">
-            <img src="assets/Holidate.jpeg">
-        </div>
-        <aside>
-            <h2>Confira mais resenhas</h2>
-            <label for="autores">
-                Selecione um autor
-            </label>
-            <select name="autores" id="autores">
-                <option value="-">-</option>
-                <option value="Edvan Sabino">Edvan Sabino</option>
-                <option value="Roberto Zanin">Roberto Zanin</option>
-                <option value="Rosângela Melanias">Rosângela Melanias</option>
-                <option value="Thiago Manfredi">Thiago Manfredi</option>
-                <option value="Vinícius Marques">Vinícius Marques</option>
-                <option value="Viviane Favato">Viviane Favato</option>
-            </select>
-        </aside>
-        <aside>
-            <h2>Siga o Cinemundo</h2>
-            <img src="assets/instagram.jpg">
-        </aside>
+        </section>
     </main>
     <footer>
         <section>

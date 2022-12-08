@@ -1,0 +1,199 @@
+@import url('https://fonts.google.com/specimen/Bebas+Neue?query=bebas+neue');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://www.1001fonts.com/codec-pro-font.html');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 80.625%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 135px;
+    /*text-align: center;*/
+    /*margin: 0 163px 135px 163px;*/
+}
+
+.main_resenhas a, a-visited {
+    text-decoration: none;
+}
+
+.main_resenhas a:link, a:visited{
+    color: black;
+  }
+
+.main_resenhas a:hover {
+    color: #BD4CF7;
+    cursor: pointer;
+}
+
+.titulo_index_resenhas {
+    text-align: center;
+    /*width: 362.25px;
+    height: 24px;*/
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 37.5px;
+    line-height: 11px;
+    margin: 66px 0 104px 0;
+}
+
+.section_index_resenhas {
+    display: flex;
+    justify-content: center;
+}
+
+.banner_index_resenhas {
+    display: flex;
+    align-items: center;
+    width: 654.5px;
+    height: 160px;
+    margin-bottom: 76.5px;
+}
+
+.img_banner_principal_resenhas {
+    width: 315.75px;
+    height: 158.25px;
+}
+
+.titulo_banner_index_resenhas {
+    font-family: 'Codec Pro', sans-serif;
+    font-size: 22.5px;
+}
+
+.resumo_banner_index_resenhas {
+    margin-left: 23.75px;
+    text-align: left;
+}
+
+p {
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-size: 18.75px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 19px;
+    margin-top: 18px;
+}
+
+.img_banner_estrelas_resenhas {
+    width: 135px;
+    height: 24.75px;
+    margin-top: 3px;
+}
+
+.nome_autor_banner_resenhas {
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+.secao_lateral_index_resenhas {
+    /*width: 402.75px;*/
+    /*height: 436.50px;*/
+}
+
+.secao_selecao_autores_resenhas {
+    margin-left: 79.5px;
+    width: 402.75px;
+    height: 162.75;
+    padding:5px 0 10px 10px;
+    border-left: solid 2px;
+}
+
+.titulo_selecao_autores_resenhas {
+    text-align: left;
+    font-family: 'Codec Pro', sans-serif;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.espaco_selecao_autor_resenhas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #BD4CF7;
+    width: 357.59px;
+    height: 63.75px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+ 
+.selecione_autor_resenhas {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22.5px;
+    line-height: 11px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.select_autores_resenhas {
+    background-color: #BD4CF7;
+    color: white;
+    width: 30px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.secao_redes_sociais_resenhas {
+    width: 294px;
+    height: 187.5px;
+    margin-top: 65px;
+    margin-left: 133.5px;
+}
+
+.titulo_redes_sociais_resenhas {
+    font-family: 'Codec Pro', sans-serif;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.img_redes_sociais_resenhas {
+    width: 294px;
+    height: 138.75px;
+}
+
+.section_inferior_index_resenhas {
+    width: 754.5px;
+    /*height: 412.77px;*/ 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 49.5px;
+}
+
+.titulo_secao_inferior_resenhas {
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 11px;
+    margin-left: 10px;
+    margin-bottom: 27px;
+}
+
+.secao_inferior_fotomaior_resenhas {
+    width: 96.5%;
+    height: 150.26px;
+    margin-left: 11px;
+}
+
+.secao_inferior_fotos_resenhas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+.img_leiatambem_index_resenhas {
+    width: 224.74px;
+    height: 105.95px;
+}
+
