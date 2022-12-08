@@ -154,7 +154,7 @@
   margin: 0px;
   gap: 60px;
   height: 300px;
-  /* background-color: #BD4CF7; */
+  
 }
 
 .filmes_e_series_titulo {
@@ -162,23 +162,57 @@
   justify-content: space-around;
   gap: 60px;
   height: 50px;
-  /* background-color: #BD4CF7; */
+  
 }
 
 .obras {
   display: flex;
   gap: 15px;
-  /* background-color: #BD4CF7; */
+  position: relative;
   
 }
 
-.obras2 {
+#posicao1 {
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  border-radius: 20px;
+  top: -15px;
+  left: -10px;
+  background: white;
+  border: 3px solid #171445;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+}
+
+#posicao2 {
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  border-radius: 20px;
+  top: -15px;
+  left: 175px;
+  background: white;
+  border: 3px solid #171445;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+}
+
+#posicao3 {
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  border-radius: 20px;
+  top: -15px;
+  left: 355px;
+  background: white;
+  border: 3px solid #171445;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+}
+
+.podio {
+  position: relative;
   display: flex;
   gap: 15px;
-  /* background-color: #BD4CF7; */
   height: 250px
-  /* border-radius: 20px; */
-  
 }
 
 .premio {
@@ -187,5 +221,41 @@
   width: 168px;
   height: 250px;
   padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#posicao1_ranking {
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  border-radius: 20px;
+  top: -15px;
+  left: -10px;
+  background: white;
+  border: 3px solid #BD4CF7;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#posicao2_ranking {
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  border-radius: 20px;
+  top: -15px;
+  left: 175px;
+  background: white;
+  border: 3px solid #BD4CF7;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#posicao3_ranking {
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  border-radius: 20px;
+  top: -15px;
+  left: 355px;
+  background: white;
+  border: 3px solid #BD4CF7;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
