@@ -23,6 +23,7 @@ main {
   flex-direction: column;
   align-items: center;
   background: #fff;
+  margin-top: 60px;
 }
 
 main .title {
@@ -124,7 +125,7 @@ main .colaboratorright .descriptionright p {
   margin-top: 16px;
 }
 
-footer {
+.base {
   background: #000;
   height: 201px;
   width: 1161px;
