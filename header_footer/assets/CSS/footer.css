@@ -28,7 +28,7 @@ footer{
 .footer_main_menu_title {
     font-size: 30px;
     font-weight: 500;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
     border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
 }
 
@@ -37,7 +37,7 @@ footer{
 }
 
 .footer_search input{
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
     border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
     border-radius: 0.1em;
     padding: 0.4cm 4cm;
@@ -56,7 +56,7 @@ footer{
 
 .footer_help_center_title {
     font-size: 30px;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
     border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
 }
 

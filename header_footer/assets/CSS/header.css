@@ -61,7 +61,8 @@ header{
 }
 
 .header_main_menu li a:hover{
-    background-color: #BD4CF7;
+    /*background-color: #BD4CF7; */
+    background-image: linear-gradient(#BD4CF7, black, black)
 }
 
 .header_main_menu li:last-child a{
