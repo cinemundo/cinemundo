@@ -3,3 +3,58 @@ footer{
     color: white;
 }
 
+.footer_main_menu {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.footer_main_menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_main_menu_title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer_search {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_search input{
+    border: 1px solid whitesmoke;
+    border-radius: 0.3em;
+    padding: 0.3cm;
+    font-size: 1.2em;
+}
+
+.footer_help_center {
+    display: flex;
+    font-size: 22px;
+    font-weight: 300;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+}
+
+.footer_help_center_title {
+    font-size: 30px;
+}
+
+.footer_help_center ul li {
+    list-style: none;
+}
+
+.footer_social_media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_copyrights {
+    display: flex;
+    justify-content: center;
+}

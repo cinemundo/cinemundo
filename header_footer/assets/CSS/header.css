@@ -6,9 +6,14 @@ header{
 
 .header_title {
     list-style: none;
-    display:flex;
-    padding: 0;
+    display: flex;
     width: 100%;
+    justify-content: center;
+}
+
+.header_title_cinemundo {
+    font-size: 60px;
+    font-weight: 400;
 }
 
 .header_title a {
@@ -18,63 +23,53 @@ header{
     color: white;
 }
 
-.header_search {
-    align-items: center;    
-}
-
-.header_search input{
-    border: 1px solid whitesmoke;
-    border-radius: 0.3em;
-    padding: 0.3cm;
-    font-size: 1.2em;
-}
-
-.header_search button{
+.header_main_menu button{
     border: 1px solid whitesmoke;
     border-radius: 0.2em;
     padding: 0.1cm;
     font-size: 1.0em;
 }
 
-#menu-principal {
+.header_main_menu {
     list-style: none;
-    padding: 0;
     background-color: black;
+    font-size: 22px;
+    font-weight: 300;
 }
-#menu-principal li{
+.header_main_menu li{
     display: inline;
 }
 
-#menu-principal li a{
+.header_main_menu li a{
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     transition: background .4s;
 }
 
-#menu-principal li a:hover{
+.header_main_menu li a:hover{
     background-color: #BD4CF7;
 }
 
-#menu-principal li:last-child a{
+.header_main_menu li:last-child a{
     float: right;
     background-color: #171445;
 }
 
-#menu-principal li:last-child a{
+.header_main_menu li:last-child a{
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     transition: background .4s;
 }
 
-#menu-principal li:last-child a:hover{
+.header_main_menu li:last-child a:hover{
     background-color: #BD4CF7;
 }
 
-#menu-principal li:last-child img{
+.header_main_menu li:last-child img{
     float: right;
     align-items: center;
 }
