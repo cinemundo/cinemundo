@@ -1,13 +1,3 @@
-* {
-    font-family: 'Nerko One', cursive;
-    font-family: 'Bebas Neue', cursive;
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-    /* color: black; */
-    list-style: none;
-  }
-
 .topo {
     background-color: white;
     display: flex;

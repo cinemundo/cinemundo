@@ -1,0 +1,88 @@
+header{
+    background-color: black;
+    color:white;
+
+}
+
+.header_title {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.header_title_cinemundo {
+    font-size: 80px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.header_title a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    color: white;
+}
+
+.header_title_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+}
+
+.header_main_menu button{
+    border: 1px solid whitesmoke;
+    border-radius: 0.2em;
+    padding: 0.1cm;
+    font-size: 1.0em;
+}
+
+.header_main_menu {
+    list-style: none;
+    background-color: black;
+    font-size: 24px;
+    font-weight: 300;
+}
+.header_main_menu li{
+    display: inline;
+}
+
+.header_main_menu_index {
+    border-top: 2px solid whitesmoke;
+}
+
+.header_main_menu li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 60px;
+    transition: background .4s;
+}
+
+.header_main_menu li a:hover{
+    /*background-color: #BD4CF7; */
+    background-image: linear-gradient(#BD4CF7, black, black)
+}
+
+.header_main_menu li:last-child a{
+    float: right;
+    background-color: #171445;
+}
+
+.header_main_menu li:last-child a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    transition: background .4s;
+}
+
+.header_main_menu li:last-child a:hover{
+    background-color: #BD4CF7;
+}
+
+.header_main_menu li:last-child img{
+    float: right;
+    align-items: center;
+}
