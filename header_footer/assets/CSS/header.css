@@ -12,8 +12,9 @@ header{
 }
 
 .header_title_cinemundo {
-    font-size: 66px;
-    font-weight: 400;
+    font-size: 80px;
+    font-weight: 300;
+    text-align: center;
 }
 
 .header_title a {
@@ -21,6 +22,13 @@ header{
     text-decoration: none;
     padding: 0;
     color: white;
+}
+
+.header_title_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
 }
 
 .header_main_menu button{
@@ -38,6 +46,10 @@ header{
 }
 .header_main_menu li{
     display: inline;
+}
+
+.header_main_menu_index {
+    border-top: 2px solid whitesmoke;
 }
 
 .header_main_menu li a{
