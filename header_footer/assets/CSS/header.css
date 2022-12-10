@@ -12,7 +12,7 @@ header{
 }
 
 .header_title_cinemundo {
-    font-size: 60px;
+    font-size: 66px;
     font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ header{
 .header_main_menu {
     list-style: none;
     background-color: black;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 300;
 }
 .header_main_menu li{
@@ -44,7 +44,7 @@ header{
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 15px;
+    padding: 15px 60px;
     transition: background .4s;
 }
 

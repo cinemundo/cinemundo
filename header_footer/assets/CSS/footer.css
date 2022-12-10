@@ -16,6 +16,7 @@ footer{
 .footer_main_menu_title {
     font-size: 30px;
     font-weight: 500;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .footer_search {
@@ -25,9 +26,12 @@ footer{
 
 .footer_search input{
     border: 1px solid whitesmoke;
-    border-radius: 0.3em;
-    padding: 0.3cm;
-    font-size: 1.2em;
+    border-radius: 0.1em;
+    padding: 0.4cm 4cm;
+    font-size: 2.2em;
+    text-align: center;
+    gap: 16px;
+    background: transparent;
 }
 
 .footer_help_center {
@@ -37,10 +41,12 @@ footer{
     align-items: flex-end;
     flex-direction: column;
     text-align: end;
+    gap: 16px;
 }
 
 .footer_help_center_title {
     font-size: 30px;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .footer_help_center ul li {
