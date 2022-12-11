@@ -11,9 +11,10 @@ footer{
 
 .footer_main_menu {
     gap: 16px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 300;
     text-align:left;
+    margin: 10px 0 0 10px;
 }
 
 .footer_main_menu li {
@@ -27,11 +28,11 @@ footer{
 
 .footer_main_menu li a:hover{
     color: #BD4CF7;
-    font-size: 105%;
+    font-size: 104%;
 }
 
 .footer_main_menu_title {
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 500;
     border-bottom: 4px solid whitesmoke;
     border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
@@ -41,11 +42,19 @@ footer{
     color: white;
 }
 
+.footer_search {
+    margin-left: 50px;
+}
+
+.feather-feather-search {
+    cursor: pointer;
+}
+
 .footer_search input{
     border: 2px solid whitesmoke;
     border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
     border-radius: 0.1em;
-    padding: 0.4cm 4cm;
+    padding: 0.3cm 7cm;
     font-size: 2.2em;
     text-align: center;
     gap: 16px;
@@ -53,14 +62,16 @@ footer{
 }
 
 .footer_help_center {
+    flex-direction: column;
     gap: 16px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 300;
     text-align: end;
+    margin: 10px 10px 0 0;
 }
 
 .footer_help_center_title {
-    font-size: 30px;
+    font-size: 34px;
     border-bottom: 4px solid whitesmoke;
     border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
 }
@@ -69,8 +80,27 @@ footer{
     list-style: none;
 }
 
-.footer_help_center_contact {
+.footer_help_center li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer_help_center_button {
+    border: 2px solid whitesmoke;
+    border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
+    border-radius: 0.1em;
+    padding: 0.1cm 0.5cm;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(#BD4CF7, black, black);
+    margin: 5px 0;
     font-size: 24px;
+}
+
+.footer_help_center_contact {
+    font-size: 22px;
 }
 
 .footer_help_center_email {
