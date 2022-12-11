@@ -1,18 +1,18 @@
 header{
     background-color: black;
     color:white;
-
+    box-sizing: border-box;
 }
 
 .header_title {
-    list-style: none;
     display: flex;
+    list-style: none;
     width: 100%;
     justify-content: center;
 }
 
 .header_title_cinemundo {
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 300;
     text-align: center;
 }
@@ -29,60 +29,55 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: center;
-}
-
-.header_main_menu button{
-    border: 1px solid whitesmoke;
-    border-radius: 0.2em;
-    padding: 0.1cm;
-    font-size: 1.0em;
+    padding-bottom: 1.2%;
 }
 
 .header_main_menu {
     list-style: none;
-    background-color: black;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 300;
-}
-.header_main_menu li{
-    display: inline;
+    margin: 0 30px;
+    display: flex;
+    justify-content:space-between;
 }
 
 .header_main_menu_index {
     border-top: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: 5px 40px 5px 40px;
+    margin: 0 10px;
+}
+
+.header_main_menu li{
+    display: inline-block;
 }
 
 .header_main_menu li a{
     color: white;
     text-decoration: none;
-    display: inline-block;
-    padding: 15px 60px;
-    transition: background .4s;
+    border-radius: 1px;
 }
 
 .header_main_menu li a:hover{
     /*background-color: #BD4CF7; */
-    background-image: linear-gradient(#BD4CF7, black, black)
+    background-image: linear-gradient(#BD4CF7, black, black);
 }
 
-.header_main_menu li:last-child a{
-    float: right;
-    background-color: #171445;
-}
-
-.header_main_menu li:last-child a{
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px;
-    transition: background .4s;
-}
-
-.header_main_menu li:last-child a:hover{
-    background-color: #BD4CF7;
-}
-
-.header_main_menu li:last-child img{
-    float: right;
+.header_main_menu2 {
+    display: flex;
     align-items: center;
+}
+
+.header_main_menu2 li svg {
+    cursor: pointer;
+}
+
+.header_perfil_name {
+    font-weight: 100;
+}
+
+.header_perfil_name a {
+    padding: 10px 18px;
+    margin: 0 18px;
 }
