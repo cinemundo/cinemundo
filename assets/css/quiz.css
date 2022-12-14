@@ -6,12 +6,12 @@
     gap: 75px;
     padding: 15px;
     /* border-left: 0px; */
-  }
+}
 
 .titulos:hover {
     scale: 1.04;
     /* color: white; */
-  }
+}
 
 #quizTitulos {
   display: flex;
@@ -137,29 +137,34 @@
   box-shadow: rgba(255, 255, 255, 0.267) 0px 5px 15px;
 }
 
+.poster:hover {
+    scale: 1.04;
+    color: white;
+    transition: all 0.3s;    
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(8px 8px 8px rgba(0,0,0,.9));
+}
+
 .filmes_e_series {
   display: flex;
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
   gap: 60px;
-  height: 300px;
-  
+  height: 300px;  
 }
 
 .filmes_e_series_titulo {
   display: flex;
   justify-content: space-around;
   gap: 60px;
-  height: 50px;
-  
+  height: 50px;  
 }
 
 .obras {
   display: flex;
   gap: 15px;
-  position: relative;
-  
+  position: relative;  
 }
 
 #posicao1 {

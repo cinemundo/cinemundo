@@ -8,16 +8,53 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/quiz.css">
-    
-
     <title>Quiz | Cinemundo</title>
-
 </head>
 
 <body>
-    
-    <header>
+    <!-- <object data="header.html" width="100%" height="300px"></object> -->
+    <!-- <header>
         <div w3-include-HTML="header.html">My HTML include will go here.</div>       
+    </header> -->
+    <header>
+        <div class="header_title">
+            <a href="index.html">
+                <h1 class="header_title_cinemundo">
+                    CINEMUNDO
+                </h1>
+                <img src="assets/images/header_footer/header_estrelas.png" alt="CineMundo 5 Estrelas" width="200" class="header_title_image">
+            </a>
+        </div>
+        <nav>
+            <ul class="header_main_menu">
+                <li>
+                    <a href="index.html" class="header_main_menu_index">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="resenhas.html" class="header_main_menu_index">
+                        RESENHAS
+                    </a>
+                </li>
+                <li>
+                    <a href="quiz.html" class="header_main_menu_index">
+                        QUIZ
+                    </a>
+                </li>
+                <li>
+                    <a href="time.html" class="header_main_menu_index">
+                        NOSSO TIME
+                    </a>
+                </li>
+                <li>
+                    <img src="assets/images/header_footer/header_foto-perfil.png" alt="foto perfil">
+                    <a href="perfiluser.html">
+                        ANNA_123
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     
     <main>   
@@ -56,7 +93,7 @@
         </section>
                 
         <section id="quizTitulos" align="center">            
-            <a href="" class="topico">Qual é a série?</a>
+            <a href="" class="topico" >Qual é a série?</a>
             <a href="" class="topico">Descubra o<br>personagem</a>
             <a href="" class="topico">Teste os seus<br>conhecimentos</a>
             <a href="" class="topico">Qual é o filme?</a>
@@ -140,17 +177,17 @@
             </section>
             <section class="filmes_e_series">
                 <div class="obras">
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/His Dark Materials.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/Gossip Girl.png" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/His Dark Materials.png" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Gossip Girl.png" alt="" height="250"></a>
                 </div>
                 <div class="obras">
                     <div id="posicao1"><h2 align="center">1º</h2></div>
                     <div id="posicao2"><h2 align="center">2º</h2></div>
                     <div id="posicao3"><h2 align="center">3º</h2></div>
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/Harry Potter.jpg" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/Supernatural.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/Rick and Morty.png" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Harry Potter.jpg" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Supernatural.png" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Rick and Morty.png" alt="" height="250"></a>
                 </div>
             </section>
             <section class="filmes_e_series_titulo">
@@ -163,9 +200,9 @@
             </section>
             <section class="filmes_e_series">
                 <div class="obras">
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/O Esquadrão Suicida.jpg" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img src="assets/images/quiz/Filmes&Series/TheBigBangTheory.png" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/O Esquadrão Suicida.jpg" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/TheBigBangTheory.png" alt="" height="250"></a>
                 </div>
                 <div class="podio" align="center">
                     <div id="posicao1_ranking"><h2 align="center">1º</h2></div>
@@ -180,10 +217,93 @@
     </main>
 
     <footer>
-        <div w3-include-HTML="footer.html">My HTML include will go here.</div>           
+        <section class="footer_main">
+            <nav>
+                <div>
+                    <ul class="footer_main_menu">
+                        <li class="footer_main_menu_title">
+                            menu
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resenhas.html">
+                                resenhas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quiz.html">
+                                quiz
+                            </a>
+                        </li>
+                        <li>
+                            <a href="time.html">
+                                nosso time
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_search">
+                    <form action="#" method="post">
+                        <label for="busca">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-search">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </label>
+                        <input type="search" autocomplete="off" spellcheck="false" role="combobox" placeholder="Quiz Harry Potter" id="busca" name="search" required>
+                    </form>
+                </div>
+                <div>
+                    <ul class="footer_help_center">
+                        <li class="footer_help_center_title">
+                            SUPORTE
+                        </li>
+                        <li>
+                            CHAT 24h
+                            <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="CHAT">
+                        </li>
+                        <li>
+                            CONTATO: CONTATO@CINEMUNDO.COM.BR
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section class="footer_social_media">
+            <nav>
+                <div class="footer_social_media_title">
+                    REDES SOCIAIS:
+                </div>
+                <div>
+                    <a href=".">
+                        <img src="assets/images/header_footer/footer_twitter.png" alt="twitter" width="60"
+                            class="footer_social_media_image">
+                        <img src="assets/images/header_footer/footer_facebook.png" alt="facebook" width="60"
+                            class="footer_social_media_image">
+                        <img src="assets/images/header_footer/footer_instagram.png" alt="instagram" width="60"
+                            class="footer_social_media_image">
+                    </a>
+                </div>
+        </section>
+        <div class="footer_copyrights">
+            @2022 CINEMUNDO, LLC. todos os direitos reservados.
+        </div>
+        </nav>
     </footer>
 
-    <script src="assets/script/w3-include-HTML.js"></script>
+    <!-- <footer>
+        <div w3-include-HTML="footer.html">My HTML include will go here.</div>           
+    </footer>
+  
+
+
+    <script src="assets/script/w3-include-HTML.js"></script> -->
 
 </body>
 
