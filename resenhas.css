@@ -16,8 +16,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 135px;
-    /*text-align: center;*/
-    /*margin: 0 163px 135px 163px;*/
 }
 
 .main_resenhas a, a-visited {
@@ -35,8 +33,6 @@ main {
 
 .titulo_index_resenhas {
     text-align: center;
-    /*width: 362.25px;
-    height: 24px;*/
     font-family: 'Bebas Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -94,15 +90,10 @@ p {
     margin-top: 18px;
 }
 
-.secao_lateral_index_resenhas {
-    /*width: 402.75px;*/
-    /*height: 436.50px;*/
-}
-
 .secao_selecao_autores_resenhas {
     margin-left: 79.5px;
     width: 402.75px;
-    height: 162.75;
+    height: 162.75px;
     padding:5px 0 10px 10px;
     border-left: solid 2px;
 }
@@ -115,33 +106,13 @@ p {
 }
 
 .espaco_selecao_autor_resenhas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: #BD4CF7;
+    color: white;
+    font-size: 22.5px;
     width: 357.59px;
     height: 63.75px;
     margin-top: 10px;
     margin-left: 15px;
-}
- 
-.selecione_autor_resenhas {
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 22.5px;
-    line-height: 11px;
-    text-align: center;
-    margin-left: 15px;
-}
-
-.select_autores_resenhas {
-    background-color: #BD4CF7;
-    color: white;
-    width: 30px;
-    margin-right: 10px;
-    overflow: hidden;
 }
 
 .secao_redes_sociais_resenhas {

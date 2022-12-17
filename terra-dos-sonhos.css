@@ -1,0 +1,312 @@
+@import url('https://fonts.google.com/specimen/Bebas+Neue?query=bebas+neue');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://www.1001fonts.com/codec-pro-font.html');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    width: 80.625%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.section_titulo_resenha_completa {
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.titulo_principal_resenha_completa {
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37.5px;
+    line-height: 11px;
+    margin: 66px auto 25px auto;
+}
+
+.publicado_por_resenha {
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 11px;
+    margin-bottom: 18px;
+}
+
+.data_hora_resenha_completa {
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 11px;
+}
+
+.section_principal_resenha_completa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+.secao_informacoes_resenha_completa {
+    width: 375px;
+}
+
+.banner_resenha_completa {
+    width: 375px;
+    height: 472px;
+    border: 5px solid #BD4CF7;
+}
+
+.titulos_lateral_resenha_completa {
+    text-align: center;
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.ficha_tecnica_resenha_completa {
+    margin-top: 27px;
+}
+
+.ficha_tecnica_resenha_completa strong {
+    font-family: 'Codec Pro', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.ficha_tecnica_resenha_completa h4 {
+    font-family: 'Open Sauce Sans', sans-serif;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+hr {
+    color: #BD4CF7;
+    border: 1px solid;
+}
+
+.avaliacoes_resenha_completa {
+    margin-top: 45px;
+}
+
+.avaliacoes_resenha_completa h4 {
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.campo_avaliacao_resenha_completa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campo_avaliacao_resenha_completa img {
+    margin-left: 10px;
+}
+
+.img_estrelas_avaliar {
+    width: 135px;
+    height: 24.75px;
+    margin-top: 3px;
+}
+
+.onde_assistir_resenha_completa {
+    width: 375px;
+    margin-top: 45px;
+}
+
+.img_ondeassistir_resenha_completa {
+    display: flex;
+    width: 50px;
+    height: 40px;
+    margin: 0 137.5px 20px;
+}
+
+.onde_assistir_resenha_completa strong {
+    margin-top: 30px;
+}
+
+.onde_assistir_resenha_completa p {
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.redes_sociais_resenha_completa {
+    margin-top: 100px;
+}
+
+.redes_sociais_resenha_completa img {
+    width: 374px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.redes_sociais_resenha_completa h2 {
+    text-align: center;
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 11px;
+}
+
+.secao_textos_resenha_completa {
+    width: 661px;
+}
+
+.secao_textos_resenha_completa h2 {
+    text-align: center;
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 11px;
+    margin-bottom: 20px;
+}
+
+.secao_textos_resenha_completa p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.avalie_resenha_completa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avalie_resenha_completa h4 {
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+.roteirista_resenha_completa {
+    display: flex;
+}
+
+.roteirista_resenha_completa img {
+    border-radius: 50%;
+    border: 5px solid #BD4CF7;
+    margin-right: 18px;
+}
+
+.roteirista_resenha_completa h4 {
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.roteirista_resenha_completa p {
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.secao_formulario_resenha_completa {
+    width: 550px;
+    margin: 40px auto;
+}
+
+.secao_formulario_resenha_completa h3 {
+    text-align: center;
+    font-family: 'Codec Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+}
+
+.secao_formulario_resenha_completa p {
+    text-align: center;
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.label_form_resenha_completa {
+    display: block;
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 3px;
+}
+
+.input_form_resenha_completa {
+    background: #E8C4FB;
+    border: none;
+    width: 550px;
+    height: 30px;
+    margin-bottom: 22px;
+}
+
+.textarea_form_resenha_completa {
+    background: #E8C4FB;
+    border: none;
+    width: 550px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.input_form_resenha_completa::-webkit-input-placeholder {
+    color: gray; /*Change the placeholder color*/
+    opacity: 0.5; /*Change the opacity between 0 and 1*/
+}
+
+.botao_form_resenha_completa {
+    display: block;
+    background: #BD4CF7;
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    width: 415px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.botao_form_resenha_completa:hover {
+    transform: scale(1.2);
+}
