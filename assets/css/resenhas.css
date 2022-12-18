@@ -25,6 +25,7 @@ header{
 }
 
 .header_title_cinemundo {
+    color: white;
     font-size: 90px;
     font-weight: 300;
     text-align: center;
