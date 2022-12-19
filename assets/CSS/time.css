@@ -23,6 +23,11 @@ main .colaboratorleft .photoleft {
   border-radius: 50%;
 }
 
+main .colaboratorleft .photoleft:hover {
+  scale: 1.3;
+  transition: all 0.5s ease-in-out;
+}
+
 main .colaboratorleft .descriptionleft {
   display: flex;
   flex-direction: column;
@@ -30,7 +35,7 @@ main .colaboratorleft .descriptionleft {
   justify-content: center;
   width: 576px;
   height: 171px;
-  padding: 24px 24px 8px 24px;
+  padding: 24px 24px 24px 24px;
   background: #bd4cf7;
   color: #fff;
   border-radius: 20px;
@@ -80,6 +85,11 @@ main .colaboratorright .photoright {
   border-radius: 50%;
 }
 
+main .colaboratorright .photoright:hover {
+  scale: 1.3;
+  transition: all 0.5s ease-in-out;
+}
+
 main .colaboratorright .descriptionright {
   display: flex;
   flex-direction: column;
@@ -87,7 +97,7 @@ main .colaboratorright .descriptionright {
   justify-content: center;
   width: 576px;
   height: 171px;
-  padding: 24px 24px 8px 24px;
+  padding: 24px 24px 24px 24px;
   background: #352052;
   color: #fff;
   border-radius: 20px;
