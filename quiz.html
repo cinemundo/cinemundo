@@ -58,9 +58,12 @@
     </header>
     
     <main>   
-        <section>
+        <section id="Quiz-Logo">
             <div>
-                <p align="Center"><img src="assets/images/quiz/Logo.png" alt="Logo do Quiz" width="75">Quiz</p>
+                <img src="assets/images/quiz/Logo.png" alt="Logo do Quiz" width="75">
+            </div>
+            <div>
+                <h1>Quiz</h1>
             </div>
         </section>
 
@@ -69,7 +72,7 @@
                 <div>
                     <h2 class="titulos">Conhecimentos gerais</h2>
                     <form action="/" align="Center"><br>
-                        <input list="generos" placeholder="Selecione o gênero">
+                        <input list="generos" class="quiz-imput" placeholder=" Selecione o gênero">
                         <datalist id="generos">
                             <option value="Comédia" />
                             <option value="Terror" />
@@ -83,8 +86,8 @@
                 <div>
                     <h2 class="titulos">Busca por obra específica</h2>
                     <form action="/" align="Center"><br>                 
-                        <input type="text" id="Nome" name="nomeObra" placeholder="Digite o nome da obra">                    
-                    <button type="submit">
+                        <input type="text" id="Nome" class="quiz-imput" name="nomeObra" placeholder=" Digite o nome da obra">                    
+                    <button type="submit" id="quiz-pesquisar">
                         Pesquisar
                     </button>
                     </form>
@@ -105,18 +108,21 @@
                                 
                 <div class="card">
                     <div class="card_3d"></div>
+                    <div id="card_logo">
+                        <img src="assets/images/quiz/Logo(c).png" alt="Logo do Quiz" width="350">
+                    </div>
                 </div>
 
                 <aside>
                     <div id="DoisRankings">
                         <nav>                    
                             <ul id="RankingDiario">                        
-                                <li class="jogadoresD">                                
+                                <li class="jogadoresD" >                                
                                     <h2 align="center">Ranking<br>Diário</h5>
                                 </li>
                                 <li class="jogadoresD">
                                     <a href="perfiluser.html"><img src="assets/images/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
-                                    <h5 align="center">1º<br>Fulano de tal<br>5030 pts</h5>
+                                    <h5 align="center">2º<br>Fulano de tal<br>5030 pts</h5>
                                 </li>
                                 <li class="jogadoresD">
                                     <a href="perfiluser.html"><img src="assets/images/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
@@ -130,7 +136,7 @@
                                     <a href="perfiluser.html"><img src="assets/images/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">4º<br>Fulano de tal<br>5030 pts</h5>
                                 </li>
-                                <li class="jogador_atual">
+                                <li class="jogador_atual_D">
                                     <a href="perfiluser.html"><img src="assets/images/quiz/RainhaElizabeth.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">37º<br>R. Elizabeth<br>5030 pts</h5>
                                 </li>
@@ -157,7 +163,7 @@
                                     <a href="perfiluser.html"><img src="assets/images/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">4º<br>Fulano de tal<br>5030 pts</h5>
                                 </li>
-                                <li class="jogador_atual">
+                                <li class="jogador_atual_M">
                                     <a href="perfiluser.html"><img src="assets/images/quiz/RainhaElizabeth.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">65º<br>R. Elizabeth<br>5030 pts</h5>
                                 </li>
@@ -167,50 +173,58 @@
                 </aside>
             </section>
             <hr><br><br><hr><br>
-            <section class="filmes_e_series_titulo">
-                <div class="obras">
-                    <h2 align="center">NOVIDADES</h2>
-                </div>
-                <div class="obras">
-                    <h2 align="center">OS MAIS JOGADOS</h2>
-                </div>
-            </section>
             <section class="filmes_e_series">
                 <div class="obras">
+                    <div class="tres_obras">
+                        <h2>Novidades</h2>
+                    </div>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/His Dark Materials.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Gossip Girl.png" alt="" height="250"></a>
                 </div>
                 <div class="obras">
+                    <div id="os_mais_jogados">
+                        <h2>Os Mais Jogados</h2>
+                    </div>
                     <div id="posicao1"><h2 align="center">1º</h2></div>
                     <div id="posicao2"><h2 align="center">2º</h2></div>
                     <div id="posicao3"><h2 align="center">3º</h2></div>
-                    <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Harry Potter.jpg" alt="" height="250"></a>
+                    <a href="perfiluser.html"><img class="poster2" src="assets/images/quiz/Filmes&Series/Harry Potter.jpg" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Supernatural.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Rick and Morty.png" alt="" height="250"></a>
                 </div>
             </section>
-            <section class="filmes_e_series_titulo">
-                <div class="obras">
-                    <h2 align="center">SUGESTÕES</h2>
-                </div>
-                <div class="obras">
-                    <h2 align="center">PREMIAÇÃO MENSAL</h2>
-                </div>
-            </section>
             <section class="filmes_e_series">
                 <div class="obras">
+                    <div class="tres_obras">
+                        <h2>SUGESTÕES</h2>
+                    </div>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/O Esquadrão Suicida.jpg" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/images/quiz/Filmes&Series/TheBigBangTheory.png" alt="" height="250"></a>
                 </div>
                 <div class="podio" align="center">
+                    <div id="premiacao_mensal">
+                        <h2>Premiação Mensal</h2>
+                    </div>
                     <div id="posicao1_ranking"><h2 align="center">1º</h2></div>
                     <div id="posicao2_ranking"><h2 align="center">2º</h2></div>
                     <div id="posicao3_ranking"><h2 align="center">3º</h2></div>
-                    <div class="premio"><h4><br>Vai ganhar um par de ingressos para o cinema.<br><br> Prêmio patrocinado pela rede Cinemark</h4></div>
-                    <div class="premio"><h4><br>Vai ganhar um par de ingressos para o cinema.<br><br> Prêmio patrocinado pela rede Cinemark</h4></div>
-                    <div class="premio"><h4><br>Vai ganhar um par de ingressos para o cinema.<br><br> Prêmio patrocinado pela rede Cinemark</h4></div>
+                    <div class="premio">
+                        <div class="premio_3d"></div>
+                        <h4><br><br>Leva um par de ingressos para o cinema na rede Cinemark.<br><br></h4>
+                        <img src="assets/images/quiz/Cinemark.png" alt="Foto do Usuário" height="75px">
+                    </div>
+                    <div class="premio">
+                        <div class="premio_3d"></div>
+                        <h4><br><br>Recebe 50% de desconto durante 6 meses no HBO Max.<br><br> </h4>
+                        <img src="assets/images/quiz/HBO_max.png" alt="Foto do Usuário" height="75px">
+                    </div>
+                    <div class="premio">
+                        <div class="premio_3d"></div>
+                        <h4><br><br>Ganha 3 meses grátis no serviço de streaming da Netflix.<br><br></h4>
+                        <img src="assets/images/quiz/Netflix.png" alt="Foto do Usuário" height="75px">
+                    </div>
                 </div>
             </section>
         </section>
