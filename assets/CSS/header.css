@@ -51,7 +51,7 @@ header{
         display: block;
     }   
     ul{
-        position: fixed;
+        position: absolute;
         min-width: 60%;
         max-width: 100%;
         min-height: 5%;
