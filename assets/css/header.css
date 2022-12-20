@@ -1,12 +1,23 @@
 header{
     background-color: black;
     color:white;
+<<<<<<< HEAD
     font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;   
+=======
+}
+
+.header_title {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+>>>>>>> rosangela-perfiluser
 }
 
 .header_title_cinemundo {
     font-size: 80px;
     font-weight: 300;
+<<<<<<< HEAD
     cursor: pointer;
     display: flex;
     justify-content: space-around;
@@ -26,15 +37,38 @@ header{
 @media (max-width: 920px){
     label.header_title_cinemundo{
         font-size: 70px;
+=======
+    text-align: center;
+}
+
+.header_title a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    color: white;
+}
+
+@media (max-width: 952px){
+    label.header_title_cinemundo{
+        font-size: 70px;
+        padding-left: 10px;
+>>>>>>> rosangela-perfiluser
     }
 }
 
 .header_title_image {
     display: flex;
+<<<<<<< HEAD
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1%;
     padding-left: 1.5%;
+=======
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    padding-bottom: 1.2%;
+>>>>>>> rosangela-perfiluser
 }
 
 .checkbtn_header {
@@ -52,17 +86,25 @@ header{
     }   
     ul{
         position: fixed;
+<<<<<<< HEAD
         min-width: 60%;
         max-width: 100%;
         min-height: 5%;
         max-width: 100%;
         background: black;
         top: 222px;
+=======
+        width: 100%;
+        height: 100vh;
+        background: #080327;
+        top: 210px;
+>>>>>>> rosangela-perfiluser
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
     nav ul li{
+<<<<<<< HEAD
         display: flex;
         margin: 7px 0;
         line-height: 30px;
@@ -72,6 +114,14 @@ header{
     }
     nav ul li a{
         font-size: 22px;
+=======
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+>>>>>>> rosangela-perfiluser
     }
     a:hover, a.active{
         background: none;
@@ -83,7 +133,11 @@ header{
 }
 
 i.material-symbols-outlined {
+<<<<<<< HEAD
     font-size: 180%;
+=======
+    font-size: 40px;
+>>>>>>> rosangela-perfiluser
     cursor: pointer;
 }
 
@@ -104,7 +158,11 @@ i.material-symbols-outlined:hover {
     border-top: 2px solid white;
     display: block;
     align-items: center;
+<<<<<<< HEAD
     padding: 5px 40px;
+=======
+    padding: 5px 40px 5px 40px;
+>>>>>>> rosangela-perfiluser
     margin: 0 10px;
 }
 
@@ -117,7 +175,12 @@ i.material-symbols-outlined:hover {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .header_main_menu_index:hover, .header_main_menu_index:active{
+=======
+.header_main_menu li a:hover, .header_main_menu li a:active{
+    /*background-color: #BD4CF7; */
+>>>>>>> rosangela-perfiluser
     background-color: white;
     color: black;
     border-top: 2px solid black;
@@ -129,25 +192,36 @@ i.material-symbols-outlined:hover {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .header_main_menu2 li a:hover, .header_main_menu2 li a:active {
     background-color:#BD4CF7;
     transition: .4s;
 }
 
+=======
+>>>>>>> rosangela-perfiluser
 .header_main_menu2 li svg {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .header_main_menu2 li svg:hover {
     color: #BD4CF7;
     transition: .4s;
 }
 
+=======
+>>>>>>> rosangela-perfiluser
 .header_perfil_name {
     font-weight: 100%;
 }
 
 .header_perfil_name a {
+<<<<<<< HEAD
     padding: 10px 16px;
     margin: 0 1px;
+=======
+    padding: 10px 18px;
+    margin: 0 18px;
+>>>>>>> rosangela-perfiluser
 }
