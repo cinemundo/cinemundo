@@ -1,0 +1,283 @@
+#Quiz-Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+#topo {
+  display: flex;
+  justify-content: center;  
+  gap: 75px;
+  padding: 15px;  
+}
+
+.quiz-imput {
+  width: 150px;
+  height: 25px;
+  font-size: 15px;
+  border-color: #171445;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+#quiz-pesquisar {    
+  font-size: large;  
+  color: #171445;
+}
+
+#quizTitulos {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #171445;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 15px;
+}
+
+.topico {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  width: 175px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  font-size: large;
+}
+
+.topico:hover {
+  scale: 1.14;
+  transition: all 0.2s;    
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(8px 8px 8px rgba(0,0,0,.9));
+}
+
+#main_fake {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#CardRankings {
+  display: flex;  
+  justify-content: space-evenly;
+  gap: 75px;
+  margin-bottom: 30px;    
+}
+
+#card {
+  background-color: #BD4CF7;
+  min-width: 700px;
+  height: 510px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  border: 5px solid #171445;
+  border-radius: 12px;  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+#card_3d {
+  background-color: #171445;
+  min-width: 700px;
+  height: 510px;
+  position: absolute;
+  left: 10px;  
+  top: 10px;
+  border-radius: 12px;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+#card_logo {
+  position: absolute;
+  left: 200px;  
+  top: 100px;
+  border-radius: 12px;
+  z-index: 1;
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(8px 8px 8px rgba(0,0,0,.9)); 
+}
+
+#DoisRankings {
+  display: flex;
+  gap: 15px;
+}
+
+#RankingDiario, #RankingMensal {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 525px;
+  border-radius: 20px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+#RankingDiario {
+  background-color: #171445;
+}
+
+#RankingMensal {
+  background-color: #BD4CF7;
+}
+
+.jogadoresD, .jogadoresM {
+  display: flex;
+  color: white;
+  border-radius: 30px;
+  justify-content: space-around;
+  border: 2px solid #ffffffff;
+  box-shadow: rgba(229, 95, 241, 0.342) 0px 5px 15px;  
+}
+
+.jogadoresM {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.jogadoresD:hover {
+  background-color: #BD4CF7;
+}
+
+.jogadoresM:hover {
+  background-color: #17144565;
+}
+
+.jogador_atual_D, .jogador_atual_M {
+  display: flex;
+  color: white;
+  border-radius: 30px;
+  justify-content: space-around;
+  border: 2px solid #BD4CF7;
+  box-shadow: rgba(229, 95, 241, 0.342) 0px 5px 15px;
+}
+
+.jogador_atual_M {
+  border: 2px solid #171445be;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.jogador_atual_D:hover {
+  background-color: #BD4CF7;
+}
+
+
+.jogador_atual_M:hover {
+  background-color: #17144565;
+}
+
+.poster:hover {
+  scale: 1.04;
+  color: white;
+  transition: all 0.3s;    
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(8px 8px 8px rgba(0,0,0,.9));
+}
+
+.filmes_e_series {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  gap: 60px;
+  height: 300px;  
+}
+
+.obras {
+  display: flex;
+  gap: 15px;
+  position: relative;  
+}
+
+.tres_obras, #os_mais_jogados, #premiacao_mensal {
+  position: absolute;  
+  top: -55px;
+}
+
+.tres_obras {
+  left: 230px;
+}
+
+#os_mais_jogados {
+  left: 210px;
+}
+
+#premiacao_mensal {
+  left: 195px;
+}
+
+#posicao1, #posicao2, #posicao3 {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  top: -15px;
+  background: white;
+  border: 3px solid #171445;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1;
+  left: -10px;
+}
+
+#posicao2 {
+  left: 175px;
+}
+
+#posicao3 {
+  left: 355px;
+}
+
+#podio {
+  position: relative;  
+  display: flex;
+  gap: 15px;
+}
+
+.premio {
+  background-color: #BD4CF7;
+  border-radius: 20px;
+  width: 168px;
+  height: 250px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: -2;
+}
+
+.premio_3d {
+  position: absolute;
+  left: px;
+  background-color: white;
+  border-radius: 20px;
+  width: 149px;
+  height: 230px;
+  z-index: -1;
+  border: 3px solid #171445;
+}
+
+#posicao1_ranking, #posicao2_ranking, #posicao3_ranking {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  top: -15px;
+  background: white;
+  border: 3px solid #BD4CF7;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  left: -10px;
+}
+
+#posicao2_ranking {
+  left: 175px;
+}
+
+#posicao3_ranking {
+  left: 355px;
+}
