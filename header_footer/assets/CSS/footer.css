@@ -62,7 +62,7 @@ footer{
     border: 2px solid whitesmoke;
     border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
     border-radius: 0.1em;
-    padding: 0.3cm 7cm;
+    padding: 0.3cm 7vh;
     font-size: 2.2em;
     text-align: center;
     gap: 16px;
