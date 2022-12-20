@@ -70,11 +70,11 @@
                     <form action="/" align="Center"><br>
                         <input list="generos" class="quiz-imput" placeholder=" Selecione o gênero">
                         <datalist id="generos">
-                            <option value="Comédia" />
-                            <option value="Terror" />
-                            <option value="Drama" />
-                            <option value="Ficção Científica" />
-                            <option value="Aventura" />
+                            <option value="Comédia">
+                            <option value="Terror">
+                            <option value="Drama">
+                            <option value="Ficção Científica">
+                            <option value="Aventura">
                         </datalist>
                     </form>
                 </div>
@@ -82,7 +82,7 @@
                 <div>
                     <h2 class="titulos">Busca por obra específica</h2>
                     <form action="/" align="Center"><br>                 
-                        <input type="text" id="Nome" class="quiz-imput" name="nomeObra" placeholder=" Digite o nome da obra">                    
+                        <input type="text" class="quiz-imput" name="nomeObra" placeholder=" Digite o nome da obra">                    
                     <button type="submit" id="quiz-pesquisar">
                         Pesquisar
                     </button>
@@ -99,10 +99,10 @@
         </section>
 
         <section id="main_fake">
-            <section class="CardRankings">
+            <section id="CardRankings">
                                 
-                <div class="card">
-                    <div class="card_3d"></div>
+                <div id="card">
+                    <div id="card_3d"></div>
                     <div id="card_logo">
                         <img src="assets/image/quiz/Logo(c).png" alt="Logo do Quiz" width="350">
                     </div>
@@ -139,22 +139,22 @@
                         </nav>
                         <nav>                    
                             <ul id="RankingMensal">                        
-                                <li class="jogadores">                                
+                                <li class="jogadoresM">                                
                                     <h2 align="center">Ranking<br>Mensal</h5>
                                 </li>
-                                <li class="jogadores">
+                                <li class="jogadoresM">
                                     <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">1º<br>Fulano de tal<br>5030 pts</h5>
                                 </li>
-                                <li class="jogadores">
+                                <li class="jogadoresM">
                                     <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">2º<br>Fulano de tal<br>5030 pts</h5>
                                 </li>
-                                <li class="jogadores">
+                                <li class="jogadoresM">
                                     <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">3º<br>Fulano de tal<br>5030 pts</h5>
                                 </li>
-                                <li class="jogadores">
+                                <li class="jogadoresM">
                                     <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
                                     <h5 align="center">4º<br>Fulano de tal<br>5030 pts</h5>
                                 </li>
@@ -198,7 +198,7 @@
                     <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/TheBigBangTheory.png" alt="" height="250"></a>
                 </div>
-                <div class="podio" align="center">
+                <div id="podio" align="center">
                     <div id="premiacao_mensal">
                         <h2>Premiação Mensal</h2>
                     </div>

@@ -63,14 +63,14 @@
   margin-right: 10%;
 }
 
-.CardRankings {
+#CardRankings {
   display: flex;  
   justify-content: space-evenly;
   gap: 75px;
   margin-bottom: 30px;    
 }
 
-.card {
+#card {
   background-color: #BD4CF7;
   min-width: 700px;
   height: 510px;
@@ -83,7 +83,7 @@
   cursor: pointer;
 }
 
-.card_3d {
+#card_3d {
   background-color: #171445;
   min-width: 700px;
   height: 510px;
@@ -129,16 +129,16 @@
   background-color: #BD4CF7;
 }
 
-.jogadoresD, .jogadores {
+.jogadoresD, .jogadoresM {
   display: flex;
   color: white;
   border-radius: 30px;
   justify-content: space-around;
   border: 2px solid #ffffffff;
-  box-shadow: rgba(229, 95, 241, 0.342) 0px 5px 15px;
+  box-shadow: rgba(229, 95, 241, 0.342) 0px 5px 15px;  
 }
 
-.jogadores {
+.jogadoresM {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -146,7 +146,7 @@
   background-color: #BD4CF7;
 }
 
-.jogadores:hover {
+.jogadoresM:hover {
   background-color: #17144565;
 }
 
@@ -235,7 +235,7 @@
   left: 355px;
 }
 
-.podio {
+#podio {
   position: relative;  
   display: flex;
   gap: 15px;
