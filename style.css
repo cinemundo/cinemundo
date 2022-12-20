@@ -1,0 +1,416 @@
+body {
+  background-color: #040115;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+ul {
+  list-style: none;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.news-stars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news-headlines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-stars {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 20px 50px;
+  align-items: center;
+}
+
+.images-news-star {
+  width: 800px;
+  height: 400px;
+  gap: 50px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+.popular-movies-and-series {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+
+.popular-movies-and-series h2 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.link-best-series {
+  text-decoration: none;
+}
+
+.link-best-series h3 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.link-best-series h3:hover {
+  font-size: 3rem;
+  color: #bd4cf7;
+}
+
+.best-series {
+  display: flex;
+  margin: 0 50px;
+  gap: 70px;
+  justify-content: center;
+}
+
+.famous-series {
+  width: 600px;
+  height: 300px;
+  gap: 50px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+.link-best-movies {
+  text-decoration: none;
+}
+
+.link-best-movies h3 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.link-best-movies h3:hover {
+  font-size: 3rem;
+  color: #bd4cf7;
+}
+
+.best-movies {
+  display: flex;
+  margin: 50px;
+  gap: 70px;
+  justify-content: center;
+}
+
+.famous-movies {
+  width: 600px;
+  height: 300px;
+  gap: 50px;
+  margin-bottom: 100px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+.community-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-movies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+
+.list-movies-container a h3 {
+  font-size: 2.5rem;
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.list-movies-container a {
+  text-decoration: none;
+}
+
+.list-movies {
+  width: 120rem;
+  height: 50rem;
+  margin-bottom: 100px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+.list-series-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+
+.list-series-container a h3 {
+  font-size: 2.5rem;
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+
+.list-series-container a {
+  text-decoration: none;
+}
+
+.list-series {
+  width: 120rem;
+  height: 50rem;
+  margin-bottom: 100px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+.link-celebrity-highlights {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.link-celebrity-highlights:hover {
+  font-size: 2.3rem;
+  color: #bd4cf7;
+}
+
+.ranking-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ranking-users a h3 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  margin-bottom: 150px;
+}
+
+.ranking-users a {
+  text-decoration: none;
+}
+
+.ranking-users a h3:hover {
+  font-size: 2.8rem;
+  color: #bd4cf7;
+}
+
+.highlights-month {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#community-title h2 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+#link-headlines {
+  font-size: 2rem;
+  text-decoration: none;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+#link-headlines:hover {
+  font-size: 2.3rem;
+  color: #bd4cf7;
+}
+
+#link-movie-rating h3 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+#link-movie-rating h3:hover {
+  font-size: 2.8rem;
+  color: #bd4cf7;
+}
+
+#link-quiz-questions h3 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+#link-quiz-questions h3:hover {
+  font-size: 2.8rem;
+  color: #bd4cf7;
+}
+
+#ranking-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ranking-titles h2 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+#ranking-titles h3 {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  margin-bottom: 100px;
+}
+
+#quiz-leader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quiz-leader-container p {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  margin: 25px;
+}
+
+#quiz-leader {
+  width: 25rem;
+  height: 40rem;
+  margin-left: 20px;
+  gap: 20px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+#best-comments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#best-comments-container p {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  margin: 25px;
+}
+
+#best-comments {
+  width: 25rem;
+  height: 40rem;
+  margin-left: 20px;
+  gap: 20px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+#analysis-wizard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#analysis-wizard-container p {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  margin: 25px;
+}
+
+#analysis-wizard {
+  width: 25rem;
+  height: 40rem;
+  margin-left: 20px;
+  gap: 20px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+#best-feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#best-feed-container p {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  margin: 25px;
+}
+
+#best-feed {
+  width: 25rem;
+  height: 40rem;
+  margin-left: 20px;
+  gap: 20px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+#more-likes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#more-likes-container p {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  margin: 25px;
+}
+
+#more-likes {
+  width: 25rem;
+  height: 40rem;
+  margin-left: 20px;
+  gap: 20px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
