@@ -34,6 +34,7 @@ header{
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1%;
+    padding-left: 1.5%;
 }
 
 .checkbtn_header {
@@ -54,7 +55,7 @@ header{
         min-width: 60%;
         max-width: 100%;
         min-height: 5%;
-        max-width: 80%;
+        max-width: 100%;
         background: black;
         top: 222px;
         left: -100%;
@@ -70,7 +71,7 @@ header{
         flex-direction: column;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 22px;
     }
     a:hover, a.active{
         background: none;
@@ -128,7 +129,7 @@ i.material-symbols-outlined:hover {
     align-items: center;
 }
 
-.header_main_menu2 li a:hover {
+.header_main_menu2 li a:hover, .header_main_menu2 li a:active {
     background-color:#BD4CF7;
     transition: .4s;
 }
