@@ -267,7 +267,7 @@ i.material-symbols-outlined:hover {
 }
 
 .section_inferior_index_resenhas {
-    width: 60%;
+    max-width: 755px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 49.5px;
@@ -288,8 +288,9 @@ i.material-symbols-outlined:hover {
 }
 
 .secao_inferior_fotos_resenhas {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 18px;
 }
 
@@ -339,8 +340,8 @@ i.material-symbols-outlined:hover {
 
 .section_principal_resenha_completa {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 72px;
+    justify-content: center;
+    margin-bottom: 70px;
 }
 
 .secao_informacoes_resenha_completa {
@@ -457,6 +458,7 @@ i.material-symbols-outlined:hover {
 
 .secao_textos_resenha_completa {
     width: 661px;
+    margin-left: 75px;
 }
 
 .secao_textos_resenha_completa h2 {
@@ -520,8 +522,8 @@ i.material-symbols-outlined:hover {
 }
 
 .secao_formulario_resenha_completa {
-    width: 662px;
-    margin: 40px auto;
+    max-width: 662px;
+    margin: 0 auto;
 }
 
 .secao_formulario_resenha_completa h3 {
