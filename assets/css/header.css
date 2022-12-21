@@ -28,6 +28,9 @@ header{
     label.header_title_cinemundo{
         font-size: 70px;
     }
+    .header_title_image img {
+        width: 0%;
+    }
 }
 
 .header_title_image {
@@ -58,7 +61,7 @@ header{
         min-height: 5%;
         max-width: 100%;
         background: black;
-        top: 222px;
+        top: 170px;
         left: -100%;
         text-align: center;
         transition: all .5s;
