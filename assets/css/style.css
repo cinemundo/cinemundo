@@ -40,8 +40,8 @@ ul {
 }
 
 .images-news-star {
-  width: 800px;
-  height: 400px;
+  width: 550px;
+  height: 350px;
   gap: 50px;
   padding: 10px;
   background-color: #bd4cf7;
@@ -87,7 +87,7 @@ ul {
 }
 
 .famous-series {
-  width: 600px;
+  width: 500px;
   height: 300px;
   gap: 50px;
   padding: 10px;
@@ -120,7 +120,7 @@ ul {
 }
 
 .famous-movies {
-  width: 600px;
+  width: 500px;
   height: 300px;
   gap: 50px;
   margin-bottom: 100px;
@@ -156,8 +156,8 @@ ul {
 }
 
 .list-movies {
-  width: 120rem;
-  height: 50rem;
+  width: 1400px;
+  height: 800px;
   margin-bottom: 100px;
   padding: 10px;
   background-color: #bd4cf7;
@@ -184,8 +184,8 @@ ul {
 }
 
 .list-series {
-  width: 120rem;
-  height: 50rem;
+  width: 1400px;
+  height: 800px;
   margin-bottom: 100px;
   padding: 10px;
   background-color: #bd4cf7;
@@ -309,8 +309,8 @@ ul {
 }
 
 #quiz-leader {
-  width: 25rem;
-  height: 40rem;
+  width: 350px;
+  height: 450px;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -333,8 +333,8 @@ ul {
 }
 
 #best-comments {
-  width: 25rem;
-  height: 40rem;
+  width: 350px;
+  height: 450px;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -357,8 +357,8 @@ ul {
 }
 
 #analysis-wizard {
-  width: 25rem;
-  height: 40rem;
+  width: 350px;
+  height: 450px;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -381,8 +381,8 @@ ul {
 }
 
 #best-feed {
-  width: 25rem;
-  height: 40rem;
+  width: 350px;
+  height: 450px;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -405,8 +405,8 @@ ul {
 }
 
 #more-likes {
-  width: 25rem;
-  height: 40rem;
+  width: 350px;
+  height: 450px;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
