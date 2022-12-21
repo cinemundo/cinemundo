@@ -147,7 +147,6 @@ i.material-symbols-outlined:hover {
     width: 80.625%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 135px;
 }
 
 .main_resenhas a, a:visited {
@@ -171,12 +170,13 @@ i.material-symbols-outlined:hover {
     text-transform: uppercase;
     font-size: 37.5px;
     line-height: 11px;
-    margin: 66px 0 104px 0;
+    margin-top: 66px;
 }
 
 .section_index_resenhas {
     display: flex;
     justify-content: center;
+    margin-top: 104px;
 }
 
 .banner_index_resenhas {
@@ -208,6 +208,7 @@ i.material-symbols-outlined:hover {
     font-style: normal;
     font-weight: 100;
     line-height: 19px;
+    text-align: justify;
     margin-top: 18px;
 }
 
@@ -271,6 +272,7 @@ i.material-symbols-outlined:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 49.5px;
+    margin-bottom: 135px;
 }
 
 .titulo_secao_inferior_resenhas {
