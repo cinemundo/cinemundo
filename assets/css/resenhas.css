@@ -1,145 +1,3 @@
-/* HEADER */
-
-header{
-    background-color: black;
-    color:white;
-}
-
-.header_title {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-
-.header_title_cinemundo {
-    font-size: 80px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.header_title a {
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
-    color: white;
-}
-
-@media (max-width: 952px){
-    label.header_title_cinemundo{
-        font-size: 70px;
-        padding-left: 10px;
-    }
-}
-
-.header_title_image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: center;
-    padding-bottom: 1.2%;
-}
-
-.checkbtn_header {
-    float: left;
-    display: none;
-}
-
-#check_header {
-    display: none;
-}
-
-@media (max-width: 920px){
-    .checkbtn_header{
-        display: block;
-    }   
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #080327;
-        top: 210px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover, a.active{
-        background: none;
-        color:#BD4CF7;
-    }
-    #check_header:checked ~ ul{
-        left: 0;
-    }
-}
-
-i.material-symbols-outlined {
-    font-size: 40px;
-    cursor: pointer;
-}
-
-i.material-symbols-outlined:hover {
-    color: #BD4CF7;
-}
-
-.header_main_menu {
-    list-style: none;
-    font-size: 22px;
-    font-weight: 300;
-    margin: 0 30px;
-    display: flex;
-    justify-content:space-between;
-}
-
-.header_main_menu_index {
-    border-top: 2px solid white;
-    display: block;
-    align-items: center;
-    padding: 5px 40px 5px 40px;
-    margin: 0 10px;
-}
-
-.header_main_menu li{
-    display: inline-block;
-}
-
-.header_main_menu li a{
-    color: white;
-    text-decoration: none;
-}
-
-.header_main_menu li a:hover, .header_main_menu li a:active{
-    /*background-color: #BD4CF7; */
-    background-color: white;
-    color: black;
-    border-top: 2px solid black;
-    transition: .4s;
-}
-
-.header_main_menu2 {
-    display: flex;
-    align-items: center;
-}
-
-.header_main_menu2 li svg {
-    cursor: pointer;
-}
-
-.header_perfil_name {
-    font-weight: 100%;
-}
-
-.header_perfil_name a {
-    padding: 10px 18px;
-    margin: 0 18px;
-}
 
 /* INÍCIO PÁGINA ÚLTIMAS RESENHAS */
 
@@ -268,7 +126,7 @@ i.material-symbols-outlined:hover {
 }
 
 .section_inferior_index_resenhas {
-    max-width: 755px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 49.5px;
@@ -281,7 +139,7 @@ i.material-symbols-outlined:hover {
     font-weight: 600;
     font-size: 30px;
     line-height: 11px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 
 .secao_inferior_fotomaior_resenhas {
@@ -293,11 +151,11 @@ i.material-symbols-outlined:hover {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 18px;
+    margin-top: 13px;
 }
 
 .img_leiatambem_index_resenhas {
-    width: 224.74px;
+    max-width: 224.74px;
     height: 105.95px;
 }
 
@@ -644,155 +502,3 @@ i.material-symbols-outlined:hover {
     text-align: justify;
 }
 
-/* FOOTER */
-
-footer{
-    background-color: black;
-    color: white;
-}
-
-.footer_main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer_main_menu {
-    gap: 16px;
-    font-size: 24px;
-    font-weight: 300;
-    text-align:left;
-    margin: 10px 0 0 80px;
-}
-
-.footer_main_menu li {
-    list-style: none;
-    margin-top: 2px;
-    margin-bottom: 1px;
-}
-
-.footer_main_menu li a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer_main_menu li a:hover{
-    color: #BD4CF7;
-    font-size: 103%;
-}
-
-.footer_main_menu_title {
-    font-size: 34px;
-    font-weight: 500;
-    padding: 0px 100px 0 0;
-    border-bottom: 3px solid whitesmoke;
-    border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
-}
-
-#busca {
-    color: white;
-}
-
-.footer_search {
-    margin-left: 0px;
-}
-
-.feather-feather-search {
-    cursor: pointer;
-}
-
-.footer_search_icon {
-    display: flex;
-    align-items: center;
-}
-
-.footer_search input{
-    border: 2px solid whitesmoke;
-    border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
-    border-radius: 0.1em;
-    padding: 0.3cm 7vh;
-    font-size: 2.2em;
-    text-align: center;
-    gap: 16px;
-    background: transparent;
-}
-
-.footer_help_center {
-    flex-direction: column;
-    gap: 16px;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: end;
-    margin: 10px 80px 0 0;
-}
-
-.footer_help_center_title {
-    font-size: 34px;
-    border-bottom: 3px solid whitesmoke;
-    border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
-}
-
-.footer_help_center li {
-    list-style: none;
-    margin-top: 2px;
-    margin-bottom: 1px;
-}
-
-.footer_help_center li a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer_help_center li a:hover {
-    color: #BD4CF7;
-    font-size: 103%;
-}
-
-
-.footer_help_center_button {
-    border: 2px solid whitesmoke;
-    border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
-    border-radius: 0.1em;
-    padding: 0.1cm 0.5cm;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
-    background-image: linear-gradient(#BD4CF7, black, black);
-    margin: 5px 0;
-    font-size: 24px;
-}
-
-.footer_help_center_button:hover {
-    background-image: linear-gradient(#BD4CF7,white, white);
-    font-size: 101%;
-    color: black;
-}
-
-.footer_help_center_contact {
-    font-size: 22px;
-}
-
-.footer_help_center_email {
-    font-size: 18px;
-}
-
-
-.footer_social_media_title {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-}
-
-.footer_social_media_link {
-    display: flex;
-    justify-content: center;
-}
-
-.footer_social_media_image {
-    padding: 10px;
-}
-
-.footer_copyrights {
-    display: flex;
-    justify-content: center;
-}
