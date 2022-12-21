@@ -10,6 +10,7 @@ header{
     cursor: pointer;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
@@ -50,7 +51,7 @@ header{
     .checkbtn_header{
         display: block;
     }   
-    ul{
+    .header_main_menu_ul {
         position: absolute;
         min-width: 60%;
         max-width: 100%;
@@ -62,7 +63,7 @@ header{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+    .header_main_menu_list{
         display: flex;
         margin: 7px 0;
         line-height: 30px;
@@ -70,10 +71,10 @@ header{
         align-items: center;
         flex-direction: column;
     }
-    nav ul li a{
+    .header_main_menu_index{
         font-size: 22px;
     }
-    a:hover, a.active{
+    header_main_menu_index:hover, header_main_menu_index:active{
         background: none;
         color:#BD4CF7;
     }
