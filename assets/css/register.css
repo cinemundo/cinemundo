@@ -1,24 +1,28 @@
-main {
-  background: linear-gradient(#BD4CF7, #080327);
+body {
+  background: linear-gradient(black, black, #080327, #171445, #BD4CF7, #BD4CF7);
 }
 
 h1.form-title {
     text-align: center;
     font-size: 2em;
-    margin: 20px 0;
+    margin: 15px 0;
     color: white;
+    cursor: default;
   }
   
+h1.form-title:hover {
+  color: #BD4CF7;
+}
   .form {
     width: 500px;
-    margin: auto;
+    margin: 20px auto;
     border: 2px solid #BD4CF7;
     border-radius: 5px;
-    padding: 25px;
+    padding: 30px;
     box-sizing: border-box;
-    background: linear-gradient(black, #080327);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   
   .form:hover {
@@ -27,14 +31,15 @@ h1.form-title {
   
   .form-label {
     display: block;
-    margin-top: 8px;
+    margin-top: 25px;
     font-size: 1.3em;
   }
   
   .form-input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
     padding: 12px 20px;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 3px;
     box-sizing: border-box;
     border: 2px solid #352052;
@@ -77,26 +82,12 @@ h1.form-title {
   .helper-text {
     display: none;
     font-size: 1em;
-    color: #d591f7;
+    color: #ffcdcd;
   }
 
   .orientacao {
     margin-top: 1.5rem;
     font-size: .7rem;
-  }
-
-   /* ---------- Estilos dinâmicos ---------- */
-   .required-popup::after {
-    content: "*Campo obrigatório";
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #DFDFDF;
-    font-size: .65rem;
-    padding: .2rem .3rem;
-    width: auto;
-    display: block;
-    background-color: #202020;
   }
   
   input.error {
@@ -104,7 +95,7 @@ h1.form-title {
   }
   
   input.correct {
-    border: 3px solid #00ff00;
+    border-image: linear-gradient(to right, #BD4CF7, rgb(0, 17, 255)) 1;
   }
 
   .visible {

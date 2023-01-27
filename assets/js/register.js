@@ -35,7 +35,7 @@ usernameInput.addEventListener("change", (e)=> {
   let valorUsuario = e.target.value
 
   if(valorUsuario.length < 6){
-    // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
+    // Adicionar estilos dinâmicos se o valor tiver menos de 6 caracteres
     usernameHelper.innerText = "Seu username precisa ter 6 ou mais caracteres";
     estilizarInputIncorreto(usernameInput, usernameHelper)
     inputCorreto.username = false;
@@ -101,7 +101,7 @@ emailInput.addEventListener("change", (e)=> {
     estilizarInputCorreto(emailInput, emailHelper);
     inputCorreto.email = true;
   } else {
-    // Adicionar estilos dinâmicos se o valor estiver correto
+    // Adicionar estilos dinâmicos se o valor estiver incorreto
     emailHelper.innerText = "Inserira um e-mail válido";
     estilizarInputIncorreto(emailInput, emailHelper);
     inputCorreto.email = false;
@@ -109,9 +109,9 @@ emailInput.addEventListener("change", (e)=> {
 })
 
 // ---------- VALIDAÇÃO NASCIMENTO  ---------- //
-let nascimentoInput = document.getElementById("email");
-let nascimentoLabel = document.querySelector('label[for="email"]');
-let nascimentoHelper = document.getElementById("email-helper");
+let nascimentoInput = document.getElementById("nascimento");
+let nascimentoLabel = document.querySelector('label[for="nascimento"]');
+let nascimentoHelper = document.getElementById("nascimento-helper");
 
 togglePopup(nascimentoInput, nascimentoLabel)
 
@@ -119,14 +119,14 @@ togglePopup(nascimentoInput, nascimentoLabel)
 nascimentoInput.addEventListener("change", (e)=> {
   let nascimentoValor = e.target.value
 
-  if(nascimentoValor.includes("@") && nascimentoValor.includes(".com")){
+  if(nascimentoValor.length == 10){
     // Adicionar estilos dinâmicos se o valor estiver correto
     estilizarInputCorreto(nascimentoInput, nascimentoHelper);
     inputCorreto.nascimento = true;
   } else {
     // Adicionar estilos dinâmicos se o valor estiver correto
-    nascimentoHelper.innerText = "Data inválida";
-    //estilizarInputIncorreto(emailInput, emailHelper);
+    nascimentoHelper.innerText = "Data de nascimento inválida";
+    estilizarInputIncorreto(nascimentoInput, nascimentoHelper);
     inputCorreto.nascimento = false;
   }
 })
@@ -154,11 +154,13 @@ celularInput.addEventListener("change", (e)=> {
   }
 })
 
-//Limitar a digitação à somente números.
+//Limitar a digitação à somente números e até 15 caracteres.
 celularInput.oninput = function() {
-  this.value = this.value.replace(/[^0-9]/g, "").replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
+  if (this.value.length > 15) {
+    this.value = this.value.slice(0, 15);
+  }
+  this.value = this.value.replace(/[^0-9]/g, "").replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
 };
-
 
  // -------------- HABILITAR ENVIO DO FORMULÁRIO ------------- //  
 
