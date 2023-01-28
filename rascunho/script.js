@@ -46,45 +46,52 @@ sorteioPorNivel("D", 2)
 
 // Array com os 10 número sorteados (ordenados por nivel de dificuldade).
 
-console.log(sorteadas)
+// console.log(sorteadas)
 
 // Array com os 10 número sorteados (elementos embaralhados).
+
 embaralhadas = sorteadas.sort(function() {
     return 0.5 - Math.random();
 })
 
-console.log(embaralhadas)
-
 // Exibindo as questões no navegador.
+
+// pontos.innerHTML = 0
+// pontos.innerHTML = parseInt(pontos.innerHTML)
+
+// console.log(typeof(pontos.innerHTML))
+// console.log(parseInt(pontos.innerHTML))
 
 for (i=0; i < obra.length; i++) {
     if (obra[i].numero == embaralhadas[0]) {
-        console.log(obra[i])
         pergunta.innerText = obra[i].pergunta
-        opcaoA.innerText = "a) " + obra[i].a
-        opcaoB.innerText = "b) " + obra[i].b
-        opcaoC.innerText = "c) " + obra[i].c
-        opcaoD.innerText = "d) " + obra[i].d
+        opcaoA.innerHTML = `<div onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
+        opcaoB.innerHTML = `<div onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
+        opcaoC.innerHTML = `<div onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
+        opcaoD.innerHTML = `<div onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
     }
 }
 
 n = 0
-s = 2
+s = 1
 
-function avancar() {
-    // pontos.innerHTML = Number(pontos.innerHTML) + 10
-    // console.log(pontos.innerText)
+function contaPontos(opcao,num) {
+    if (opcao == obra[num].respCorreta) {
+        console.log('Certo!')
+        pontos.innerHTML = parseInt(pontos.innerHTML) + 10
+    } else {
+        console.log('Errado!')
+    }
 
     n = n + 1
 
     for (i=0; i < obra.length; i++) {
         if (obra[i].numero == embaralhadas[n]) {
-            console.log(obra[i])
             pergunta.innerText = obra[i].pergunta
-            opcaoA.innerText = "a) " + obra[i].a
-            opcaoB.innerText = "b) " + obra[i].b
-            opcaoC.innerText = "c) " + obra[i].c
-            opcaoD.innerText = "d) " + obra[i].d
+            opcaoA.innerHTML = `<div onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
+            opcaoB.innerHTML = `<div onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
+            opcaoC.innerHTML = `<div onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
+            opcaoD.innerHTML = `<div onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
         }
     }
 
