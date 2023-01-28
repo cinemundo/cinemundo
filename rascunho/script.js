@@ -73,17 +73,15 @@ for (i=0; i < obra.length; i++) {
 }
 
 n = 0
-s = 1
+s = 2
 
 function contaPontos(opcao,num) {
-    if (opcao == obra[num].respCorreta) {
-        console.log('Certo!')
-        pontos.innerHTML = parseInt(pontos.innerHTML) + 10
-    } else {
-        console.log('Errado!')
-    }
-
+    
     n = n + 1
+
+    if (n < 10) {
+        statusPergunta.innerHTML = `${s++} / 10`
+    }
 
     for (i=0; i < obra.length; i++) {
         if (obra[i].numero == embaralhadas[n]) {
@@ -94,6 +92,10 @@ function contaPontos(opcao,num) {
             opcaoD.innerHTML = `<div onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
         }
     }
-
-    statusPergunta.innerHTML = `${s++} / 10`
+    
+    if (opcao == obra[num].respCorreta && n <= 10) {
+        pontos.innerHTML = parseInt(pontos.innerHTML) + 10
+    }
 }
+
+console.log(obra.length)
