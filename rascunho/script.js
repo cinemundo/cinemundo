@@ -5,6 +5,7 @@ const opcaoC =  document.getElementById("quiz-opcao_c")
 const opcaoD =  document.getElementById("quiz-opcao_d")
 let pontos =  document.getElementById("quiz-pontos")
 let statusPergunta = document.getElementById("quiz-status_pergunta")
+const contaTempo = document.getElementById("conta-tempo")
 
 sorteadas = []
 obra = Friends
@@ -62,6 +63,8 @@ embaralhadas = sorteadas.sort(function() {
 // console.log(typeof(pontos.innerHTML))
 // console.log(parseInt(pontos.innerHTML))
 
+let intervalId
+
 for (i=0; i < obra.length; i++) {
     if (obra[i].numero == embaralhadas[0]) {
         pergunta.innerText = obra[i].pergunta
@@ -70,6 +73,17 @@ for (i=0; i < obra.length; i++) {
         opcaoC.innerHTML = `<div onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
         opcaoD.innerHTML = `<div onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
     }
+
+    contaTempo.innerHTML = 0    
+    clearInterval(intervalId)
+    let startTime = new Date();
+        intervalId = setInterval(function(){
+        let elapsedTime = new Date() - startTime;
+        let seconds = Math.floor(elapsedTime / 1000);
+        let displayTime = seconds;
+        contaTempo.innerHTML = displayTime;
+    }, 1000);
+
 }
 
 n = 0
@@ -96,6 +110,20 @@ function contaPontos(opcao,num) {
     if (opcao == obra[num].respCorreta && n <= 10) {
         pontos.innerHTML = parseInt(pontos.innerHTML) + 10
     }
+
+    contaTempo.innerHTML = 0    
+    clearInterval(intervalId)
+    let startTime = new Date();
+        intervalId = setInterval(function(){
+        let elapsedTime = new Date() - startTime;
+        let seconds = Math.floor(elapsedTime / 1000);
+        let displayTime = seconds;
+        contaTempo.innerHTML = displayTime;
+    }, 1000);
+
+    setTimeout(function() {
+        contaPontos('e',15)
+    }, 15000);
 }
 
 console.log(obra.length)
