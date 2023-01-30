@@ -67,7 +67,7 @@ let MODELO = [
      pergunta: "",
      a: "",
      b: "",
-     c: " ",
+     c: "",
      d: "",
      respCorreta: ""
     },
