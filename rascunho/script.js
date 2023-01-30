@@ -8,7 +8,7 @@ let statusPergunta = document.getElementById("quiz-status_pergunta")
 const contaTempo = document.getElementById("conta-tempo")
 
 sorteadas = []
-obra = GameOfThrones
+obra = That70sShow
 
 function sorteioPorNivel (nivel,nSorteadas) {
     let nQuestoes = 0
