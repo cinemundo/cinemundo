@@ -8,7 +8,7 @@ let statusPergunta = document.getElementById("quiz-status_pergunta")
 const contaTempo = document.getElementById("conta-tempo")
 
 sorteadas = []
-obra = Avatar
+obra = GameOfThrones
 
 function sorteioPorNivel (nivel,nSorteadas) {
     let nQuestoes = 0
