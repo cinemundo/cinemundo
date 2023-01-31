@@ -188,3 +188,100 @@ celularInput.oninput = function() {
     alert('Preencha todos os campos.')
   }
  })
+
+ //---------------  APARECER O FORMULÁRIO DE REGISTRO/LOGIN ----------------
+
+ document.getElementById("check-register").addEventListener("change", function () {
+  if (this.checked) {
+  document.querySelector(".form-login").style.display = "block";
+  document.querySelector(".form").style.display = "none";
+  } else {
+  document.querySelector(".form-login").style.display = "none";
+  document.querySelector(".form").style.display = "block";
+  }
+ });
+
+ document.getElementById("form-title-3").addEventListener("click", function () {
+  document.querySelector(".form-login").style.display = "none";
+  document.querySelector(".form").style.display = "block";
+  });
+  
+  document.getElementById("form-title-4").addEventListener("click", function () {
+  document.querySelector(".form-login").style.display = "block";
+  document.querySelector(".form").style.display = "none";
+  });
+  
+  
+ //---------------- FORMULARIO 2 ------------------------
+
+const formLogin = document.querySelector(".form-login");
+const usernameLoginInput = formLogin.querySelector("#username2");
+const usernameLoginHelper = formLogin.querySelector("#username-helper-login");
+const passwordLoginInput = formLogin.querySelector("#senha-login");
+const passwordLoginHelper = formLogin.querySelector("#senha-helper-login");
+const submitLoginButton = formLogin.querySelector("#submit2");
+
+const inputLoginStatus = {
+  username: false,
+  password: false,
+};
+
+function handleUsernameInput() {
+  const username = usernameLoginInput.value;
+
+  if (username.length < 6) {
+    usernameLoginHelper.innerText = "Seu nome de usuário precisa ter 6 ou mais caracteres";
+    inputLoginStatus.username = false;
+    estilizarInputIncorreto(usernameLoginInput, usernameLoginHelper);
+    inputCorreto.username = false;
+  } else {
+    usernameLoginInput.classList.remove("input-error");
+    usernameLoginHelper.classList.remove("helper-error");
+    estilizarInputCorreto(usernameLoginInput, usernameLoginHelper);
+    inputLoginStatus.username = true;
+
+  }
+}
+
+function handlePasswordInput() { 
+  const password = passwordLoginInput.value;
+
+  if (password.length < 8) {
+    passwordLoginHelper.innerText = "A senha é obrigatória e deve ter o mínimo de 8 caracteres";
+    estilizarInputIncorreto(passwordLoginInput, passwordLoginHelper);
+    passwordLoginHelper.classList.add("helper-text-login");
+    inputLoginStatus.password = false;
+  } else {
+    estilizarInputCorreto(passwordLoginInput, passwordLoginHelper);
+    inputLoginStatus.password = true;
+  }
+}
+
+function handleSubmitLogin(event) {
+  event.preventDefault();
+
+  handleUsernameInput();
+  handlePasswordInput();
+
+  const hasErrors = Object.values(inputLoginStatus).includes(false);
+  if (!hasErrors) {
+    alert("Formulário enviado com sucesso!");
+  } else {
+    alert("Preencha todos os campos corretamente");
+  }
+}
+
+usernameLoginInput.addEventListener("input", handleUsernameInput);
+passwordLoginInput.addEventListener("input", handlePasswordInput);
+submitLoginButton.addEventListener("click", handleSubmitLogin);
+
+
+// ------------ SUBTITULO -------------
+
+setTimeout(function () {
+  document.getElementById("texto-register").style.display = "block";
+}, 4000);
+
+setTimeout(function () {
+  document.getElementById("texto-register2").style.display = "block";
+}, 5500);

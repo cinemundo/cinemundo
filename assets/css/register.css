@@ -1,94 +1,73 @@
 body {
-  background: linear-gradient(black, black, #080327, #171445, #BD4CF7, #BD4CF7);
+  background-image: url(https://images4.alphacoders.com/106/1062808.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  image-rendering: optimizeQuality;
 }
+
+
 
 div#form-titles {
   display: flex;
 }
+
 
 h1.form-title {
     text-align: left;
     font-size: 1.6em;
     margin: 15px 0;
     color: white;
-    cursor: default;
+    cursor: pointer;
     margin: auto;
+    padding: 20px;
   }
   
-h1.form-title:hover {
+#form-title-1, #form-title-2 {
   color: #BD4CF7;
-  background-color: #ff0000;
+  background-color: black;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.checkbtn-register {
-  float: left;
+#form-title-1:hover, #form-title-2:hover {
+  color: white;
+  background-color: black;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#form-title-3:hover, #form-title-4:hover {
+  color: #BD4CF7;
+  background-color: black;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.form-login, #check-register {
   display: none;
 }
 
-#check-register {
-  display: none;
-}
-
-@media (max-width: 1000){
-  .checkbtn-register {
-      display: block;
-  }   
-  . {
-      position: absolute;
-      min-width: 60%;
-      max-width: 100%;
-      min-height: 5%;
-      max-width: 100%;
-      background: black;
-      top: 140px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-  }
-  .{
-      display: flex;
-      margin: 7px 0;
-      line-height: 30px;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  }
-  .{
-      font-size: 22px;
-  }
-  header_main_menu_index:hover, header_main_menu_index:active{
-      background: none;
-      color:#BD4CF7;
-  }
-  #check-register:checked ~ ul{
-      left: 0;
-  }
-}
-
-  .form {
+  .form, .form-login {
     width: 500px;
     margin: 20px auto;
     border: 2px solid #BD4CF7;
     border-radius: 5px;
     padding: 30px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     transition: all 0.4s ease-in-out;
-    display: none;
   }
   
-  .form:hover {
+  .form:hover, .form-login:hover {
     box-shadow: 0 0 10px #171445;
   }
   
-  .form-label {
+  .form-label, .form-label-login {
     display: block;
     margin-top: 25px;
     font-size: 1.3em;
   }
   
-  .form-input {
+  .form-input, .form-input-login {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: 100%;
     padding: 12px 20px;
@@ -107,7 +86,7 @@ h1.form-title:hover {
     border-color: #BD4CF7;
   }
   
-  #submit {
+  #submit, #submit2 {
     width: 100%;
     background-color: #BD4CF7;
     color: white;
@@ -121,18 +100,18 @@ h1.form-title:hover {
     font-size: 1.4em;
   }
   
-  #submit:hover {
+  #submit:hover, #submit2:hover {
     background-color: #352052;
   }
   
   /* Responsive layout - faz com que o formulário fique funcional para telas menores */
   @media (max-width: 600px) {
-    .form {
+    .form, .form-login {
       width: 100%;
     }
   }
   
-  .helper-text {
+  .helper-text, .helper-text-login {
     display: none;
     font-size: 1em;
     color: #ffcdcd;
@@ -154,3 +133,32 @@ h1.form-title:hover {
   .visible {
     display: block;
   }
+
+  @media (min-width: 1220px) {
+
+  #texto-register {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 4.4em;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 1px transparent;
+    text-shadow: #BD4CF7;
+    cursor: default;
+  }
+
+  #texto-register2 {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    cursor: default;
+  }
+}

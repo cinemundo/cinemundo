@@ -81,27 +81,41 @@
 
     <main>
         <form class="form-login">
+            <div id="form-titles">
+                <h1 class="form-title" id="form-title-1">Login</h1>
+                <input type="checkbox" id="check-register">
+                <label for="check-register" class="checkbtn-register">
+                    <i class="material-symbols-outlined">swap_horiz</i>
+                </label>
+                <h1 class="form-title" id="form-title-3">Registro</h1>
+            </div>
+
             <label class="form-label-login" for="username">Nome de usuário</label>
-            <input class="form-input-login" type="text" id="username-login" placeholder="Insira o seu nome de usuário" name="username">
+            <input class="form-input-login" type="text" id="username2" placeholder="Insira o seu nome de usuário"
+                name="username">
             <p id="username-helper-login" class="helper-text-login">Mensagem de ajuda</p>
 
 
             <label class="form-label-login" for="senha">Senha</label>
-            <input class="form-input-login" type="password" id="senha-login" placeholder="Insira a sua senha" name="senha">
+            <input class="form-input-login" type="password" id="senha-login" placeholder="Insira a sua senha"
+                name="senha">
             <p id="senha-helper-login">A senha deve ter 8 caracteres</p>
+
+            <button id="submit2" type="submit">Entrar</button>
         </form>
 
         <form class="form">
             <div id="form-titles">
-            <h1 class="form-title">Login</h1>
-            <input type="checkbox" id="check-register">
+                <h1 class="form-title" id="form-title-4">Login</h1>
+                <input type="checkbox" id="check-register">
                 <label for="check-register" class="checkbtn-register">
                     <i class="material-symbols-outlined">swap_horiz</i>
                 </label>
-            <h1 class="form-title">Registro</h1>    
+                <h1 class="form-title" id="form-title-2">Registro</h1>
             </div>
             <label class="form-label" for="username">Nome de usuário</label>
-            <input class="form-input" type="text" id="username" placeholder="Insira o seu nome de usuário" name="username">
+            <input class="form-input" type="text" id="username" placeholder="Insira o seu nome de usuário"
+                name="username">
             <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
 
@@ -111,12 +125,14 @@
 
 
             <label class="form-label" for="confirma-senha">Confirmação de senha</label>
-            <input class="form-input" type="password" id="confirma-senha" placeholder="Confirme a sua senha" name="confirma-senha">
+            <input class="form-input" type="password" id="confirma-senha" placeholder="Confirme a sua senha"
+                name="confirma-senha">
             <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
 
 
             <label class="form-label" for="email">E-mail</label>
-            <input class="form-input" type="email" id="email" placeholder="Insira o seu endereço de e-mail" name="email">
+            <input class="form-input" type="email" id="email" placeholder="Insira o seu endereço de e-mail"
+                name="email">
             <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
 
 
@@ -126,13 +142,17 @@
 
 
             <label class="form-label" for="celular">Número de celular</label>
-            <input class="form-input" type="tel" id="celular" placeholder="(11) 91234-5678" name="celular" pattern="[0-9]*">
+            <input class="form-input" type="tel" id="celular" placeholder="(11) 91234-5678" name="celular"
+                pattern="[0-9]*">
             <p id="celular-helper" class="helper-text">Mensagem de ajuda</p>
 
 
             <button id="submit" type="submit">Enviar</button>
-          </form>
-          
+        </form>
+
+        <div id="texto-register">CineMundo</div>
+        <div id="texto-register2">a sua jornada começa aqui.</div>
+
     </main>
 
     <footer class="footer">
