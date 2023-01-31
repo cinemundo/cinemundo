@@ -26,7 +26,7 @@
                 </label>
         </div>
         <div class="header_title_image">
-            <img src="assets/image/header_estrelas.png" alt="CineMundo 5 Estrelas" width="90%">
+            <img src="assets/image/header_estrelas.png" alt="CineMundo 5 Estrelas" width="100%">
             </a>
         </div>
         <nav class="header_main_menu">
@@ -80,8 +80,26 @@
     </header>
 
     <main>
+        <form class="form-login">
+            <label class="form-label-login" for="username">Nome de usuário</label>
+            <input class="form-input-login" type="text" id="username-login" placeholder="Insira o seu nome de usuário" name="username">
+            <p id="username-helper-login" class="helper-text-login">Mensagem de ajuda</p>
+
+
+            <label class="form-label-login" for="senha">Senha</label>
+            <input class="form-input-login" type="password" id="senha-login" placeholder="Insira a sua senha" name="senha">
+            <p id="senha-helper-login">A senha deve ter 8 caracteres</p>
+        </form>
+
         <form class="form">
-            <h1 class="form-title">Registro</h1>
+            <div id="form-titles">
+            <h1 class="form-title">Login</h1>
+            <input type="checkbox" id="check-register">
+                <label for="check-register" class="checkbtn-register">
+                    <i class="material-symbols-outlined">swap_horiz</i>
+                </label>
+            <h1 class="form-title">Registro</h1>    
+            </div>
             <label class="form-label" for="username">Nome de usuário</label>
             <input class="form-input" type="text" id="username" placeholder="Insira o seu nome de usuário" name="username">
             <p id="username-helper" class="helper-text">Mensagem de ajuda</p>

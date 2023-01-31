@@ -2,17 +2,69 @@ body {
   background: linear-gradient(black, black, #080327, #171445, #BD4CF7, #BD4CF7);
 }
 
+div#form-titles {
+  display: flex;
+}
+
 h1.form-title {
-    text-align: center;
-    font-size: 2em;
+    text-align: left;
+    font-size: 1.6em;
     margin: 15px 0;
     color: white;
     cursor: default;
+    margin: auto;
   }
   
 h1.form-title:hover {
   color: #BD4CF7;
+  background-color: #ff0000;
 }
+
+.checkbtn-register {
+  float: left;
+  display: none;
+}
+
+#check-register {
+  display: none;
+}
+
+@media (max-width: 1000){
+  .checkbtn-register {
+      display: block;
+  }   
+  . {
+      position: absolute;
+      min-width: 60%;
+      max-width: 100%;
+      min-height: 5%;
+      max-width: 100%;
+      background: black;
+      top: 140px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  .{
+      display: flex;
+      margin: 7px 0;
+      line-height: 30px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .{
+      font-size: 22px;
+  }
+  header_main_menu_index:hover, header_main_menu_index:active{
+      background: none;
+      color:#BD4CF7;
+  }
+  #check-register:checked ~ ul{
+      left: 0;
+  }
+}
+
   .form {
     width: 500px;
     margin: 20px auto;
@@ -23,6 +75,7 @@ h1.form-title:hover {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     transition: all 0.4s ease-in-out;
+    display: none;
   }
   
   .form:hover {
