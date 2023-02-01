@@ -3,7 +3,7 @@ const opcaoA =  document.getElementById("quiz-opcao_a")
 const opcaoB =  document.getElementById("quiz-opcao_b")
 const opcaoC =  document.getElementById("quiz-opcao_c")
 const opcaoD =  document.getElementById("quiz-opcao_d")
-const pontos =  document.getElementById("quiz-pontos")
+let pontos =  document.getElementById("quiz-pontos")
 const contaTempo = document.getElementById("conta-tempo")
 const statusPergunta = document.getElementById("quiz-status_pergunta")
 const cardLogo = document.getElementById("card_logo")
@@ -14,7 +14,9 @@ let embaralhadas = []
 let fimQuiz = false
 let indiceArrayEmbaralhado = 0
 let numeroDaQuestao = 1
+let remainingTime = 20
 
+console.log(pontos.innerText)
 // Sorteia 4 números entre as perguntas de nível fácil:
 sorteioPorNivel("F", 4)
 
@@ -30,8 +32,17 @@ embaralhar()
 // Inicia a contagem do tempo:
 startTimer()
 
-// Exibe as questões e atribui a pontuação:
-contaPontos("","")
+function escolheQuiz(escolhido) {
+    cardLogo.classList.add("invisible")
+    jogo[0].classList.add("visible")
+    document.getElementById("topo").scrollIntoView()
+    obra = escolhido
+    numeroDaQuestao = 1
+    indiceArrayEmbaralhado = 0
+    pontos.innerText = "00"
+    fimQuiz = false
+    contaPontos("","")
+}
 
 function sorteioPorNivel(nivel,nSorteadas) {
     let nQuestoes = 0
@@ -75,7 +86,7 @@ function startTimer() {
 }
 
 function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
-    
+
     if (indiceArrayEmbaralhado < 10) {
         statusPergunta.innerHTML = `${numeroDaQuestao++} / 10`
         resetTimer()

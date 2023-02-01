@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">    
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/quiz.css">    
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <script src="assets/js/quiz/quiz-dados.js"></script>
+    <script src="assets/js/quiz/quiz-script.js" defer></script>
     <title>Quiz | Cinemundo</title>
 </head>
 
@@ -126,8 +128,18 @@
                     <div id="card_logo">
                         <img src="assets/image/quiz/Logo(c).png" alt="Logo do Quiz" width="350">
                     </div>
+                    <div class="jogo">
+                        <div id="quiz-status_pergunta">1 / 10</div>
+                        <div id="conta-tempo">Tempo</div>
+                        <div id="quiz-pergunta">Pergunta</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_a">a) Primeira opção</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_b">b) Segunda opção</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_c">c) Terceira opção</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_d">d) Quarta opção</div>
+                        <div class="quiz-opcoes" id="quiz-pontos">00</div>        
+                    </div>
                 </div>
-
+                
                 <aside>
                     <div id="DoisRankings">
                         <nav>                    
@@ -193,7 +205,7 @@
                     <div class="tres_obras">
                         <h2>Novidades</h2>
                     </div>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Duna)" src="assets/image/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/His Dark Materials.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Gossip Girl.png" alt="" height="250"></a>
                 </div>
@@ -215,7 +227,7 @@
                         <h2>SUGESTÕES</h2>
                     </div>
                     <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/O Esquadrão Suicida.jpg" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Friends)" src="assets/image/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
                     <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/TheBigBangTheory.png" alt="" height="250"></a>
                 </div>
                 <div id="podio" align="center">
