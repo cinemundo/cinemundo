@@ -2280,7 +2280,7 @@ let ThisisUs = [
     respCorreta: "d"
     },
     {numero: "10M",
-    pergunta: ""Qual é o verdadeiro nome da personagem Tess na série 'This is Us'?",
+    pergunta: "Qual é o verdadeiro nome da personagem Tess na série 'This is Us'?",
     a: "Tess Pearson",
     b: "Tess Randall",
     c: "Tess Williams",
@@ -2361,7 +2361,7 @@ let ThisisUs = [
     respCorreta: "a"
     },
     {numero: "10D",
-    pergunta: ""QQual é o nome do filho adotivo de Randall e Beth na série 'This is Us'?",
+    pergunta: "Qual é o nome do filho adotivo de Randall e Beth na série 'This is Us'?",
     a: "William",
     b: "Deja",
     c: "Tess",
@@ -2525,7 +2525,7 @@ let Dark = [
     respCorreta: "a"
     },
     {numero: "10M",
-    pergunta: ""Ql é a importância da fábrica de nuclear na trama da série 'Dark'?",
+    pergunta: "Qual é a importância da fábrica de nuclear na trama da série 'Dark'?",
     a: "É o local onde ocorre o paradoxo temporal",
     b: "É o esconderijo do grupo secreto",
     c: "É a fonte da energia da cidade",
@@ -2606,7 +2606,7 @@ let Dark = [
     respCorreta: "a"
     },
     {numero: "10D",
-    pergunta: ""Ql é o objetivo final da série 'Dark'?",
+    pergunta: "Qual é o objetivo final da série 'Dark'?",
     a: "Evitar o fim do mundo",
     b: "Encontrar a solução para o paradoxo temporal",
     c: "Salvar a humanidade",
@@ -2689,7 +2689,7 @@ let TheCrown = [
      respCorreta: "d"
     },
     {numero: "10F",
-     pergunta: ""al é o nome da música tema da série 'The Crown'?",
+     pergunta: "Qual é o nome da música tema da série 'The Crown'?",
      a: "God Save the Queen",
      b: "Rule Britannia",
      c: "Land of Hope and Glory",
