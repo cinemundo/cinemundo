@@ -35,7 +35,6 @@ header{
 
 .header_title_image {
     margin: auto;
-    padding-bottom: 1%;
     image-rendering: optimizeQuality;
     width: 150px;
 }
