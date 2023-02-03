@@ -1,0 +1,91 @@
+.meu_perfil {
+    display:flex;
+    justify-content: center;
+}
+
+.foto_perfil {
+    border-radius: 50%;
+    border: 5px solid #BD4CF7;
+}
+
+.botao {
+    font-size:14px;
+    font-weight:700;
+    text-transform: uppercase;
+    border-radius: 25%;
+    border: 2px solid #BD4CF7;
+    padding:10px;
+    cursor: pointer;
+    display:inline-block;
+    text-decoration: none;
+    
+}
+
+.texto_p {
+
+    display: flex;
+    justify-content:start;
+    text-align:justify;
+    font-size:larger;
+    color:white;
+
+}
+
+.tabela {
+    padding:50px;
+    width: 1220px;
+    height: 300px;
+    left: 298px;
+    top: 316px;
+    background: #352052;
+    border-radius: 25px;
+
+    }
+
+#form {
+    margin-left: 210px;
+    margin-right: 50px;
+    background-color:#352052;
+    padding: 50px;
+    width: 1220px;
+    height: 300px;
+    border-radius: 15px;
+    text-align:justify;
+}
+
+.series_favoritas{
+    padding:50px;
+    margin-left: 210px;
+    margin-right: 50px;
+    background-size: cover;
+    background:white;
+
+}
+
+.filmes_favoritos{
+    padding:50px;
+    margin-left: 210px;
+    margin-right: 50px;
+    background-size: cover;
+    background:linear-gradient(#352052,#BD4CF7, black);
+    
+}
+
+.notas {
+    padding:50px;
+    margin-left: 210px;
+    margin-right: 50px;
+    background-size:cover;
+    background:linear-gradient(white, #352052,#BD4CF7 , black);
+}
+
+.poster {
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+
+.star {
+    border-radius: 100%;
+    border: 3px solid black ;
+}

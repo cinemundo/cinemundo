@@ -1,0 +1,124 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+main {
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+main .colaboratorleft {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 55px;
+}
+
+main .colaboratorleft .photoleft {
+  width: 190px;
+  height: 190px;
+  border: 10px solid #bd4cf7;
+  border-radius: 50%;
+}
+
+main .colaboratorleft .photoleft:hover {
+  scale: 1.3;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 20px 20px 50px grey;
+}
+
+main .colaboratorleft .descriptionleft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 576px;
+  height: 160px;
+  padding: 12px 18px 18px 18px;
+  background: #bd4cf7;
+  color: #fff;
+  border-radius: 20px;
+  margin-right: 160px;
+  box-shadow: 20px 20px 50px grey;
+}
+
+main .colaboratorleft .descriptionleft h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+main .colaboratorleft .descriptionleft p {
+  font-size: 18px;
+  margin-top: 16px;
+  font-family: "Montserrat";
+  line-height: 22px;
+}
+
+main .link {
+  display: flex;
+  width: 100%;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+main .link .circulo {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+main .link .envelope {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+main .colaboratorright {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 55px;
+}
+
+main .colaboratorright .photoright {
+  width: 190px;
+  height: 190px;
+  border: 10px solid #352052;
+  border-radius: 50%;
+}
+
+main .colaboratorright .photoright:hover {
+  scale: 1.3;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 20px 20px 50px grey;
+}
+
+main .colaboratorright .descriptionright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 576px;
+  height: 160px;
+  padding: 12px 18px 18px 18px;
+  background: #352052;
+  color: #fff;
+  border-radius: 20px;
+  margin-left: 160px;
+  box-shadow: 20px 20px 50px grey;
+}
+
+main .colaboratorright .descriptionright h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+main .colaboratorright .descriptionright p {
+  font-size: 18px;
+  margin-top: 16px;
+  font-family: "Montserrat";
+  line-height: 22px;
+}

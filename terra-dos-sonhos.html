@@ -4,219 +4,327 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Terra dos Sonhos Filme</title>
-    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/resenhas.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
-    <header href background-header>
+    <header>
         <div class="header_title">
-            <a href="home.html">
-                <h1>
-                CINEMUNDO
-                </h1>
-                <img src="assets/estrelas.png" alt="Estrelas CineMundo" width="200">
+            <a href="index.html">
+                <label class="header_title_cinemundo">
+                    cinemundo
+                </label>
+        </div>
+        <div class="header_title_image">
+            <img src="assets/image/header_estrelas.png" alt="CineMundo 5 Estrelas" width="90%">
             </a>
         </div>
-        <nav>
-            <form action="#" method="post" class="header_search">
-            <label for="busca">
-                <img src="assets/lupa.png" alt="Busca CineMundo" width="50">
-            </label>
-            <input type="text" placeholder="Quiz Harry Potter" id="busca" name="search" required>
-            <button type="submit">
-                Buscar
-            </button>
-            </form>
-
-            <ul id="menu-principal">
+        <nav class="header_main_menu">
+            <menu id="menuHeader">
+                <input type="checkbox" id="check_header">
+                <label for="check_header" class="checkbtn_header">
+                    <i class="material-symbols-outlined">menu</i>
+                </label>
+                <ul>
+                    <li>
+                        <a href="index.html" class="header_main_menu_index">
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resenhas.html" class="header_main_menu_index">
+                            resenhas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html" class="header_main_menu_index">
+                            quiz
+                        </a>
+                    </li>
+                    <li>
+                        <a href="time.html" class="header_main_menu_index">
+                            nosso time
+                        </a>
+                    </li>
+                </ul>
+            </menu>
+            <div class="header_main_menu2">
                 <li>
-                    <a href="index.html">
-                        HOME
-                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather-feather-search" alt="icone de pesquisa">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
                 </li>
-                <li>
-                    <a href="resenhas.html">
-                        RESENHAS
-                    </a>
-                </li>
-                <li>
-                    <a href="quiz.html">
-                        QUIZ
-                    </a>
-                </li>
-                <li>
-                    <a href="time.html">
-                        NOSSO TIME
-                    </a>
-                </li>
-                <li>
-                    <img src="assets/foto-perfil.png" alt="foto perfil">
-                    <a href="perfiluser.html">
+                <li class="header_perfil_name">
+                    <a href="perfiluser.html" class="header_perfil_reference">
                         ANNA_123
+                </li>
+                <li>
+                    <img src="assets/image/header_foto-perfil.png" alt="foto perfil" class="header_perfil_picture">
                     </a>
                 </li>
-            </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <div>
-            <h1>TERRA DOS SONHOS</h1>
-            <h3>Publicado por Viviane Favato</h3>
-            <p>28/11/22 - 14:27</p>
-        </div>
-        <div>
-            <img src="assets/Banner Terra dos Sonhos.jpeg">
-            <h3>FICHA TÉCNICA</h3>
-            <h4>Direção</h4>
-            <h4>Roteiro</h4>
-            <h4>Elenco</h4>
-            <h4>Trilha Sonora</h4>
-            <h4>Produção</h4>
-        </div>
-        <div>
-            <h3>AVALIAÇÕES</h3>
-            <h4>Nota do autor</h4>
-            <img src="assets/4.5 estrelas.png">
-            <h4>Nota do leitor</h4>
-            <img src="assets/4.0 estrelas.png">
-            <h4>Deixe a sua avaliação</h4>
-            <img src="assets/Estrelas para avaliar.png">
-        </div>
-        <div>
-            <h3>ONDE ASSISTIR</h3>
-            <img src="assets/Netflix.png">
-            <img src="assets/Ícone tv.png">
-        </div>
-        <section>
-            <article>
-                <h2>SINOPSE</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae commodo massa, sed facilisis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan sodales purus vel malesuada. Sed rutrum tellus nec metus venenatis placerat. Sed cursus dui id mauris faucibus, at pretium lacus finibus. Etiam euismod, lorem sit amet fringilla ultricies, quam ligula faucibus massa, ut pellentesque mi est ut odio. Ut lectus odio, euismod nec aliquet vitae, lobortis eget felis. Suspendisse velit dui, auctor eget finibus vel, congue eget leo. Donec posuere lacus eget nisl vestibulum imperdiet. Nulla faucibus nec arcu luctus lobortis. Etiam eu tristique tellus, nec egestas odio. Maecenas aliquam euismod leo, sit amet sagittis eros scelerisque id. Morbi sed tortor sed enim vestibulum molestie nec et neque. Sed facilisis, tortor luctus imperdiet eleifend, ante odio sollicitudin mauris, vel molestie eros tortor semper eros. Nam porttitor nibh quis rutrum luctus. 
-                </p>
-            </article>
-            <article>
-                <h2>RESENHA</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel finibus nunc. Nam sit amet urna lobortis, semper nulla a, consectetur arcu. Ut nec quam non augue laoreet pharetra at tempor nisl. Praesent at lorem et enim tempus dignissim a sed nulla. Phasellus orci diam, consectetur a aliquam a, pretium in augue. Maecenas cursus ligula sed interdum ullamcorper. Duis eleifend, tellus eu aliquet lacinia, est nibh tincidunt erat, vitae pharetra diam orci rutrum augue. Fusce magna arcu, pretium vitae tortor sed, laoreet hendrerit turpis. Donec feugiat ipsum id ipsum convallis, malesuada iaculis tellus congue. Morbi a lectus sit amet neque venenatis posuere sit amet vitae diam. Nunc id lacus eu lectus vehicula auctor non a orci. Vestibulum eget pretium dui. Maecenas eu odio id nulla fringilla volutpat. Donec orci nibh, aliquet eget viverra vitae, posuere at turpis. Fusce laoreet varius maximus. Etiam posuere metus id ex mattis tincidunt.
-                </p>
-                <p>
-                    Nam a nunc dapibus, ornare ex sed, auctor diam. Maecenas commodo rutrum consectetur. Ut commodo turpis vitae laoreet aliquet. Morbi feugiat sed risus sit amet rhoncus. Sed vitae luctus est, placerat vehicula eros. Curabitur eleifend sem ac tempor rutrum. Pellentesque finibus arcu tincidunt leo dignissim, a lobortis lectus elementum.
-                </p>
-                <p>
-                    Vestibulum ultricies arcu vel congue aliquet. Proin vestibulum, sem sed hendrerit posuere, metus purus lacinia erat, sit amet laoreet sem lacus rhoncus velit. Proin a facilisis leo, a pretium metus. Phasellus at mauris mauris. Fusce dapibus elit non erat posuere fringilla. Maecenas orci velit, placerat id ipsum lacinia, tristique rutrum lorem. Morbi in ex metus. Nullam vitae lectus nisl. Donec euismod, est et iaculis convallis, lorem elit molestie tellus, quis semper ligula risus eu orci. Pellentesque facilisis turpis nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris varius, ex sed blandit dictum, justo augue ullamcorper eros, vitae fringilla lectus dolor vel ligula. Phasellus nec mi ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi in finibus ipsum.
-                </p>
-                <p>
-                    Aliquam metus tortor, malesuada nec maximus non, egestas sed felis. Maecenas ac mi sagittis, pellentesque felis a, congue leo. Sed molestie vulputate quam ut luctus. Nunc porttitor nunc nec mauris tincidunt, vel finibus orci dapibus. Aenean finibus ante et neque semper vestibulum. Duis congue eros eget massa viverra bibendum. Mauris finibus scelerisque auctor. Quisque pulvinar neque euismod lobortis condimentum. Sed ullamcorper condimentum suscipit.
-                </p>
-                <p>
-                    Nunc faucibus ex vel tortor efficitur, at ornare quam suscipit. Mauris non cursus erat. In tempus porta dignissim. Nulla sagittis ligula a purus aliquet viverra. Proin sed bibendum elit. Donec egestas libero quis leo aliquet laoreet. Vivamus dignissim sem vitae orci fermentum, sit amet elementum ipsum hendrerit. Sed tempus blandit sem vitae consectetur. Vivamus vitae est lacinia, tincidunt lorem vel, sollicitudin felis. Sed sed sodales sem, sed molestie lacus. Nullam auctor urna vitae mi venenatis interdum. Fusce facilisis convallis magna.
-                </p>
-            </article>
+    <main class="main_resenha_completa">
+        <section class="section_titulo_resenha_completa">
+            <div>
+                <h1 class="titulo_principal_resenha_completa">TERRA DOS SONHOS</h1>
+            </div>
+            <div>
+                <h3 class="publicado_por_resenha">Publicado por Viviane Favato</h3>
+                <p class="data_hora_resenha_completa">28/11/22 - 14:27</p>
+            </div> 
         </section>
-        <aside>
-            <h3>Avalie essa resenha</h3>
-            <img src="assets/Estrelas para avaliar.png">
-        </aside>
-        <aside>
-            <img src="assets/Viviane.jpeg">
-            <h4>Viviane Favato</h4>
-            <p>
-                Apaixonada por filmes clássicos e comédias, mas chegadinha num drama pra chorar. Adora maratonar séries nos finais de semana.
-            </p>
-        </aside>
-        <div>
-            <h3>DEIXE O SEU COMENTÁRIO</h3>
+        <section class="section_principal_resenha_completa">
+            <div class="secao_informacoes_resenha_completa">
+                <img class="banner_resenha_completa" src="assets/image/resenhas_terradossonhos2.jpeg">
+                <div class="ficha_tecnica_resenha_completa">
+                    <h3 class="titulos_lateral_resenha_completa">Ficha Técnica</h3>
+                    <h4><strong>Direção:</strong> Francis Lawrence</h4>
+                    <h4><strong>Roteiro:</strong> David Guion, Michael Handelman</h4>
+                    <h4><strong>Elenco:</strong> Jason Momoa, Marlow Barkley, Chris O'Dowd, Kyle Chandler</h4>
+                    <h4><strong>Trilha Sonora:</strong> Pinar Toprak</h4>
+                    <h4><strong>Produção:</strong> Peter Chernin, Jenno Topping, David Guion, Michael Hendelman</h4>
+                </div>
+                <div class="avaliacoes_resenha_completa">
+                    <h3 class="titulos_lateral_resenha_completa">Avaliações</h3>
+                    <div class="campo_avaliacao_resenha_completa">
+                        <h4>Nota do autor:</h4>
+                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_4.5 estrelas.png">
+                    </div>
+                    <div class="campo_avaliacao_resenha_completa">
+                        <h4>Nota do leitor:</h4>
+                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_4 estrelas.png">
+                    </div>
+                    <div class="campo_avaliacao_resenha_completa">
+                        <h4>Deixe a sua avaliação:</h4>
+                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_estrelas_avaliar.png">
+                    </div>
+                </div>
+                <div class="onde_assistir_resenha_completa">
+                    <div>
+                        <h3 class="titulos_lateral_resenha_completa">Onde Assistir</h3>
+                    </div>
+                    <div class="img_ondeassistir_resenha_completa">
+                        <img src="assets/image/resenhas_Netflix.png">
+                        <img src="assets/image/resenhas_icone_tv.png">
+                    </div>
+                    <div>
+                        <p>
+                            <strong>#ficaadica</strong>
+                        </p>
+                        <p>
+                            Devido aos efeitos visuais incríveis, a sua experiência será muito mais especial se você assistir a este filme em um aparelho de televisão.
+                        </p>
+                    </div>
+                </div>
+                <div class="redes_sociais_resenha_completa">
+                    <a><h2>SIGA O CINEMUNDO</h2></a>
+                    <img src="assets/image/resenhas_redes_sociais.jpg">
+                </div>
+            </div>
+            <div class="secao_textos_resenha_completa">
+                <article>
+                    <h2>SINOPSE</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae commodo massa, sed facilisis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan sodales purus vel malesuada. Sed rutrum tellus nec metus venenatis placerat. Sed cursus dui id mauris faucibus, at pretium lacus finibus. 
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h2>SOBRE TERRA DOS SONHOS</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel finibus nunc. Nam sit amet urna lobortis, semper nulla a, consectetur arcu. Ut nec quam non augue laoreet pharetra at tempor nisl. Praesent at lorem et enim tempus dignissim a sed nulla. Phasellus orci diam, consectetur a aliquam a, pretium in augue. Maecenas cursus ligula sed interdum ullamcorper. Duis eleifend, tellus eu aliquet lacinia, est nibh tincidunt erat, vitae pharetra diam orci rutrum augue. Fusce magna arcu, pretium vitae tortor sed, laoreet hendrerit turpis. Donec feugiat ipsum id ipsum convallis, malesuada iaculis tellus congue. Morbi a lectus sit amet neque venenatis posuere sit amet vitae diam. Nunc id lacus eu lectus vehicula auctor non a orci. Vestibulum eget pretium dui. Maecenas eu odio id nulla fringilla volutpat. Donec orci nibh, aliquet eget viverra vitae, posuere at turpis. Fusce laoreet varius maximus. Etiam posuere metus id ex mattis tincidunt.
+                    </p>
+                    <p>
+                        Nam a nunc dapibus, ornare ex sed, auctor diam. Maecenas commodo rutrum consectetur. Ut commodo turpis vitae laoreet aliquet. Morbi feugiat sed risus sit amet rhoncus. Sed vitae luctus est, placerat vehicula eros. Curabitur eleifend sem ac tempor rutrum. Pellentesque finibus arcu tincidunt leo dignissim, a lobortis lectus elementum.
+                    </p>
+                    <p>
+                        Vestibulum ultricies arcu vel congue aliquet. Proin vestibulum, sem sed hendrerit posuere, metus purus lacinia erat, sit amet laoreet sem lacus rhoncus velit. Proin a facilisis leo, a pretium metus. Phasellus at mauris mauris. Fusce dapibus elit non erat posuere fringilla. Maecenas orci velit, placerat id ipsum lacinia, tristique rutrum lorem. Morbi in ex metus. Nullam vitae lectus nisl. Donec euismod, est et iaculis convallis, lorem elit molestie tellus, quis semper ligula risus eu orci. Pellentesque facilisis turpis nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris varius, ex sed blandit dictum, justo augue ullamcorper eros, vitae fringilla lectus dolor vel ligula. Phasellus nec mi ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi in finibus ipsum.
+                    </p>
+                    <p>
+                        Aliquam metus tortor, malesuada nec maximus non, egestas sed felis. Maecenas ac mi sagittis, pellentesque felis a, congue leo. Sed molestie vulputate quam ut luctus. Nunc porttitor nunc nec mauris tincidunt, vel finibus orci dapibus. Aenean finibus ante et neque semper vestibulum. Duis congue eros eget massa viverra bibendum. Mauris finibus scelerisque auctor. Quisque pulvinar neque euismod lobortis condimentum. Sed ullamcorper condimentum suscipit.
+                    </p>
+                    <p>
+                        Nunc faucibus ex vel tortor efficitur, at ornare quam suscipit. Mauris non cursus erat. In tempus porta dignissim. Nulla sagittis ligula a purus aliquet viverra. Proin sed bibendum elit. Donec egestas libero quis leo aliquet laoreet. Vivamus dignissim sem vitae orci fermentum, sit amet elementum ipsum hendrerit. Sed tempus blandit sem vitae consectetur. Vivamus vitae est lacinia, tincidunt lorem vel, sollicitudin felis. Sed sed sodales sem, sed molestie lacus. Nullam auctor urna vitae mi venenatis interdum. Fusce facilisis convallis magna.
+                    </p>
+                </article>
+                <div class="avalie_resenha_completa">
+                    <div>
+                        <h4>Avalie essa resenha</h4>
+                    </div>
+                    <div>
+                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_estrelas_avaliar.png">
+                    </div>   
+                </div>
+                <div class="roteirista_resenha_completa">
+                    <div>
+                        <img src="assets/image/resenhas_Viviane.jpeg">
+                    </div>
+                    <div>
+                        <strong><h4>Viviane Favato é roteirista do site CineMundo</h4></strong>
+                        <p>
+                            Apaixonada por filmes clássicos e comédias, mas chegadinha num drama pra chorar. Adora maratonar séries nos finais de semana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secao_formulario_resenha_completa">
+            <h3>Deixe o seu comentário:</h3>
             <p>
                 O seu endereço de e-mail não será publicado.
             </p>
             <form action="/">
                 <section>
-                    <label for="nome">
-                        Nome
+                    <label class="label_form_resenha_completa" for="nome">
+                        Nome:
                     </label>
-                    <input type="text" placeholder="Informe o seu nome" id="nome" name="username">
+                    <input type="text" placeholder="Informe o seu nome e sobrenome" id="nome" name="username" class="input_form_resenha_completa">    
                 </section>
-                <br>
                 <section>
-                    <label for="email">
-                        E-mail
+                    <label class="label_form_resenha_completa" for="email">
+                        E-mail:
                     </label>
-                    <input type="email" placeholder="Informe o seu e-mail" id="email" name="mailto">
+                    <input type="email" placeholder="usuario@dominio.com" id="email" name="mailto" class="input_form_resenha_completa">
                 </section>
-                <br>
                 <section>
-                    <label for="comentario">
-                        Mensagem
+                    <label class="label_form_resenha_completa" for="comentario">
+                        Mensagem:
                     </label>
                     <textarea 
-                        id="comentario" name="comentario" rows="7" cols="50">
+                        id="comentario" name="comentario" rows="15" cols="70" class="textarea_form_resenha_completa">
                     </textarea>
                 </section>
-                <br>
-                <button type="submit">
-                    PUBLICAR COMENTÁRIO
-                </button>
+                <section>
+                    <button class="botao_form_resenha_completa" type="submit">
+                        PUBLICAR COMENTÁRIO
+                    </button>
+                </section>        
             </form>
-        </div>
+        </section>
+        <section class="secao_outras_resenhas">
+            <h2>OUTRAS RESENHAS</h2>
+            <div class="outras_resenhas">
+                <img class="img_outras_resenha_completa" src="assets/image/resenhas_wakanda-forever.webp">
+                <div>
+                    <h4>Wakanda para Sempre</h4>
+                    <p>
+                    A emblemática sequência da história do personagem Pantera Negra  
+                    </p>
+                </div>
+            </div>
+            <div class="outras_resenhas">
+                <img class="img_outras_resenha_completa" src="assets/image/resenhas_desencantada.jpeg">
+                <div>
+                    <h4>Desencantada</h4>
+                    <p>
+                    Nesta sequência, Gisele enfrenta uma nova aventura nesse longa divertido e encantador.
+                    </p>
+                </div>   
+            </div>
+            <div class="outras_resenhas">
+                <img class="img_outras_resenha_completa" src="assets/image/resenhas_ela_disse.jpeg">
+                <div>
+                    <h4>Ela Disse</h4>
+                    <p>
+                        Baseado em fatos reais, este filme mostra o desenrolar do movimento #MeToo, em Hollywood.
+                    </p>
+                </div>
+            </div> 
+        </section>
     </main>
-    <footer>
-        <section>
-            <nav>
-                <ul>
+    <footer class="footer">
+        <nav class="footer_main">
+            <div>
+                <ul class="footer_main_menu">
+                    <li class="footer_main_menu_title">
+                        menu
+                    </li>
                     <li>
                         <a href="index.html">
-                            HOME
+                            home
                         </a>
                     </li>
                     <li>
                         <a href="resenhas.html">
-                            RESENHAS
+                            resenhas
                         </a>
                     </li>
                     <li>
                         <a href="quiz.html">
-                            QUIZ
+                            quiz
                         </a>
                     </li>
                     <li>
                         <a href="time.html">
-                            NOSSO TIME
+                            nosso time
                         </a>
                     </li>
                 </ul>
-        </section>
-        <form action="#" method="post">
-        <label for="busca">
-            <img src="assets/lupa.png" alt="Busca CineMundo" width="50">
-        </label>
-        <input type="text" placeholder="Minha série favorita" id="busca" name="search" required>
-        <button type="submit">
-            Buscar
-        </button>
-        </form>
-        <ul>
-            <section>
-                <h1>
-                    SUPORTE
-                </h1>
-                <h2>
-                    CHAT 24h
-                    <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="CHAT">
-                    CONTATO: CONTATO@CINEMUNDO.COM.BR
-                </h2>
+            </div>
+            <div class="footer_search">
+                <form action="#" method="post" class="footer_search_icon">
+                    <label for="busca">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather-feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </label>
+                    <input type="search" autocomplete="off" spellcheck="false" role="combobox"
+                        placeholder="Quiz Harry Potter" id="busca" name="search" required>
+                </form>
+            </div>
+            <div>
+                <ul class="footer_help_center">
+                    <li class="footer_help_center_title">
+                        suporte
+                    </li>
+                    <li>
+                        <a href="#">
+                            dúvidas
+                        </a>
+                    </li>
+                    <li>
+                        <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="chat 24h"
+                            class="footer_help_center_button">
+                    </li>
+                    <li class="footer_help_center_contact">
+                        contato:
+                    </li>
+                    <li class="footer_help_center_email">
+                        contato@cinemundo.com.br
+                    </li>
+                </ul>
+            </div>
+        </nav class="footer_social_media">
+        <nav>
+            <div class="footer_social_media_title">
+                redes sociais:
+            </div>
+            <div>
+                <a href="." class="footer_social_media_link">
+                    <img src="assets/image/footer_twitter.png" alt="twitter" width="60"
+                        class="footer_social_media_image">
+                    <img src="assets/image/footer_facebook.png" alt="facebook" width="60"
+                        class="footer_social_media_image">
+                    <img src="assets/image/footer_instagram.png" alt="instagram" width="60"
+                        class="footer_social_media_image">
+                </a>
+            </div>
             </section>
-        </ul>
-        <section>
-            <h2>
-                REDES SOCIAIS:
-            </h2>
-            <ol>
-                <img src="assets/twitter.png" alt="twitter" width="30">
-                <img src="assets/facebook.png" alt="facebook" width="30">
-                <img src="assets/instagram.png" alt="instagram" width="30">
-            </ol>
-        </section>
-        @2022 CINEMUNDO, LLC. todos os direitos reservados.
+            <div class="footer_copyrights">
+                @2022 CINEMUNDO, LLC. todos os direitos reservados.
+            </div>
         </nav>
     </footer>
 </body>
