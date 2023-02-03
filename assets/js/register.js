@@ -285,3 +285,33 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById("texto-register2").style.display = "block";
 }, 5500);
+
+// ------------- FUNDO IMAGEM ----------
+
+const bgMain = document.getElementById("background-main");
+
+const imageLinks = [
+  "assets/image/strangert_wallpaper_register.png",
+  "assets/image/duna_wallpaper_register.png",
+  "assets/image/centralbr_wallpaper_register.png"
+];
+
+let currentImage = 0;
+
+bgMain.style.backgroundImage = `url(${imageLinks[currentImage]})`;
+bgMain.style.backgroundSize = "cover";
+bgMain.style.backgroundAttachment = "fixed";
+bgMain.style.backgroundRepeat = "no-repeat";
+bgMain.style.imageRendering = "optimizeQuality";
+
+setInterval(() => {
+  currentImage = (currentImage + 1) % imageLinks.length;
+
+  const nextImage = new Image();
+  nextImage.src = imageLinks[currentImage];
+  nextImage.onload = function() {
+    bgMain.style.backgroundImage = `url(${imageLinks[currentImage]})`;
+  };
+}, 10000);
+
+
