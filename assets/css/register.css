@@ -3,9 +3,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: 100% 50%;
   image-rendering: optimizeQuality;
 }
-
 
 
 div#form-titles {
@@ -135,30 +135,45 @@ h1.form-title {
   }
 
   @media (min-width: 1220px) {
-
-  #texto-register {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    font-size: 4.4em;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 0 1px transparent;
-    text-shadow: #BD4CF7;
-    cursor: default;
+    #texto-register,
+    #texto-register2 {
+      display: none;
+      position: absolute;
+      top: 40%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      font-size: 4.4em;
+      font-weight: bold;
+      color: white;
+      cursor: default;
+    }
+  
+    #texto-register {
+      animation: bounce 3s;
+      font-size: 4.4em;
+      text-shadow: 4px 2px #171445;
+    }
+  
+    #texto-register2 {
+      animation: bounce 4s;
+      font-size: 2.5em;
+      top: 46%;
+      text-shadow: 4px 2px #171445;
+    }
+  
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(-30px) translate(-50%, -50%);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0) translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
   }
-
-  #texto-register2 {
-    display: none;
-    position: absolute;
-    top: 45%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5em;
-    font-weight: bold;
-    color: white;
-    cursor: default;
-  }
-}
+  
