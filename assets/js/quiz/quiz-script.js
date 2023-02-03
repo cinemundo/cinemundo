@@ -16,20 +16,6 @@ let indiceArrayEmbaralhado = 0
 let numeroDaQuestao = 1
 let remainingTime = 20
 
-console.log(pontos.innerText)
-// Sorteia 4 números entre as perguntas de nível fácil:
-sorteioPorNivel("F", 4)
-
-// Sorteia 4 números entre as perguntas de nível médio:
-sorteioPorNivel("M", 4)
-
-// Sorteia 2 números entre as perguntas de nível difícil:
-sorteioPorNivel("D", 2)
-
-// Compôe um array com os 10 número sorteados (elementos embaralhados):
-embaralhar()
-
-// Inicia a contagem do tempo:
 startTimer()
 
 function escolheQuiz(escolhido) {
@@ -41,6 +27,7 @@ function escolheQuiz(escolhido) {
     indiceArrayEmbaralhado = 0
     pontos.innerText = "00"
     fimQuiz = false
+    sortear()
     contaPontos("","")
 }
 
@@ -63,6 +50,20 @@ function sorteioPorNivel(nivel,nSorteadas) {
             sorteadas.push(numeroSorteado + `${nivel}`)
         }    
     }
+}
+
+function sortear() {
+    // Sorteia 4 números entre as perguntas de nível fácil:
+    sorteioPorNivel("F", 4)
+    
+    // Sorteia 4 números entre as perguntas de nível médio:
+    sorteioPorNivel("M", 4)
+    
+    // Sorteia 2 números entre as perguntas de nível difícil:
+    sorteioPorNivel("D", 2)
+    
+    // Compôe um array com os 10 número sorteados (elementos embaralhados):
+    embaralhar()    
 }
 
 function embaralhar() {
