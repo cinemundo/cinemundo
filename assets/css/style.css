@@ -1,46 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+list-style: none;
+}
+
 body {
-  background-color: #040115;
-}
-
-h1 {
-  font-size: 4rem;
+  width: 100%;
   color: white;
-  margin-bottom: 30px;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  background: linear-gradient(to bottom, black, #20052E) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
-ul {
-  list-style: none;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.news-container {
+.topo-home {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  background: linear-gradient(to bottom, black, #260637) no-repeat;
+  height: 550px;
+  margin: 0 auto;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to top, transparent 3%, black 25%);
+  mask-image: linear-gradient(to top, transparent 3%, black 25%);
+  position: relative;
 }
 
-.news-stars-container {
+.topo-home img {
+  opacity: 0.8;
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to top, transparent 3%, black 25%);
+  mask-image: linear-gradient(to top, transparent 3%, black 25%);
+  position: absolute;
+}   
+
+.titulo-home {
+  position: absolute;
+  font-size: 5rem;
+  margin: 240px 0 0 30px;
+  padding: 0;
+  text-align: justify;  
+  width: 60%;  
+}
+
+.titulo-home h3 {
+  position: relative;
+  font-family: 'Bebas Neue', cursive; 
+  letter-spacing: 1.5;
+  line-height: 70px;
+}
+
+.titulo-home h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.titulo-home p {
+  position: relative;
+  font-size: 1.1rem;
+  width: 45%;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  padding: 0;
+}
+
+.btn-topo-home {
+  position: absolute;
+  background: #645E5E;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 3px 5px;
+  margin: 20px auto;
+}
+
+.btn-topo-home:hover {
+  background: black;
+  border: 1px solid #bd4cf7;
+}
+
+/* --------------- MAIN --------------- */
+
+main { 
+  width: 100%;
+  padding-left: 40px;
+}
+
+main h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.titulo-time {
+  margin-bottom: 5px;
+}
+
+main h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+/* --------------- HEADER--------------- */
+
+.menu-home {
+  width: 90%;
+  position: absolute;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  top: 30px;
+  left: 30px;
+}
+
+.logo-cinemundo-home {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.news-headlines {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.news-stars {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin: 20px 50px;
-  align-items: center;
+.logo-cinemundo-home span {
+  font-size: 4rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1.5px;
 }
 
 .images-news-star {
-  width: 500px;
+  width: 800px;
+  height: 400px;
+  gap: 50px;
+  padding: 10px;
+  background-color: #bd4cf7;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+}
+
+#menuHeader ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#menuHeader li {
+  font-size: 1.3rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+list-style: none;
+  padding: 5px 10px;
+}
+
+.menu-home a, .menu-home2 a {
+  opacity: 0.8;
+}
+
+.menu-home a.active, .menu-home a:hover, .menu-home2 a.active, .menu-home2 a:hover {
+color: white;
+  font-weight: bolder;
+transition: .4s;
+  opacity: 1;
+}
+
+.menu-home2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.famous-series {
+  width: 600px;
   height: 300px;
   gap: 50px;
   padding: 10px;
@@ -49,79 +208,91 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-.popular-movies-and-series {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px;
-}
-
-.popular-movies-and-series h2 {
-  margin-bottom: 20px;
-  font-size: 3rem;
+.header_perfil_name a {
+  padding: 10px 16px;
+  margin: 0 1px;
   color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-}
-
-.link-best-series {
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
   text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
 }
 
-.link-best-series h3 {
-  margin-top: 20px;
-  font-size: 2.5rem;
+.checkbtn_header {
+font-size: 20px;
+color: white;
+float: left;
+line-height: 20px;
+margin-right: 40px;
+cursor: pointer;    
+display: none;
+}
+
+#check {
+display: none;
+}
+
+@media (max-width: 920px){
+
+  .logo-cinemundo-home {
+      text-align: center;
+  }
+  .checkbtn_header{
+      display: block;
+  }   
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .4s;
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 20px;
+}
+nav ul li a {
+  font-size: 1.5rem;
+}
+a:hover, a.active {
+  background: none;
   color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+}
+#check:checked ~ ul {
+  left: 0;
+}
 }
 
-.link-best-series h3:hover {
-  font-size: 3rem;
-  color: #bd4cf7;
+/* --------------- EM ALTA E CINEMUNDO RECOMENDA --------------- */
+
+.slider-home {
+  position: relative;
+  overflow-x: hidden;
+  height: 300px;
+  margin-bottom: 50px;
 }
 
-.best-series {
+.slider-width-home {
+  position: absolute;
   display: flex;
-  margin: 0 50px;
-  gap: 70px;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
+  left: 0;
+  top: 0;
+  transition: 0.8s ease-in-out;
 }
 
-.famous-series {
-  width: 400px;
-  height: 200px;
-  gap: 50px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
-}
-
-.link-best-movies {
-  text-decoration: none;
-}
-
-.link-best-movies h3 {
-  margin-top: 20px;
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-}
-
-.link-best-movies h3:hover {
-  font-size: 3rem;
-  color: #bd4cf7;
-}
-
-.best-movies {
+.item {
   display: flex;
-  margin: 50px;
-  gap: 70px;
   justify-content: center;
 }
 
 .famous-movies {
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
   gap: 50px;
   margin-bottom: 100px;
   padding: 10px;
@@ -130,34 +301,100 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-.community-section {
+
+.botoes-home {
+  top: 35%;
+  position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.7;
 }
 
-.list-movies-container {
+.slider-home .botoes-home i:first-child {
+ background-color: none;
+ border-style: outset;
+ border: none;
+ outline: none;
+ color: #fff;
+ margin-top: 20px;
+ cursor: pointer;
+ transition: all 0.4s;
+ font-size: 1.7em;
+ margin-left: 12px;
+}
+
+.slider-home .botoes-home i:nth-child(2) {
+ background-color: none;
+ border-style: outset;
+ border: none;
+ outline: none;
+ color: #fff;
+ margin-top: 20px;
+ cursor: pointer;
+ transition: all 0.4s;
+ font-size: 1.7em;
+ margin-left: 1325px;
+}
+
+/* --------------- FANDOM E GÊNERO --------------- */
+
+.fandom, .genero {
+ position: relative;
+ overflow-x: hidden;
+ height: 200px;
+ margin-bottom: 50px;
+}
+
+.width-fandom {
+ width: 500%;
+ position: absolute;
+ display: flex;
+ align-items: start;
+ justify-content: start;
+ left: 0;
+ top: 0;
+ transition: 0.8s ease-in-out;
+}
+
+.width-genero {
+  width: 200%;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px;
+  align-items: start;
+  justify-content: start;
+  left: 0;
+  top: 0;
+  transition: 0.8s ease-in-out;
 }
 
-.list-movies-container a h3 {
-  font-size: 2.5rem;
-  text-decoration: none;
-  margin-left: 10px;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+.item-fandom, .item-genero {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 350px;
+ height: 200px;
+ margin: 0 10px;
+ opacity: 0.8;
 }
 
-.list-movies-container a {
-  text-decoration: none;
+.item-fandom:hover, .item-genero:hover {
+  border: 1.5px solid #bd4cf7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.width-genero .itens-genero img {
+  position: relative;
 }
 
 .list-movies {
-  width: 1100px;
-  height: 500px;
+  width: 120rem;
+  height: 50rem;
   margin-bottom: 100px;
   padding: 10px;
   background-color: #bd4cf7;
@@ -165,27 +402,36 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-.list-series-container {
+/* --------------- CHAMADA QUIZ --------------- */
+
+.quiz-home {
+  width: 80%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 100px;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto 50px;
+  padding: 20px;
 }
 
-.list-series-container a h3 {
-  font-size: 2.5rem;
-  text-decoration: none;
-  margin-left: 10px;
-  color: black;
+.chamada-quiz-home {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 60px;
 }
 
-.list-series-container a {
+.chamada-quiz-home h1 {
+  margin-bottom: 10px;
+}
+
+.chamada-quiz-home a {
+  color: white;
   text-decoration: none;
 }
 
 .list-series {
-  width: 1100px;
-  height: 500px;
+  width: 120rem;
+  height: 50rem;
   margin-bottom: 100px;
   padding: 10px;
   background-color: #bd4cf7;
@@ -193,124 +439,187 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-.link-celebrity-highlights {
-  font-size: 2rem;
-  text-decoration: none;
+.btn-quiz-home {
+  position: absolute;
+  background: #645E5E;
   color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 3px 5px;
+  margin: 20px auto;
 }
 
-.link-celebrity-highlights:hover {
-  font-size: 2.3rem;
-  color: #bd4cf7;
+.btn-quiz-home:hover {
+  background: black;
+  border: 1px solid #bd4cf7;
 }
 
-.ranking-users {
+/* --------------- CHAMADA COMUNIDADE --------------- */
+
+.comunidade-home {
+  width: 80%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.ranking-users a h3 {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-  margin-bottom: 150px;
-}
-
-.ranking-users a {
-  text-decoration: none;
-}
-
-.ranking-users a h3:hover {
-  font-size: 2.8rem;
-  color: #bd4cf7;
-}
-
-.highlights-month {
-  display: flex;
   justify-content: center;
-  flex-direction: row;
   gap: 50px;
+  margin: 0 auto 50px;
+  padding: 20px;
 }
 
-#community-title h2 {
-  font-size: 3rem;
+.chamada-comunidade-home {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 65px;
+  margin-bottom: 20px;
+}
+
+.banner-comunidade-home img {
+  width: 650px;
+  height: 365px;
+  box-shadow: 20px 20px 40px -30px #352052;
+  opacity: 0.9;
+}
+
+.btn-comunidade-home {
+  position: absolute;
+  background: #645E5E;
   color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 3px 5px;
+  margin: 20px auto;
 }
 
-#link-headlines {
-  font-size: 2rem;
+.btn-comunidade-home:hover {
+  background: black;
+  border: 1px solid #bd4cf7;
+}
+
+.chamada-comunidade-home a {
+  color: white;
   text-decoration: none;
-  margin-bottom: 50px;
+}
+
+/* --------------- AUTORES --------------- */
+
+.autores {
+  position: relative;
+}
+
+.home-autores{
+ width: 100%;
+ margin: 0 auto 100px;
+
+}
+
+.autores-home{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ transition: 0.8s ease-in-out;
+}
+
+.autor-home {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 270px;
+ height: 350px;
+ opacity: 0.8;
+}
+
+.autor-home:hover {
+border: 1px solid #bd4cf7;
+opacity: 1;
+cursor: pointer;
+
+}
+
+.home-autores .autores-home img {
+  position: relative;
+}
+
+.home-autores .autores-home span {
+  position: absolute;
+  top: 380px;
+  text-align: center;
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  color: #E8C4FB;
+  font-weight: bolder;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+/* --------------- FOOTER--------------- */
+
+footer{
   color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+  font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
 }
 
-#link-headlines:hover {
-  font-size: 2.3rem;
-  color: #bd4cf7;
-}
-
-#link-movie-rating h3 {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-}
-
-#link-movie-rating h3:hover {
-  font-size: 2.8rem;
-  color: #bd4cf7;
-}
-
-#link-quiz-questions h3 {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-}
-
-#link-quiz-questions h3:hover {
-  font-size: 2.8rem;
-  color: #bd4cf7;
-}
-
-#ranking-titles {
+.footer_main {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
-#ranking-titles h2 {
-  font-size: 3rem;
-  margin-bottom: 80px;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
+.footer_main_menu {
+  font-size: 150%;
+  font-weight: 300;
+  text-align:left;
+  margin: 10px 0 0 80px;
 }
 
-#ranking-titles h3 {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-  margin-bottom: 100px;
+.footer_main_menu li {
+  list-style: none;
+  margin-top: 2px;
+  margin-bottom: 4px;
 }
 
-#quiz-leader-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer_main_menu li a {
+  text-decoration: none;
+  color: white;
 }
 
-#quiz-leader-container p {
-  font-size: 2.5rem;
+.footer_main_menu li a:hover{
+  color: #BD4CF7;
+  font-size: 102%;
+}
+
+.footer_main_menu_title {
+  font-size: 34px;
+  font-weight: 500;
+  padding: 0px 100px 0 0;
+  border-bottom: 3px solid whitesmoke;
+  border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
+}
+
+#busca {
   color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-  margin: 25px;
+}
+
+.footer_search {
+  margin-left: 0px;
 }
 
 #quiz-leader {
-  width: 270px;
-  height: 350px;
+  width: 25rem;
+  height: 40rem;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -319,22 +628,31 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-#best-comments-container {
+.footer_search_icon {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-#best-comments-container p {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-  margin: 25px;
+.footer_search input{
+  border: 2px solid white;
+  border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
+  border-radius: 0.1em;
+  padding: 0.3cm 20vh;
+  font-size: 2.2em;
+  text-align: center;
+  gap: 16px;
+  background: transparent;
+}
+
+@media (max-width: 1234px){
+  div.footer_search input {
+  padding: 0.3cm 4vh;
+  }
 }
 
 #best-comments {
-  width: 270px;
-  height: 350px;
+  width: 25rem;
+  height: 40rem;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -343,22 +661,45 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-#analysis-wizard-container {
-  display: flex;
+.footer_help_center {
   flex-direction: column;
-  align-items: center;
+  font-size: 150%;
+  font-weight: 300;
+  text-align: end;
+  margin: 10px 80px 0 0;
 }
 
-#analysis-wizard-container p {
-  font-size: 2.5rem;
+@media (max-width: 486px){
+  footer.footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 100%;
+      margin: auto;       
+  }
+}
+
+.footer_help_center_title {
+  font-size: 34px;
+  border-bottom: 3px solid whitesmoke;
+  border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
+}
+
+.footer_help_center li {
+  list-style: none;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.footer_help_center li a {
+  text-decoration: none;
   color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-  margin: 25px;
 }
 
 #analysis-wizard {
-  width: 270px;
-  height: 350px;
+  width: 25rem;
+  height: 40rem;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -367,22 +708,33 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-#best-feed-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.footer_help_center_button {
+  border: 2px solid whitesmoke;
+  border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
+  border-radius: 0.1em;
+  padding: 0.1cm 0.5cm;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(#BD4CF7, black, black);
+  margin: 5px 0;
+  font-size: 24px;
 }
 
-#best-feed-container p {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-  margin: 25px;
+.footer_help_center_button:hover {
+  background-image: linear-gradient(#BD4CF7,white, white);
+  font-size: 101%;
+  color: black;
+}
+
+.footer_help_center_contact {
+  font-size: 22px;
 }
 
 #best-feed {
-  width: 270px;
-  height: 350px;
+  width: 25rem;
+  height: 40rem;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
@@ -391,26 +743,28 @@ ul {
   box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-#more-likes-container {
+
+.footer_social_media_title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 }
 
-#more-likes-container p {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.8);
-  margin: 25px;
+.footer_social_media_link {
+  display: flex;
+  justify-content: center;
 }
 
 #more-likes {
-  width: 270px;
-  height: 350px;
+  width: 25rem;
+  height: 40rem;
   margin-left: 20px;
   gap: 20px;
   padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
 }
+
+.footer_copyrights {
+  display: flex;
+  justify-content: center;
+}
+

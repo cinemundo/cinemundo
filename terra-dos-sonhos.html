@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Terra dos Sonhos Filme</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Últimas Críticas Cinemundo</title>
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="assets/css/resenhas.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="assets/js/resenhas.js" defer></script>
 </head>
-<body>
+<body class="body-resenha-completa">
     <header>
         <div class="header_title">
             <a href="index.html">
@@ -72,40 +74,51 @@
             </div>
         </nav>
     </header>
-    <main class="main_resenha_completa">
-        <section class="section_titulo_resenha_completa">
-            <div>
-                <h1 class="titulo_principal_resenha_completa">TERRA DOS SONHOS</h1>
+
+        <section class="topo-resenha-completa">
+            <h1><img src="assets/image/resenhas/ret-filme-terra-dos-sonhos.jpeg"></h1>
+            <div class="ficha_tecnica_resenha_completa">
+                <div>
+                   <h1>Terra dos Sonhos</h1> 
+                   <p><b>Gênero:</b> Aventura, Família, Fantasia</p>
+                   <p><b>Duração:</b> 2hs</p>
+                   <p><b>Classificação:</b> 10 anos</p>
+                   <p><b>Direção:</b> Francis Lawrence</p>
+                   <p><b>Roteiro:</b> David Guion, Michael Handelman</p>
+                   <p><b>Elenco:</b> Jason Momoa, Marlow Barkley, Chris O'Dowd, Kyle Chandler</p>
+               </div>
+                 
+                     
             </div>
-            <div>
-                <h3 class="publicado_por_resenha">Publicado por Viviane Favato</h3>
-                <p class="data_hora_resenha_completa">28/11/22 - 14:27</p>
-            </div> 
         </section>
-        <section class="section_principal_resenha_completa">
-            <div class="secao_informacoes_resenha_completa">
-                <img class="banner_resenha_completa" src="assets/image/resenhas_terradossonhos2.jpeg">
-                <div class="ficha_tecnica_resenha_completa">
-                    <h3 class="titulos_lateral_resenha_completa">Ficha Técnica</h3>
-                    <h4><strong>Direção:</strong> Francis Lawrence</h4>
-                    <h4><strong>Roteiro:</strong> David Guion, Michael Handelman</h4>
-                    <h4><strong>Elenco:</strong> Jason Momoa, Marlow Barkley, Chris O'Dowd, Kyle Chandler</h4>
-                    <h4><strong>Trilha Sonora:</strong> Pinar Toprak</h4>
-                    <h4><strong>Produção:</strong> Peter Chernin, Jenno Topping, David Guion, Michael Hendelman</h4>
-                </div>
-                <div class="avaliacoes_resenha_completa">
-                    <h3 class="titulos_lateral_resenha_completa">Avaliações</h3>
+
+        <main class="resenha-completa"> 
+
+        <section class="principal_resenha_completa">
+            <div class="informacoes_resenha_completa">
+                <div class="trailer">
+                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/bZZdw1TMeIY" title="Terra dos Sonhos | Trailer oficial | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>  
+                <div class="avaliacao-resenha-completa">
                     <div class="campo_avaliacao_resenha_completa">
                         <h4>Nota do autor:</h4>
-                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_4.5 estrelas.png">
+                        <div>
+                            <button>&#9733;</button>
+                            <button>&#9733;</button>
+                            <button>&#9733;</button>
+                            <button>&#9733;</button>
+                            <button>&#9734;</button>
+                        </div>
                     </div>
                     <div class="campo_avaliacao_resenha_completa">
-                        <h4>Nota do leitor:</h4>
-                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_4 estrelas.png">
-                    </div>
-                    <div class="campo_avaliacao_resenha_completa">
-                        <h4>Deixe a sua avaliação:</h4>
-                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_estrelas_avaliar.png">
+                        <h4>Avaliar:</h4>
+                        <div class="star-rating-resenha">
+                            <button class="star-resenha">&#9734;</button>
+                            <button class="star-resenha">&#9734;</button>
+                            <button class="star-resenha">&#9734;</button>
+                            <button class="star-resenha">&#9734;</button>
+                            <button class="star-resenha">&#9734;</button>
+                        </div>
                     </div>
                 </div>
                 <div class="onde_assistir_resenha_completa">
@@ -113,8 +126,8 @@
                         <h3 class="titulos_lateral_resenha_completa">Onde Assistir</h3>
                     </div>
                     <div class="img_ondeassistir_resenha_completa">
-                        <img src="assets/image/resenhas_Netflix.png">
-                        <img src="assets/image/resenhas_icone_tv.png">
+                        <a target="_blank" href="https://www.netflix.com/search?q=terra%20dos%20s&jbv=81220825"><img src="assets/image/resenhas/Netflix.png"></a>
+                        <img src="assets/image/resenhas/Ícone tv.png">
                     </div>
                     <div>
                         <p>
@@ -124,22 +137,22 @@
                             Devido aos efeitos visuais incríveis, a sua experiência será muito mais especial se você assistir a este filme em um aparelho de televisão.
                         </p>
                     </div>
-                </div>
+                </div>   
                 <div class="redes_sociais_resenha_completa">
-                    <a><h2>SIGA O CINEMUNDO</h2></a>
-                    <img src="assets/image/resenhas_redes_sociais.jpg">
+                    <a><h3>Siga o cinemundo</h3></a>
+                    <img src="assets/image/resenhas/instagram.jpg">
                 </div>
             </div>
             <div class="secao_textos_resenha_completa">
                 <article>
-                    <h2>SINOPSE</h2>
+                    <h2>Sinopse</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae commodo massa, sed facilisis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan sodales purus vel malesuada. Sed rutrum tellus nec metus venenatis placerat. Sed cursus dui id mauris faucibus, at pretium lacus finibus. 
                     </p>
                 </article>
                 <br>
                 <article>
-                    <h2>SOBRE TERRA DOS SONHOS</h2>
+                    <h2>Sobre o filme</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel finibus nunc. Nam sit amet urna lobortis, semper nulla a, consectetur arcu. Ut nec quam non augue laoreet pharetra at tempor nisl. Praesent at lorem et enim tempus dignissim a sed nulla. Phasellus orci diam, consectetur a aliquam a, pretium in augue. Maecenas cursus ligula sed interdum ullamcorper. Duis eleifend, tellus eu aliquet lacinia, est nibh tincidunt erat, vitae pharetra diam orci rutrum augue. Fusce magna arcu, pretium vitae tortor sed, laoreet hendrerit turpis. Donec feugiat ipsum id ipsum convallis, malesuada iaculis tellus congue. Morbi a lectus sit amet neque venenatis posuere sit amet vitae diam. Nunc id lacus eu lectus vehicula auctor non a orci. Vestibulum eget pretium dui. Maecenas eu odio id nulla fringilla volutpat. Donec orci nibh, aliquet eget viverra vitae, posuere at turpis. Fusce laoreet varius maximus. Etiam posuere metus id ex mattis tincidunt.
                     </p>
@@ -156,20 +169,23 @@
                         Nunc faucibus ex vel tortor efficitur, at ornare quam suscipit. Mauris non cursus erat. In tempus porta dignissim. Nulla sagittis ligula a purus aliquet viverra. Proin sed bibendum elit. Donec egestas libero quis leo aliquet laoreet. Vivamus dignissim sem vitae orci fermentum, sit amet elementum ipsum hendrerit. Sed tempus blandit sem vitae consectetur. Vivamus vitae est lacinia, tincidunt lorem vel, sollicitudin felis. Sed sed sodales sem, sed molestie lacus. Nullam auctor urna vitae mi venenatis interdum. Fusce facilisis convallis magna.
                     </p>
                 </article>
-                <div class="avalie_resenha_completa">
-                    <div>
-                        <h4>Avalie essa resenha</h4>
-                    </div>
-                    <div>
-                        <img class="img_estrelas_avaliar" src="assets/image/resenhas_estrelas_avaliar.png">
-                    </div>   
+                
+                <div class="campo_avaliacao_resenha_completa">
+                    <h4>Avalie essa resenha</h4>
+                    <div class="star-rating-resenha">
+                        <button class="star-avalia-resenha">&#9734;</button>
+                        <button class="star-avalia-resenha">&#9734;</button>
+                        <button class="star-avalia-resenha">&#9734;</button>
+                        <button class="star-avalia-resenha">&#9734;</button>
+                        <button class="star-avalia-resenha">&#9734;</button>
+                    </div> 
                 </div>
                 <div class="roteirista_resenha_completa">
                     <div>
-                        <img src="assets/image/resenhas_Viviane.jpeg">
+                        <img src="assets/image/resenhas/resenhas_Viviane.jpeg">
                     </div>
                     <div>
-                        <strong><h4>Viviane Favato é roteirista do site CineMundo</h4></strong>
+                        <h4><strong>Viviane Favato é roteirista do site CineMundo</strong></h4>
                         <p>
                             Apaixonada por filmes clássicos e comédias, mas chegadinha num drama pra chorar. Adora maratonar séries nos finais de semana.
                         </p>
@@ -177,71 +193,43 @@
                 </div>
             </div>
         </section>
-        <section class="secao_formulario_resenha_completa">
+        <section class="formulario_resenha_completa">
             <h3>Deixe o seu comentário:</h3>
-            <p>
+            <h4>
                 O seu endereço de e-mail não será publicado.
-            </p>
-            <form action="/">
-                <section>
-                    <label class="label_form_resenha_completa" for="nome">
-                        Nome:
+            </h4>
+            <form class="form" action="">
+
+                    <label class="label-form-resenha-completa" for="username">
+                        Usuário:
                     </label>
-                    <input type="text" placeholder="Informe o seu nome e sobrenome" id="nome" name="username" class="input_form_resenha_completa">    
-                </section>
-                <section>
-                    <label class="label_form_resenha_completa" for="email">
+                    <input type="text" placeholder="Informe o seu nome de usuário" id="username" name="username" class="input-form-resenha-completa"> 
+                    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>   
+    
+                    <label class="label-form-resenha-completa" for="email">
                         E-mail:
                     </label>
-                    <input type="email" placeholder="usuario@dominio.com" id="email" name="mailto" class="input_form_resenha_completa">
-                </section>
-                <section>
-                    <label class="label_form_resenha_completa" for="comentario">
+                    <input type="email" placeholder="usuario@dominio.com" id="email" name="email" class="input-form-resenha-completa">
+                    <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+                
+                    <label class="label-form-resenha-completa" for="message">
                         Mensagem:
                     </label>
                     <textarea 
-                        id="comentario" name="comentario" rows="15" cols="70" class="textarea_form_resenha_completa">
+                        id="message" name="message" rows="7" cols="50" class="textarea_form_resenha_completa">
                     </textarea>
-                </section>
-                <section>
-                    <button class="botao_form_resenha_completa" type="submit">
-                        PUBLICAR COMENTÁRIO
+                    <p id="message-helper" class="helper-text">Mensagem de ajuda</p>
+             
+                    <button class="botao_form_resenha_completa" type="submit" id="submit">
+                        Publicar comentário
                     </button>
-                </section>        
+                      
             </form>
         </section>
-        <section class="secao_outras_resenhas">
-            <h2>OUTRAS RESENHAS</h2>
-            <div class="outras_resenhas">
-                <img class="img_outras_resenha_completa" src="assets/image/resenhas_wakanda-forever.webp">
-                <div>
-                    <h4>Wakanda para Sempre</h4>
-                    <p>
-                    A emblemática sequência da história do personagem Pantera Negra  
-                    </p>
-                </div>
-            </div>
-            <div class="outras_resenhas">
-                <img class="img_outras_resenha_completa" src="assets/image/resenhas_desencantada.jpeg">
-                <div>
-                    <h4>Desencantada</h4>
-                    <p>
-                    Nesta sequência, Gisele enfrenta uma nova aventura nesse longa divertido e encantador.
-                    </p>
-                </div>   
-            </div>
-            <div class="outras_resenhas">
-                <img class="img_outras_resenha_completa" src="assets/image/resenhas_ela_disse.jpeg">
-                <div>
-                    <h4>Ela Disse</h4>
-                    <p>
-                        Baseado em fatos reais, este filme mostra o desenrolar do movimento #MeToo, em Hollywood.
-                    </p>
-                </div>
-            </div> 
-        </section>
+
     </main>
-    <footer class="footer">
+
+    <footer>
         <nav class="footer_main">
             <div>
                 <ul class="footer_main_menu">
@@ -327,5 +315,8 @@
             </div>
         </nav>
     </footer>
+
 </body>
 </html>
+
+<!--<button class="botao-trailer-resenha-completa">Assista ao trailer</button>-->
