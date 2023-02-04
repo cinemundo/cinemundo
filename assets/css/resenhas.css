@@ -361,8 +361,8 @@ a {
     height: 450px;
     margin: 0 auto;
     object-fit: cover;
-    -webkit-mask-image: linear-gradient(to right, transparent 2%, black 98%);
-    mask-image: linear-gradient(to right, transparent 2%, black 98%);
+    -webkit-mask-image: linear-gradient(to right, transparent 5%, lightgray 40%);
+    mask-image: linear-gradient(to right, transparent 5%, lightgray 40%);
     position: absolute;
 }
 
@@ -385,7 +385,7 @@ a {
 .ficha_tecnica_resenha_completa h1 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    color: #434343;
+    color: black;
     font-size: 2.2rem;
     line-height: 25px;
     letter-spacing: 1.5px;
@@ -393,22 +393,24 @@ a {
     white-space: nowrap;
     padding: 16px 0;
     margin: 35px 0 10px;
-    text-shadow: lightgray 0.1em 0.1em 0.2em;
+    text-shadow: darkgray 0.1em 0.1em 0.2em;
     font-weight: bolder;
 }
 
 .ficha_tecnica_resenha_completa p {
+    color: black;
     padding: 3px 0;
-    text-shadow: lightgray 0.1em 0.1em 0.2em;
+    text-shadow: darkgray 0.1em 0.1em 0.2em;
     line-height: 25px;
 }
 
 .ficha_tecnica_resenha_completa strong {
+    color: black;
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 25px;
-    text-shadow: lightgray 0.1em 0.1em 0.2em;
+    text-shadow: darkgray 0.1em 0.1em 0.2em;
     font-weight: bolder;
 }
 
