@@ -29,7 +29,11 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-   
+}
+
+a {
+    text-decoration: none;
+    font-style: none;
 }
 
 /*--------------- SEÇÃO CARDS FILMES E SÉRIES ---------------*/
@@ -150,7 +154,7 @@
     align-items: center;
 }
 
-.autores-resenhas h2, .redes-sociais-resenhas h2, .form h2 {
+.autores-resenhas h2, .redes-sociais-resenhas h2, .form-resenhas h2 {
     padding: 10px 0;
     font-family: 'Codec Pro', sans-serif;
     text-align: center;
@@ -164,35 +168,49 @@
 
 /*----------------  FORMULÁRIO -----------------*/
 
-.form {
+.form-resenhas {
     width: 100%;
     margin-bottom: 80px;
+    position: relative;
 }
 
 .label-form-resenha {
     display: block;
+    position: relative;
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 18px;
     line-height: 25px;
-    margin-bottom: 3px;
+}
+
+.form-resenhas .label-form-resenha:first-child {
+    margin-top: 15px;
 }
 
 .input-form-resenha {
+    position: relative;
     background: #E8C4FB;
     border: none;
     width: 100%;
     height: 35px;
+    margin: 0 auto 20px;
     padding: 15px;
-    margin-bottom: 22px;
     font-family: 'Open Sauce Sans', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .input-form-resenha::-webkit-input-placeholder {
     color: gray;
     opacity: 0.7; 
+}
+
+.input-form-resenha:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0 30px #E8C4FB inset;
+}
+ 
+.input-form-resenha:-webkit-autofill {
+    -webkit-text-fill-color: #434343 !important;
 }
 
 .botao-form-resenha {
@@ -326,12 +344,12 @@
     color: #434343;
 }
 
-/* -------------------- BANNER TOPO RESENHAS -------------------- */
+/* -------------------- BANNER TOPO RESENHA COMPLETA -------------------- */
 
 .topo-resenha-completa {
     width: 80%;
     display: flex;
-    background: #F5F5F5;
+    background: lightgray;
     height: 450px;
     margin: 10px auto 60px;
     box-shadow: 20px 20px 60px -30px black;
@@ -343,8 +361,8 @@
     height: 450px;
     margin: 0 auto;
     object-fit: cover;
-    -webkit-mask-image: linear-gradient(to right, transparent 20%, black 60%);
-    mask-image: linear-gradient(to right, transparent 20%, black 60%);
+    -webkit-mask-image: linear-gradient(to right, transparent 2%, black 98%);
+    mask-image: linear-gradient(to right, transparent 2%, black 98%);
     position: absolute;
 }
 
@@ -353,63 +371,47 @@
     flex-direction: column;
     gap: 20px;
     padding: 0 15px;
-    width: 30%;
+    width: 250px;
     max-height: 442px;
     font-family: 'Open Sauce Sans', sans-serif;
     font-size: 15px;
     text-align: justify;
     font-style: normal;
     font-weight:100;
-    line-height: 11px;
+    line-height: 20px;
     position: relative;
 }
 
 .ficha_tecnica_resenha_completa h1 {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    color: #BD4CF7;
+    color: #434343;
     font-size: 2.2rem;
     line-height: 25px;
     letter-spacing: 1.5px;
     text-align: center;
     white-space: nowrap;
     padding: 16px 0;
-    margin: 20px 0;
+    margin: 35px 0 10px;
+    text-shadow: lightgray 0.1em 0.1em 0.2em;
+    font-weight: bolder;
 }
 
 .ficha_tecnica_resenha_completa p {
     padding: 3px 0;
+    text-shadow: lightgray 0.1em 0.1em 0.2em;
+    line-height: 25px;
 }
 
 .ficha_tecnica_resenha_completa strong {
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
-    font-weight:bold;
     font-size: 15px;
     line-height: 25px;
+    text-shadow: lightgray 0.1em 0.1em 0.2em;
+    font-weight: bolder;
 }
 
-.avaliacao-resenha-completa {
-    width: 120%;
-}   
-
-.avaliacao-resenha-completa div:first-child {
-    margin-bottom: 10px;
-}
-
-.campo_avaliacao_resenha_completa {
-    display: flex;
-    align-items: center;
-}
-
-.campo_avaliacao_resenha_completa h4 {
-    font-family: 'Codec Pro', sans-serif;
-    white-space: nowrap;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-}
 
 /* -------------------- BANNER TOPO RESENHAS -------------------- */
 
@@ -429,10 +431,10 @@
     margin-bottom: 72px;
 }
 
-/* -------------------- ONDE ASSISTIR E REDES SOCIAIS -------------------- */
+/* -------------------- ONDE ASSISTIR, AVALIAÇÃO E REDES SOCIAIS -------------------- */
 
 .informacoes_resenha_completa {
-    width: 35%;
+    width: 403px;
 }
 
 .informacoes_resenha_completa h3 {
@@ -452,6 +454,30 @@
     height: 200px;
     box-shadow: 20px 20px 40px -30px black;
     margin: 0 auto 60px;
+}
+
+.avaliacao-resenha-completa {
+    width: 300px;
+    margin: 0 start 60px 0;
+}   
+
+.avaliacao-resenha-completa div:first-child {
+    margin-bottom: 10px;
+}
+
+.campo_avaliacao_resenha_completa {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.campo_avaliacao_resenha_completa h4 {
+    font-family: 'Codec Pro', sans-serif;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .onde_assistir_resenha_completa {
@@ -531,6 +557,8 @@
 
 .roteirista_resenha_completa {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .roteirista_resenha_completa {
@@ -538,6 +566,8 @@
 }
 
 .roteirista_resenha_completa img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 5px solid #BD4CF7;
     margin-right: 18px;
@@ -547,23 +577,24 @@
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 25px;
+    padding-top: 15px;
 }
 
 .roteirista_resenha_completa p {
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 25px;
 }
 
 /* -------------------- FORMULÁRIO -------------------- */
 
 .formulario_resenha_completa {
-    width: 50%;
     position: relative;
+    width: 50%;
     margin: 40px auto;
 }
 
@@ -576,7 +607,7 @@
     line-height: 25px;
 }
 
-.formulario_resenha_completa p {
+.formulario_resenha_completa h4 {
     text-align: center;
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
@@ -586,28 +617,30 @@
     margin-bottom: 10px;
 }
 
-.label_form_resenha_completa {
+.label-form-resenha-completa {
     display: block;
+    position: relative;
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
-    margin: 0 auto 3px;
 }
 
-.input_form_resenha_completa {
+.input-form-resenha-completa {
+    position: relative;
     background: #E8C4FB;
     border: none;
     width: 100%;
     height: 35px;
-    margin: 0 auto 22px;
+    margin: 0 auto;
     padding: 15px;
     font-family: 'Open Sauce Sans', sans-serif;
     font-size: 1rem;
 }
 
 .textarea_form_resenha_completa {
+    position: relative;
     background: #E8C4FB;
     border: none;
     width: 100%;
@@ -615,33 +648,99 @@
     padding: 15px;
     font-family: 'Open Sauce Sans', sans-serif;
     font-size: 1rem;
-    margin: 0 auto 25px;
+    margin: 0 auto;
 }
 
-.input_form_resenha_completa::-webkit-input-placeholder {
+.input-form-resenha-completa::-webkit-input-placeholder {
     color: gray;
     opacity: 0.7; 
 }
 
+.input-form-resenha-completa:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0 30px #E8C4FB inset;
+}
+ 
+.input-form-resenha-completa:-webkit-autofill {
+    -webkit-text-fill-color: #434343 !important;
+}
+
+.label-form-resenha-completa:not(:first-of-type){
+    margin-top: 1rem;
+  }
+  
+.helper-text {
+    display: none;
+    font-size: 1rem;
+    color: darkred;
+}
+
+.helper-text .orientacao {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}  
+
 .botao_form_resenha_completa {
+    position: relative;
     display: block;
     background: linear-gradient(to top left, #bd4cf7, #352052);
     color: white;
     font-size: 20px;
     line-height: 25px;
     font-weight: bold;
-    width: 60%;
+    width: 40%;
     height: 50px;
     border: none;
     border-radius: 10px;
     transition: 1s all;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
 .botao_form_resenha_completa:hover {
     transform: scale(1.2);
 }
+
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #434343;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .input-form-resenha-completa.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  .input-form-resenha-completa.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+
+  .textarea_form_resenha_completa.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  .textarea_form_resenha_completa.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }
 
 /* -------------------- RATING STARS -------------------- */
 
@@ -660,86 +759,13 @@
     cursor: pointer;
 }
 
+.star-avalia-resenha:hover {
+    cursor: pointer;
+}
+
 .star-rating-resenha {
     user-select: none;
 }
 
 
-/* .botao-trailer-resenha-completa {
-    background: linear-gradient(to top left, #bd4cf7, #352052);
-    color: white;
-    font-size: 15px;
-    text-transform: uppercase;
-    line-height: 20px;
-    font-weight: bold;
-    width: 70%;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    transition: 1s all;
-    cursor: pointer;
-    padding: 3px 5px;
-    margin: 0 auto;
-}
 
-.botao-trailer-resenha-completa:hover {
-    transform: scale(1.2);
-}
-*/
-
-/*label {
-    margin-bottom: .2rem;
-    position: relative;
-}
-  
-label:not(:first-of-type){
-    margin-top: 1rem;
-}
-  
-input {
-    padding: .2rem .5rem;
-}*/
-
-.helper-text {
-    display: none;
-    font-size: .8rem;
-    color: darkred;
-}
-  
-.orientacao {
-    margin-top: 1.5rem;
-    font-size: .7rem;
-}
-
-.required-popup::after {
-    content: "*Campo obrigatório";
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #DFDFDF;
-    font-size: .65rem;
-    padding: .2rem .3rem;
-    width: auto;
-    display: block;
-    background-color: #202020;
-}
-  
-input.error {
-    border: solid 2px #992020;
-    background-color: #CCBBBB;
-    color: #662020;
-}
-  
-input.correct {
-    background-color: #BBCCBB;
-    border: solid 2px #206620;
-    color: #206620;
-}
-  
-.visible {
-    display: block;
-}
-
-
-
-  
