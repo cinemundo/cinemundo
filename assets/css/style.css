@@ -155,14 +155,10 @@ main h5 {
   letter-spacing: 1.5px;
 }
 
-.images-news-star {
-  width: 800px;
-  height: 400px;
-  gap: 50px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.logo-cinemundo-home img {
+  width: 140px;
+  height: 50px; 
+  top: 60px;
 }
 
 #menuHeader ul {
@@ -198,14 +194,27 @@ transition: .4s;
   justify-content: center;
 }
 
-.famous-series {
-  width: 600px;
-  height: 300px;
-  gap: 50px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.menu-home2 li svg {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.menu-home2 li svg:hover {
+  color: white;
+  font-weight: bolder;
+  transition: .4s;
+  opacity: 1;
+}
+
+.header_perfil_name {
+  font-weight: 100%;
+}
+
+.menu-home2 li img {
+  width: 50px;
+  height: 50px;
+  top: -7px;
+  opacity: 1;
 }
 
 .header_perfil_name a {
@@ -288,17 +297,24 @@ a:hover, a.active {
 .item {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 198px;
+  height: 300px;
+  background: rgb(23 147 83);
+  margin: 0 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  opacity: 0.8;
 }
 
-.famous-movies {
-  width: 600px;
-  height: 300px;
-  gap: 50px;
-  margin-bottom: 100px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.item:hover {
+ border: 1.5px solid #bd4cf7;
+ border-radius: 5px;
+ box-sizing: border-box;
+ opacity: 1;
+ cursor: pointer;
 }
 
 
@@ -392,14 +408,16 @@ a:hover, a.active {
   position: relative;
 }
 
-.list-movies {
-  width: 120rem;
-  height: 50rem;
-  margin-bottom: 100px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.width-genero .itens-genero span {
+  position: absolute;
+  top: 160px;
+  text-align: center;
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #E8C4FB;
+  font-weight: bolder;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /* --------------- CHAMADA QUIZ --------------- */
@@ -429,14 +447,11 @@ a:hover, a.active {
   text-decoration: none;
 }
 
-.list-series {
-  width: 120rem;
-  height: 50rem;
-  margin-bottom: 100px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.banner-quiz-home img {
+  width: 650px;
+  height: 365px;
+  box-shadow: 20px 20px 40px -30px #352052;
+  opacity: 0.9;
 }
 
 .btn-quiz-home {
@@ -617,15 +632,8 @@ footer{
   margin-left: 0px;
 }
 
-#quiz-leader {
-  width: 25rem;
-  height: 40rem;
-  margin-left: 20px;
-  gap: 20px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.feather-feather-search {
+  cursor: pointer;
 }
 
 .footer_search_icon {
@@ -650,15 +658,10 @@ footer{
   }
 }
 
-#best-comments {
-  width: 25rem;
-  height: 40rem;
-  margin-left: 20px;
-  gap: 20px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+@media (max-width: 920px){
+  div.footer_search {
+  display: none;
+  }
 }
 
 .footer_help_center {
@@ -697,15 +700,8 @@ footer{
   color: white;
 }
 
-#analysis-wizard {
-  width: 25rem;
-  height: 40rem;
-  margin-left: 20px;
-  gap: 20px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.footer_help_center li a:hover {
+  color: #BD4CF7;
 }
 
 
@@ -732,15 +728,8 @@ footer{
   font-size: 22px;
 }
 
-#best-feed {
-  width: 25rem;
-  height: 40rem;
-  margin-left: 20px;
-  gap: 20px;
-  padding: 10px;
-  background-color: #bd4cf7;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.8);
+.footer_help_center_email {
+  font-size: 18px;
 }
 
 
@@ -755,11 +744,7 @@ footer{
   justify-content: center;
 }
 
-#more-likes {
-  width: 25rem;
-  height: 40rem;
-  margin-left: 20px;
-  gap: 20px;
+.footer_social_media_image {
   padding: 10px;
 }
 
@@ -767,4 +752,3 @@ footer{
   display: flex;
   justify-content: center;
 }
-
