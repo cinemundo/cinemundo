@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/reset.css">    
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/quiz.css">    
-    <title>Quiz | Cinemundo</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <script src="assets/js/quiz/quiz-dados.js"></script>
+    <script src="assets/js/quiz/quiz-script.js" defer></script>
+    <title>Cinemundo | Quiz</title>
 </head>
 
 <body>
@@ -114,7 +117,7 @@
             <a href="" class="topico" >Qual é a série?</a>
             <a href="" class="topico">Descubra o<br>personagem</a>
             <a href="" class="topico">Teste os seus<br>conhecimentos</a>
-            <a href="" class="topico">Qual é o filme?</a>
+            <a onclick="escolheQuiz(_QualFilme)" class="topico">Qual é o filme?</a>
             <a href="" class="topico">Você é fã de terror?</a>            
         </section>
 
@@ -126,8 +129,18 @@
                     <div id="card_logo">
                         <img src="assets/image/quiz/Logo(c).png" alt="Logo do Quiz" width="350">
                     </div>
+                    <div class="jogo">
+                        <div id="quiz-status_pergunta">1 / 10</div>
+                        <div id="conta-tempo">Tempo</div>
+                        <div id="quiz-pergunta">Pergunta</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_a">a) Primeira opção</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_b">b) Segunda opção</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_c">c) Terceira opção</div>
+                        <div class="quiz-opcoes" id="quiz-opcao_d">d) Quarta opção</div>
+                        <div class="quiz-opcoes" id="quiz-pontos">00</div>        
+                    </div>
                 </div>
-
+                
                 <aside>
                     <div id="DoisRankings">
                         <nav>                    
@@ -193,9 +206,9 @@
                     <div class="tres_obras">
                         <h2>Novidades</h2>
                     </div>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/His Dark Materials.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Gossip Girl.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Duna)" src="assets/image/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Avatar)" src="assets/image/quiz/Filmes&Series/Avatar.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(TheWhale)" src="assets/image/quiz/Filmes&Series/TheWhale.jpg" alt="" height="250"></a>
                 </div>
                 <div class="obras">
                     <div id="os_mais_jogados">
@@ -204,9 +217,9 @@
                     <div id="posicao1"><h2 align="center">1º</h2></div>
                     <div id="posicao2"><h2 align="center">2º</h2></div>
                     <div id="posicao3"><h2 align="center">3º</h2></div>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Harry Potter.jpg" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Supernatural.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Rick and Morty.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Dark)" src="assets/image/quiz/Filmes&Series/Dark.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(GameOfThrones)" src="assets/image/quiz/Filmes&Series/GameOfThrones.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(StrangerThings)" src="assets/image/quiz/Filmes&Series/StrangerThings.jpg" alt="" height="250"></a>
                 </div>
             </section>
             <section class="filmes_e_series">
@@ -214,9 +227,9 @@
                     <div class="tres_obras">
                         <h2>SUGESTÕES</h2>
                     </div>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/O Esquadrão Suicida.jpg" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
-                    <a href="perfiluser.html"><img class="poster" src="assets/image/quiz/Filmes&Series/TheBigBangTheory.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(CentralDoBrasil)" src="assets/image/quiz/Filmes&Series/CentralDoBrasil.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Friends)" src="assets/image/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(ThisIsUs)" src="assets/image/quiz/Filmes&Series/ThisIsUs.jpg" alt="" height="250"></a>
                 </div>
                 <div id="podio" align="center">
                     <div id="premiacao_mensal">
