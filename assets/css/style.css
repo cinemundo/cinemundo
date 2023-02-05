@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-list-style: none;
+  list-style: none;
 }
 
 body {
@@ -80,6 +80,7 @@ a {
 
 .btn-topo-home {
   position: absolute;
+  font-family: 'Open Sans', sans-serif;
   background: #645E5E;
   color: white;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -423,6 +424,7 @@ a:hover, a.active {
 /* --------------- CHAMADA QUIZ --------------- */
 
 .quiz-home {
+  font-family: 'Open Sans', sans-serif;
   width: 80%;
   display: flex;
   align-items: center;
@@ -439,10 +441,16 @@ a:hover, a.active {
 }
 
 .chamada-quiz-home h1 {
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
 }
 
+.chamada-quiz-home p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .chamada-quiz-home a {
+  font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -478,6 +486,7 @@ a:hover, a.active {
 /* --------------- CHAMADA COMUNIDADE --------------- */
 
 .comunidade-home {
+  font-family: 'Open Sans', sans-serif;
   width: 80%;
   display: flex;
   align-items: center;
@@ -494,6 +503,10 @@ a:hover, a.active {
   margin-bottom: 20px;
 }
 
+.chamada-comunidade-home h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .banner-comunidade-home img {
   width: 650px;
   height: 365px;
@@ -503,6 +516,7 @@ a:hover, a.active {
 
 .btn-comunidade-home {
   position: absolute;
+  font-family: 'Open Sans', sans-serif;
   background: #645E5E;
   color: white;
   font-size: 1rem;
@@ -523,6 +537,7 @@ a:hover, a.active {
 }
 
 .chamada-comunidade-home a {
+  font-family: 'Open Sans', sans-serif;
   color: white;
   text-decoration: none;
 }

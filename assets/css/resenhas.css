@@ -216,6 +216,7 @@ a {
 .botao-form-resenha {
     display: block;
     background: linear-gradient(to top left, #bd4cf7, #352052);
+    font-family: 'Open Sauce Sans', sans-serif;
     color: white;
     font-size: 15px;
     text-transform: uppercase;
@@ -384,6 +385,7 @@ a {
 
 .ficha_tecnica_resenha_completa h1 {
     font-family: 'Bebas Neue', cursive;
+    text-shadow: darkgray 0.1em 0.1em 0.2em;
     text-transform: uppercase;
     color: black;
     font-size: 2.2rem;
@@ -392,26 +394,26 @@ a {
     text-align: center;
     white-space: nowrap;
     padding: 16px 0;
-    margin: 35px 0 10px;
-    text-shadow: 0.1em 0.1em 0.2em;
+    margin: 35px 0 10px;    
     font-weight: bolder;
 }
 
-.ficha_tecnica_resenha_completa p {
+.ficha_tecnica_resenha_completa p{
+    font-family: 'Open Sauce Sans', sans-serif;
     color: black;
     padding: 3px 0;
     text-shadow: darkgray 0.1em 0.1em 0.2em;
     line-height: 25px;
 }
 
-.ficha_tecnica_resenha_completa strong {
+.ficha_tecnica_resenha_completa span{
     color: black;
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 25px;
     text-shadow: darkgray 0.1em 0.1em 0.2em;
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 
@@ -504,6 +506,7 @@ a {
 }
 
 .onde_assistir_resenha_completa strong {
+    font-family: 'Open Sauce Sans', sans-serif;
     margin-top: 30px;
 }
 
@@ -564,6 +567,7 @@ a {
 }
 
 .roteirista_resenha_completa {
+    font-family: 'Open Sauce Sans', sans-serif;
     margin-top: 20px;
 }
 
@@ -575,10 +579,10 @@ a {
     margin-right: 18px;
 }
 
-.roteirista_resenha_completa h4 {
+.roteirista_resenha_completa strong {
     font-family: 'Open Sauce Sans', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bolder;
     font-size: 1.2rem;
     line-height: 25px;
     padding-top: 15px;
@@ -672,7 +676,8 @@ a {
   
 .helper-text {
     display: none;
-    font-size: 1rem;
+    font-family: 'Open Sauce Sans', sans-serif;
+    font-size: 0.8rem;
     color: darkred;
 }
 
@@ -685,16 +690,19 @@ a {
     position: relative;
     display: block;
     background: linear-gradient(to top left, #bd4cf7, #352052);
+    font-family: 'Open Sauce Sans', sans-serif;
     color: white;
-    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
     line-height: 25px;
     font-weight: bold;
-    width: 40%;
+    width: 60%;
     height: 50px;
     border: none;
     border-radius: 10px;
     transition: 1s all;
     cursor: pointer;
+    padding: 10px;
     margin: 20px auto 0;
 }
 
