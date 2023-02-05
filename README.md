@@ -10,11 +10,11 @@
 
 > ##### ✅ Sprint II - HTML.
 
-> ##### ⚠️ Sprint III - CSS.
+> ##### ✅ Sprint III - CSS.
 
-> ##### Sprint IV - JavaScript
+> ##### ✅ Sprint IV - JavaScript
 
-> ##### Sprint V - Create e Read + Pitch do PI
+> ##### ⚠️ Sprint V - Create e Read + Pitch do PI
 
 ## Link do Figma: https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1
 
