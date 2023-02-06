@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Últimas Resenhas Cinemundo</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Últimas Críticas Cinemundo</title>
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="assets/css/resenhas.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="assets/js/resenhas.js" defer></script>
 </head>
-<body>
+
+<body class="body-resenha">
     <header>
         <div class="header_title">
             <a href="index.html">
@@ -20,7 +26,7 @@
                 </label>
         </div>
         <div class="header_title_image">
-            <img src="assets/image/header_estrelas.png" alt="CineMundo 5 Estrelas" width="90%">
+            <img src="assets/image/header_estrelas.png" alt="CineMundo 5 Estrelas" width="100%">
             </a>
         </div>
         <nav class="header_main_menu">
@@ -72,103 +78,273 @@
             </div>
         </nav>
     </header>
-    <main class="main_resenhas">
-        <div>
-            <h1 class="titulo_index_resenhas">Últimas Resenhas Cinemundo</h1>
-        </div>
-        <section class="section_index_resenhas">
-            <div>
-                <div class="banner_index_resenhas">
-                    <div>
-                        <img class="img_banner_principal_resenhas" src="assets/image/resenhas_terra_dos_sonhos.jpeg">
-                    </div>
-                    <div class="resumo_banner_index_resenhas">
-                        <a target="_blank" href="terra-dos-sonhos.html"><h3 class="titulo_banner_index_resenhas">Terra dos Sonhos</h3></a>
-                        <p>Mais do que admirar o brilho de Jason Momoa, Terra dos Sonhos é um filme para se amar.</p>
-                        <p class="nome_autor_banner_resenhas">Por Viviane Favato</p>
-                        <img class="img_banner_estrelas_resenhas" src="assets/image/resenhas_4.5 estrelas.png">
-                    </div>
+
+    <h1>Últimas Críticas Cinemundo</h1>
+
+    <main class="resenhas">
+
+        <section class="cards-resenhas">
+
+            <div class="tabs">
+                <div class="tabs-head">
+                    <span class="tabs-toggle is-active">Filmes</span>
+                    <span class="tabs-toggle">Séries</span>
                 </div>
-                <div class="banner_index_resenhas">
-                    <div>
-                        <img class="img_banner_principal_resenhas" src="assets/image/resenhas_Escola do Bem e do Mal.jpeg">
+    
+                <div class="tabs-body">
+                    <div class="tabs-content is-active">
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-filme-a_mulher_rei.jpeg" alt="Goblin Guide">
+                                </div>
+                        
+                                <div class="back-card-resenhas">  
+                                    <h1>A Mulher Rei</h1>
+                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit. Fusce tristique mauris ligula, vel facilisis lectus cursus id.</p>
+                                    <p>Por Viviane Favato</p>
+                                    <img src="assets/image/resenhas/4.5_estrelas.png">
+                                </div>
+                            </div>
+                            <h3>A Mulher Rei</h3>
+                        </section>       
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                <img src="assets/image/resenhas/vert-filme-terradossonhos2.jpeg" alt="Arid Mesa">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                    <h1><a target="_blank" href="terra-dos-sonhos.html" >Terra dos Sonhos</a></h1>
+                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit. Fusce tristique mauris ligula, vel facilisis lectus cursus id.</p>
+                                    <p>Por ...</p>
+                                    <img src="assets/image/resenhas/4_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>Terra dos Sonhos</h3>
+                        </section>
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-filme-avatar.jpeg" alt="Path to Exile">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                    <h1>Avatar O Caminho das Águas</h1>
+                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit. Fusce tristique mauris ligula, vel facilisis lectus cursus id.</p>
+                                    <p>Por ...</p>
+                                    <img src="assets/image/resenhas/3_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>Avatar O Caminho da Água</h3>
+                        </section>
+            
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-filme-elvis.webp" alt="Path to Exile">
+                                </div>
+            
+                                <div class="back-card-resenhas">  
+                                    <h1>Elvis</h1>
+                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit. Fusce tristique mauris ligula, vel facilisis lectus cursus id.</p>
+                                    <p>Por Viviane Favato</p>
+                                    <img src="assets/image/resenhas/4.5_estrelas.png">
+                                </div>
+                            </div>
+                            <h3>Elvis</h3>
+                        </section>       
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-filme-tudo_em_todo_lugar.jpeg" alt="Arid Mesa">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                    <h1>Tudo em Todo Lugar ao Mesmo Tempo</h1>
+                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit. Fusce tristique mauris ligula, vel facilisis lectus cursus id.</p>
+                                    <p>Por ...</p>
+                                    <img src="assets/image/resenhas/4_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>Tudo em Todo Lugar ao Mesmo Tempo</h3>
+                        </section>
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                <img src="assets/image/resenhas/vert-filme-nao_olhe.jpeg" alt="Path to Exile">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                <h1>Não, Não Olhe</h1>
+                                <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit. Fusce tristique mauris ligula, vel facilisis lectus cursus id.</p>
+                                <p>Por ...</p>
+                                <img src="assets/image/resenhas/3_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>Não, Não Olhe</h3>
+                        </section>
+            
+                        
                     </div>
-                    <div class="resumo_banner_index_resenhas">
-                        <a><h3 class="titulo_banner_index_resenhas">Escola do Bem e do Mal</h3></a>
-                        <p>Um filme sobre a amizade e os seus desafios. Será que vale a pena arriscar tudo por poder?</p>
-                        <p class="nome_autor_banner_resenhas">Por Edvan Sabino</p> 
-                        <img class="img_banner_estrelas_resenhas" src="assets/image/resenhas_4 estrelas.png">
-                    </div>
-                </div>
-                <div class="banner_index_resenhas">
-                    <div>
-                        <img class="img_banner_principal_resenhas" src="assets/image/resenhas_O milagre.jpeg">
-                    </div>
-                    <div div class="resumo_banner_index_resenhas">
-                        <a><h3 class="titulo_banner_index_resenhas">O Milagre</h3></a>
-                        <p>Um suspense de época que traz uma ótica interessante sobre os costumes e temores de um povo.</p>
-                        <p class="nome_autor_banner_resenhas">Por Vinícius Marques</p>
-                        <img class="img_banner_estrelas_resenhas" src="assets/image/resenhas_3 estrelas.png">
-                    </div>
-                </div>
-                <div class="banner_index_resenhas">
-                    <div>
-                        <img class="img_banner_principal_resenhas" src="assets/image/resenhas_Amor em Verona.jpeg">
-                    </div>
-                    <div div class="resumo_banner_index_resenhas">
-                        <a><h3 class="titulo_banner_index_resenhas">Amor em Verona</h3></a>
-                        <p>As peripécias de uma jovem controladora em sua viagem dos sonhos. O que poderia dar errado?</p>
-                        <p class="nome_autor_banner_resenhas">Por Rosângela Melanias</p>
-                        <img class="img_banner_estrelas_resenhas" src="assets/image/resenhas_4 estrelas.png">
+                        
+                    <div class="tabs-content cards-css">
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-serie-wandinha.jpeg" alt="Goblin Guide">
+                                </div>
+                        
+                                <div class="back-card-resenhas">  
+                                    <h1>Wandinha</h1>
+                                    <p>Uma série para se divertir e se arrepiar. Jenna Ortega entrega tudo nesse papel.</p>
+                                    <p>Por Viviane Favato</p>
+                                    <img src="assets/image/resenhas/4.5_estrelas.png">
+                                </div>
+                            </div>
+                            <h3>Wandinha</h3>
+                        </section>       
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-serie-a_casa_do_dragao.jpeg" alt="Arid Mesa">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                    <h1>A Casa do Dragão</h1>
+                                    <p>Mais do que admirar o brilho de Jason Momoa, Terra dos Sonhos é um filme para se amar</p>
+                                    <p>Por ...</p>
+                                    <img src="assets/image/resenhas/4_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>A Casa do Dragão</h3>
+                        </section>
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                <img src="assets/image/resenhas/vert-serie-outlander 2.jpeg" alt="Path to Exile">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                <h1>Outlander</h1>
+                                <p>Uma série para quem tem sangue frio e gosta de uma tragédia.</p>
+                                <p>Por ...</p>
+                                <img src="assets/image/resenhas/3_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>Outlander</h3>
+                        </section>
+            
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-serie-umbrella.jpeg" alt="Goblin Guide">
+                                </div>
+                        
+                                <div class="back-card-resenhas">  
+                                    <h1>The Umbrella Academy</h1>
+                                    <p>Uma série para se divertir e se arrepiar. Jenna Ortega entrega tudo nesse papel.</p>
+                                    <p>Por Viviane Favato</p>
+                                    <img src="assets/image/resenhas/4.5_estrelas.png">
+                                </div>
+                            </div>
+                            <h3>The Umbrella Academy</h3>
+                        </section>       
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                    <img src="assets/image/resenhas/vert-serie-aneis_poder.jpeg" alt="Arid Mesa">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                    <h1>Anéis do Poder</h1>
+                                    <p>Mais do que admirar o brilho de Jason Momoa, Terra dos Sonhos é um filme para se amar</p>
+                                    <p>Por ...</p>
+                                    <img src="assets/image/resenhas/4_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>Anéis do Poder</h3>
+                        </section>
+                    
+                        <section class="card-resenhas">
+                            <div class="flip-resenhas">
+                                <div class="front-card-resenhas">
+                                <img src="assets/image/resenhas/vert-serie-euphoria.jpeg" alt="Path to Exile">
+                                </div>
+                        
+                                <div class="back-card-resenhas">
+                                <h1>Euphoria</h1>
+                                <p>Uma série para quem tem sangue frio e gosta de uma tragédia.</p>
+                                <p>Por ...</p>
+                                <img src="assets/image/resenhas/3_estrelas.png" alt="">
+                                </div>
+                            </div>
+                            <h3>Euphoria</h3>
+                        </section>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="secao_selecao_autores_resenhas">
-                    <div>
-                        <h2 class="titulo_selecao_autores_resenhas">Confira mais resenhas</h2>
-                    </div>
-                    <br>
-                    <div>
-                        <select class="espaco_selecao_autor_resenhas" name="autores" id="autores">
-                            <option value="Selecione o autor">Selecione o autor</option>
-                            <option value="Edvan Sabino">Edvan Sabino</option>
-                            <option value="Roberto Zanin">Roberto Zanin</option>
-                            <option value="Rosângela Melanias">Rosângela Melanias</option>
-                            <option value="Thiago Manfredi">Thiago Manfredi</option>
-                            <option value="Vinícius Marques">Vinícius Marques</option>
-                            <option value="Viviane Favato">Viviane Favato</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="secao_redes_sociais_resenhas">
-                        <a><h2 class="titulo_redes_sociais_resenhas">Siga o Cinemundo</h2></a>
-                        <img class="img_redes_sociais_resenhas" src="assets/image/resenhas_redes_sociais.jpg">
-                </div>
-            </div>   
+            
         </section>
-        <section class="section_inferior_index_resenhas">
-            <div>
-                <a><h2 class="titulo_secao_inferior_resenhas">Leia também</h2></a>
+
+        <aside class="lateral-resenhas">
+
+            <div class="form-resenhas" action="">
+                <form id="form-resenha">
+                    <h2>Cadastre-se:</h2>
+                    
+                        <label class="label-form-resenha" for="usernameResenha">
+                            Usuário:
+                        </label>
+                        <input type="text" placeholder="Defina seu nome de usuário" id="usernameResenha" name="usernameResenha" class="input-form-resenha">  
+                
+                        <label class="label-form-resenha" for="emailResenha">
+                            E-mail:
+                        </label>
+                        <input type="email" placeholder="Seu email" id="emailResenha" name="emailResenha" class="input-form-resenha">
+                  
+                        <button class="botao-form-resenha" type="submit" id="submit-resenha">
+                            Enviar
+                        </button>                   
+                </form>
             </div>
-            <div>
-                <div>
-                    <img class="secao_inferior_fotomaior_resenhas" src="assets/image/resenhas_1899.jpeg">
-                </div>
-                <div class="secao_inferior_fotos_resenhas">
-                    <img class="img_leiatambem_index_resenhas" src="assets/image/resenhas_Rebellion.jpeg">
-                    <img class="img_leiatambem_index_resenhas" src="assets/image/resenhas_Se eu soubesse.jpeg">
-                    <img class="img_leiatambem_index_resenhas" src="assets/image/resenhas_The Crown.jpeg">
-                </div>
-                <div class="secao_inferior_fotos_resenhas">
-                    <img class="img_leiatambem_index_resenhas" src="assets/image/resenhas_Enola Holmes.jpeg">
-                    <img class="img_leiatambem_index_resenhas" src="assets/image/resenhas_Outlander.jpeg">
-                    <img class="img_leiatambem_index_resenhas" src="assets/image/resenhas_Holidate.jpeg">
-                </div>
+
+            <div class="redes-sociais-resenhas">
+                <a><h2>Siga o Cinemundo:</h2></a>
+                <img src="assets/image/resenhas/instagram.jpg">
             </div>
-        </section>
+
+            <div class="autores-resenhas">
+                <h2>Confira os textos de cada crítico:</h2>
+
+                    <select name="autores" id="autores">
+                        <option selected>Selecione o autor</option>
+                        <option class="option" value="Edvan Sabino">Edvan Sabino</option>
+                        <option class="option" value="Roberto Zanin">Roberto Zanin</option>
+                        <option class="option" value="Rosângela Melanias">Rosângela Melanias</option>
+                        <option class="option" value="Thiago Manfredi">Thiago Manfredi</option>
+                        <option class="option" value="Vinícius Marques">Vinícius Marques</option>
+                        <option class="option" value="Viviane Favato">Viviane Favato</a></option>
+                    </select> 
+            </div>
+
+        </aside>        
+   
     </main>
-    <footer class="footer">
+
+        <div class="passa-página">
+            <p>< 1 2 3 ></p>
+        </div>   
+   
+
+    <footer>
         <nav class="footer_main">
             <div>
                 <ul class="footer_main_menu">
@@ -254,6 +430,7 @@
             </div>
         </nav>
     </footer>
-</body>
-</html>
 
+</body>
+
+</html>

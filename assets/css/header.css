@@ -1,21 +1,22 @@
 header{
-    background-color: black;
+    background: radial-gradient(#0f0f0f, black );
     color:white;
     font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;   
 }
 
 .header_title_cinemundo {
-    font-size: 80px;
+    font-size: 4em;
     font-weight: 300;
     cursor: pointer;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
 }
 
 .header_title_cinemundo:hover {
     color: #BD4CF7;
-    transition: .4s;
+    transition: .5s;
 }
 
 .header_title a {
@@ -25,18 +26,21 @@ header{
 
 @media (max-width: 920px){
     label.header_title_cinemundo{
-        font-size: 70px;
+        font-size: 3em;
+    }
+    .header_title_image img {
+        width: 0%;
     }
 }
 
 .header_title_image {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 1%;
-    padding-left: 1.5%;
+    margin: auto;
+    image-rendering: optimizeQuality;
+    width: 150px;
 }
 
+
+/*-----------------Esconder o Menu---------------*/
 .checkbtn_header {
     float: left;
     display: none;
@@ -50,19 +54,19 @@ header{
     .checkbtn_header{
         display: block;
     }   
-    ul{
+    .header_main_menu_ul {
         position: absolute;
         min-width: 60%;
         max-width: 100%;
         min-height: 5%;
         max-width: 100%;
         background: black;
-        top: 222px;
+        top: 140px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+    .header_main_menu_list{
         display: flex;
         margin: 7px 0;
         line-height: 30px;
@@ -70,10 +74,10 @@ header{
         align-items: center;
         flex-direction: column;
     }
-    nav ul li a{
+    .header_main_menu_index{
         font-size: 22px;
     }
-    a:hover, a.active{
+    header_main_menu_index:hover, header_main_menu_index:active{
         background: none;
         color:#BD4CF7;
     }
@@ -93,7 +97,7 @@ i.material-symbols-outlined:hover {
 
 .header_main_menu {
     list-style: none;
-    font-size: 22px;
+    font-size: 1.1em;
     font-weight: 300;
     margin: 0 30px;
     display: flex;
@@ -121,7 +125,7 @@ i.material-symbols-outlined:hover {
     background-color: white;
     color: black;
     border-top: 2px solid black;
-    transition: .4s;
+    transition: .5s;
 }
 
 .header_main_menu2 {
