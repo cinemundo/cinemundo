@@ -1,11 +1,5 @@
 const arrayEquipe = [
   {
-    nome: "Edvan Sabino",
-    descricao:
-      "Eclético, gosta de filmes e séries de terror, ação, aventura, guerra, documentários, baseados em fatos reais, ficção... Adora comentar sobre o assunto!",
-    imagem: "time_foto_edvan_sabino.png",
-  },
-  {
     nome: "Roberto Zanin",
     descricao:
       "Fanático por séries de ficção científica e apaixonado por tecnologia, a telinha da tv me encanta e me faz viajar por onde a imaginação levar.",
