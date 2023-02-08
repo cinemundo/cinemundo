@@ -107,10 +107,6 @@ h1.form-title {
     color: #ffcdcd;
   }
 
-  .orientacao {
-    margin-top: 1.5rem;
-    font-size: .7rem;
-  }
   
   input.error {
     border: 3px solid #ff0000;
@@ -127,6 +123,17 @@ h1.form-title {
   #background-main {
     transition: background-image 1s ease;
   }
+
+  #esqueci-helper-login {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  #esqueci-helper-login:hover {
+    color: #BD4CF7;
+  }
+
 
   @media (min-width: 1220px) {
     #texto-register,
@@ -161,7 +168,7 @@ h1.form-title {
         opacity: 0;
       }
       50% {
-        transform: translateY(-30px) translate(-50%, -50%);
+        transform: translateY(-20px) translate(-50%, -50%);
         opacity: 1;
       }
       100% {
