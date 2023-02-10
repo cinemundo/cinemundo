@@ -1,4 +1,4 @@
-const arrayEquipe = [
+const equipe = [
   {
     nome: "Roberto Zanin",
     descricao:
@@ -31,50 +31,32 @@ const arrayEquipe = [
   },
 ];
 
-let direction = "left";
+const exibirDescricao = (index) => {
+  const descricao = document.querySelector("#descricao-pessoa");
+  descricao.innerHTML = `
+    <p class="nome-pessoa">${equipe[index].nome}</p>
+    <p>${equipe[index].descricao}</p>
+  `;
+};
 
-arrayEquipe.map((colaborador) => {
-  const newColaborator = document.createElement("div");
+const mosaicos = document.querySelectorAll(".mosaico");
+mosaicos.forEach((mosaico, index) => {
+  mosaico.addEventListener("click", () => {
+    exibirDescricao(index);
+  });
+});
 
-  if (direction === "left") {
-    newColaborator.classList.add("colaboratorleft");
-
-    newColaborator.innerHTML = `
-      <img class="photoleft"
-        src="./assets/image/time/${colaborador.imagem}"
-        alt="foto de ${colaborador.nome}"
-      />
-      
-      <div class="descriptionleft">
-        <h1>${colaborador.nome}</h1>
-        <p>
-          ${colaborador.descricao}
-        </p>
-      </div>
+const pessoas = document.querySelectorAll(".pessoa");
+pessoas.forEach((pessoa, index) => {
+  pessoa.addEventListener("click", () => {
+    pessoas.forEach((p) => {
+      p.classList.remove("ativo");
+    });
+    pessoa.classList.add("ativo");
+    const descricao = document.querySelector("#descricao-pessoa");
+    descricao.innerHTML = `
+      <p class="nome-pessoa">${equipe[index].nome}</p>
+      <p>${equipe[index].descricao}</p>
     `;
-
-    direction = "right";
-  } else {
-    newColaborator.classList.add("colaboratorright");
-
-    newColaborator.innerHTML = `
-      <div class="descriptionright">
-        <h1>${colaborador.nome}</h1>
-          <p>
-            ${colaborador.descricao}
-          </p>
-        </div>
-        <img
-          class="photoright"
-          src="./assets/image/time/${colaborador.imagem}"
-          alt="foto de ${colaborador.nome}"
-        />
-    `;
-
-    direction = "left";
-  }
-
-  const main = document.querySelector("main");
-
-  main.appendChild(newColaborator);
+  });
 });
