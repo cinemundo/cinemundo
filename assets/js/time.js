@@ -35,7 +35,9 @@ const exibirDescricao = (index) => {
   const descricao = document.querySelector("#descricao-pessoa");
   descricao.innerHTML = `
     <p class="nome-pessoa">${equipe[index].nome}</p>
-    <p>${equipe[index].descricao}</p>
+    <em>${equipe[index].descricao}</em>
+    <a href="${equipe[index].instagram}" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="${equipe[index].github}" target="_blank"><i class="fa fa-github"></i></a>
   `;
 };
 
@@ -53,10 +55,7 @@ pessoas.forEach((pessoa, index) => {
       p.classList.remove("ativo");
     });
     pessoa.classList.add("ativo");
-    const descricao = document.querySelector("#descricao-pessoa");
-    descricao.innerHTML = `
-      <p class="nome-pessoa">${equipe[index].nome}</p>
-      <p>${equipe[index].descricao}</p>
-    `;
+    exibirDescricao(index);
   });
 });
+

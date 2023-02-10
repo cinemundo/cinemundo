@@ -66,6 +66,7 @@ h1 {
 #descricao-pessoa {
   margin-top: 50px;
   margin-bottom: 20px;
+  margin: 0 20px;
   font-size: 1.2em;
 }
 
@@ -74,4 +75,8 @@ h1 {
 p {
   font-size: 1.2em;
   font-style: italic;
+}
+
+main img {
+  border: 3px solid #352052;
 }
