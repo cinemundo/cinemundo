@@ -41,26 +41,40 @@ const equipe = [
   },
 ];
 
+// ------------ DESCRIÇÃO -------------
+
+let indiceAtual = -1;
+
 const exibirDescricao = (index) => {
   const descricao = document.querySelector("#descricao-pessoa");
-  descricao.innerHTML = `
-    <p class="nome-pessoa">${equipe[index].nome}</p>
-    <em>${equipe[index].descricao}</em>
-    <div>
-    <a href="${equipe[index].instagram}" target="_blank">
-      <i class="fab fa-instagram fa-2x"></i>
-    </a>
-    <a href="${equipe[index].github}" target="_blank">
-      <i class="fab fa-github fa-2x"></i>
-    </a>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      <i class="fas fa-star"></i>
-      </div>
-  `;
+  if (index === indiceAtual) {
+    indiceAtual = -1;
+    descricao.innerHTML = "";
+  } else {
+    indiceAtual = index;
+    descricao.innerHTML = `
+      <p class="nome-pessoa">${equipe[index].nome}</p>
+      <em>${equipe[index].descricao}</em>
+      <div>
+      <a href="${equipe[index].instagram}" target="_blank">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="${equipe[index].github}" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        </div>
+    `;
+  }
 };
+
+
+
+
 
 
 const mosaicos = document.querySelectorAll(".mosaico");
