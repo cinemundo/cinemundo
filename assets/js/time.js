@@ -4,7 +4,7 @@ const equipe = [
     descricao:
       "Fanático por séries de ficção científica e apaixonado por tecnologia, a telinha da tv me encanta e me faz viajar por onde a imaginação levar.",
     imagem: "time_foto_roberto_zanin.png",
-    instagram: "https://www.instagram.com/autor1",
+    instagram: "https://www.instagram.com/robertozanin",
     github: "https://github.com/raszanin"
   },
   {
@@ -20,7 +20,7 @@ const equipe = [
     descricao:
       "Geek que curte ficção científica, animação e fantasia. Também não dispensa eventualmente um bom drama ou romance. Acumulador no 'Minha Lista'.",
     imagem: "time_foto_thiago_manfredi.png",
-    instagram: "https://www.instagram.com/autor1",
+    instagram: "https://www.instagram.com/thimanf",
     github: "https://github.com/thiagoManfredi"
   },
   {
