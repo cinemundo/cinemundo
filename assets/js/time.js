@@ -12,7 +12,7 @@ const equipe = [
     descricao:
       "Cinéfila desde os 12 anos e já via filmes em VHS. Adora filmes inteligentes, suspenses e terror. Para maratonar uma série, não dispensa um guaraná e pipoca!",
     imagem: "time_foto_rosangela_melanias.png",
-    instagram: "https://www.instagram.com/autor1",
+    instagram: "https://www.instagram.com/rosangelazanza",
     github: "https://github.com/RoMelanias"
   },
   {
@@ -36,7 +36,7 @@ const equipe = [
     descricao:
       "Apaixonada por filmes clássicos e comédias, mas chegadinha num drama pra chorar. Adora maratonar séries nos finais de semana.",
     imagem: "time_foto_viviane_favato.png",
-    instagram: "https://www.instagram.com/autor1",
+    instagram: "https://www.instagram.com/vifavato",
     github: "https://github.com/Vibarbara"
   },
 ];
