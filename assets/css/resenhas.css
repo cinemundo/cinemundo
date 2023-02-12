@@ -244,9 +244,10 @@ a {
 }
 
 .redes-sociais-resenhas img {
-    width: 100%;
+    min-width: 80%;
     height: 138px;
     padding: 5px;
+    margin: 0 10%;
 }
 
 

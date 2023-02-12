@@ -8,11 +8,9 @@
 
 body {
   width: 100%;
+ 
   color: white;
-  background: linear-gradient(to bottom, black, #20052E) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+  background: linear-gradient(to bottom, black, #20052E);
 }
 
 a {
@@ -23,9 +21,9 @@ a {
 .topo-home {
   width: 100%;
   display: flex;
-  background: linear-gradient(to bottom, black, #260637) no-repeat;
+  background: linear-gradient(to bottom, black, #260637);
   height: 550px;
-  margin: 0 auto;
+  margin: 0;
   object-fit: cover;
   -webkit-mask-image: linear-gradient(to top, transparent 3%, black 25%);
   mask-image: linear-gradient(to top, transparent 3%, black 25%);
@@ -131,7 +129,7 @@ main h5 {
 /* --------------- HEADER--------------- */
 
 .menu-home {
-  width: 90%;
+  width: 95%;
   position: absolute;
   display: flex;
   align-items: center;
@@ -174,7 +172,7 @@ main h5 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 1.2px;
   text-decoration: none;
-list-style: none;
+  list-style: none;
   padding: 5px 10px;
 }
 
@@ -183,9 +181,9 @@ list-style: none;
 }
 
 .menu-home a.active, .menu-home a:hover, .menu-home2 a.active, .menu-home2 a:hover {
-color: white;
+  color: white;
   font-weight: bolder;
-transition: .4s;
+  transition: .4s;
   opacity: 1;
 }
 
@@ -193,6 +191,7 @@ transition: .4s;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 30px;
 }
 
 .menu-home2 li svg {
@@ -242,7 +241,7 @@ display: none;
 display: none;
 }
 
-@media (max-width: 920px){
+@media (max-width: 1000px){
 
   .logo-cinemundo-home {
       text-align: center;
@@ -299,7 +298,7 @@ a:hover, a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 198px;
+  max-width: 210px;
   height: 300px;
   background: rgb(23 147 83);
   margin: 0 10px;
@@ -318,56 +317,48 @@ a:hover, a.active {
  cursor: pointer;
 }
 
-
-.botoes-home {
-  top: 35%;
+.fa-chevron-left {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  font-weight: bold;
-  opacity: 0.7;
+  background-color: none;
+  border-style: outset;
+  border: none;
+  outline: none;
+  color: #fff;
+  top: 50%;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7em;
+  margin-left: 12px;
 }
 
-.slider-home .botoes-home i:first-child {
- background-color: none;
- border-style: outset;
- border: none;
- outline: none;
- color: #fff;
- margin-top: 20px;
- cursor: pointer;
- transition: all 0.4s;
- font-size: 1.7em;
- margin-left: 12px;
-}
+.fa-chevron-right {
+  position: absolute;
+  background-color: none;
+  border-style: outset;
+  border: none;
+  outline: none;
+  color: #fff;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 1.7em;
 
-.slider-home .botoes-home i:nth-child(2) {
- background-color: none;
- border-style: outset;
- border: none;
- outline: none;
- color: #fff;
- margin-top: 20px;
- cursor: pointer;
- transition: all 0.4s;
- font-size: 1.7em;
- margin-left: 1325px;
 }
 
 /* --------------- FANDOM E GÊNERO --------------- */
 
 .fandom, .genero {
  position: relative;
+ 
  overflow-x: hidden;
  height: 200px;
  margin-bottom: 50px;
 }
 
 .width-fandom {
- width: 500%;
  position: absolute;
+ 
  display: flex;
  align-items: start;
  justify-content: start;
@@ -377,8 +368,8 @@ a:hover, a.active {
 }
 
 .width-genero {
-  width: 200%;
   position: absolute;
+  
   display: flex;
   align-items: start;
   justify-content: start;
@@ -387,26 +378,20 @@ a:hover, a.active {
   transition: 0.8s ease-in-out;
 }
 
-.item-fandom, .item-genero {
- display: flex;
- justify-content: center;
- align-items: center;
- width: 350px;
- height: 200px;
- margin: 0 10px;
- opacity: 0.8;
+.width-fandom img, .width-genero .itens-genero img {
+  position: relative;
+  min-width: 330px;
+  height: 200px;
+  margin: 0 10px;
+  opacity: 0.8;
 }
 
-.item-fandom:hover, .item-genero:hover {
+.width-fandom img:hover, .width-genero .itens-genero img:hover {
   border: 1.5px solid #bd4cf7;
   border-radius: 5px;
   box-sizing: border-box;
   opacity: 1;
   cursor: pointer;
-}
-
-.width-genero .itens-genero img {
-  position: relative;
 }
 
 .width-genero .itens-genero span {
@@ -557,8 +542,8 @@ a:hover, a.active {
 .autores-home{
  display: flex;
  align-items: center;
- justify-content: center;
- gap: 10px;
+ justify-content: space-around;
+
  transition: 0.8s ease-in-out;
 }
 
@@ -598,13 +583,14 @@ cursor: pointer;
 /* --------------- FOOTER--------------- */
 
 footer{
+  width: 100%;
   color: white;
   font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
 }
 
 .footer_main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
