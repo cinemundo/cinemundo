@@ -122,6 +122,34 @@
   z-index: -1;
 }
 
+.card-background-Duna {
+  background-image: url(../image/quiz/Background/Duna-bg.jpg);
+}
+
+.card-background-Avatar {
+  background-image: url(../image/quiz/Background/Avatar-bg.jpg);
+}
+
+.card-background-TheWhale {
+  background-image: url(../image/quiz/Background/TheWhale-bg.jpg);
+}
+
+.card-background-Dark {
+  background-image: url(../image/quiz/Background/Dark-bg.jpg);
+}
+
+.card-background-GameOfThrones {
+  background-image: url(../image/quiz/Background/GameOfThrones-bg.jpg);
+}
+
+.card-background-CentralDoBrasil {
+  background-image: url(../image/quiz/Background/CentraDoBrasil-bg.jpg);
+}
+
+.card-background-ThisIsUs {
+  background-image: url(../image/quiz/Background/ThisIsUs-bg.jpg);
+}
+
 .card-background-Friends {
   background-image: url(../image/quiz/Background/Friends-bg.jpeg);
 }
@@ -129,6 +157,11 @@
 .card-background-StrangerThings {
   background-image: url(../image/quiz/Background/StrangerThings-bg.jpg);
 }
+
+.card-background-QualFilme {
+  background-image: url(../image/quiz/Background/_QualFilme.jpg);
+}
+
 
 #card_logo {
   /* display: block; */
