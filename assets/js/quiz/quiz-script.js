@@ -92,7 +92,7 @@ function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
         statusPergunta.innerHTML = `${numeroDaQuestao++} / 10`
         resetTimer()
     } else if (indiceArrayEmbaralhado = 10) {
-        contaTempo.innerHTML = "Fim do quiz"
+        contaTempo.innerHTML = "Fim"
     }
     
     for (i=0; i < obra.length; i++) {
