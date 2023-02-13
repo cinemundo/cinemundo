@@ -1,6 +1,6 @@
 # projeto_CineMundo 🎬
 
-### Equipe de Devs: Edvan Sabino, Roberto Zanin, Rosângela Melanias, Thiago Manfredi, Vinícius Marques, Viviane Favato.
+### Equipe de Devs: Roberto Zanin, Rosângela Melanias, Thiago Manfredi, Vinícius Marques, Viviane Favato.
 
 #### Status: em desenvolvimento ⚠️
 
@@ -14,13 +14,15 @@
 
 > ##### ✅ Sprint IV - JavaScript
 
-> ##### ⚠️ Sprint V - Create e Read + Pitch do PI
+> ##### ⚠️ Sprint V - Banco de Dados
+
+> ##### ⚠️ Sprint VI - Create e Read + Pitch do PI
 
 ## Link do Figma: https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1
 
-#### Faremos um blog interativo sobre cinema, afim de abranger os mecanismos de busca (Google Search, Yahoo, Bing...) para redirecionar à filmes e séries dispostos nas plataformas de streaming, cinema, festivais de cinema e etc., aumentando o número de consumo e interesse por usuário a partir do conteúdo gerado no Blog.
+#### CineMundo é um blog interativo de Cinema, que nasce com a intenção de se tornar uma rede social para pessoas que gostam de comentar, ver e saber mais sobre os seus filmes e série do momento ou favoritos.
 
-#### O usuário poderá ver e avaliar resenhas da equipe de analistas do blog, acompanhar os quizes sobre seus filmes e séries favoritos e subir no ranking mensal e diário referente aos quizes para ganhar prêmios. Poderá também personalizar o seu perfil de usuário, assim como seguir outros usuários que comentam e avaliam resenhas.
+#### O usuário poderá ver e avaliar resenhas da equipe de analistas do blog, acompanhar os quizes sobre seus filmes e séries favoritos e subir no ranking mensal e diário referente aos quizes para ganhar prêmios. Poderá também personalizar o seu perfil de usuário, assim como seguir outros usuários que comentam e/ou avaliam resenhas do Blog.
 
 #### Abaixo um pouco sobre cada uma das 5 páginas criadas.
 
