@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>CineMundo | Perfil</title>
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./assets/css/perfiluser.css">
-    <script src="./assets/js/" defer></script>
+    <title>Cinemundo | Perfil do Usuário</title>
     <link rel="icon" href="assets/favicon.ico">
-
+    <link rel="stylesheet" href="assets/css/perfiluser.css">
+    <script src="assets/js/perfiluser.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7354d6851a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="header_title">
@@ -75,162 +75,318 @@
             </div>
         </nav>
     </header>
-        <main>
-            <section>
-                <h1 class="meu_perfil"> MEU PERFIL </h1>
-                    <table>
-                        <tr>
-                            <td> <img src="./assets/image/perfiluser/FotoPerfil.jpeg" class="foto_perfil"> </td> 
-                            <td class="tabela"><p class="texto_p">Rainha Elizabeth </p>
-                                <p>                                                     <button class="botao">@rainhabeth_oficial</button>
-                                </p>
-                                    <br> 
-                                <p>                                                     <button class="botao">+ SEGUIR</button>
-                                                                                        <button class="botao"> 15 seguidores</button>
-                                                                                        <button class="botao"> 76 seguindo</button> 
-                                </p> <br>
-                                <p class="texto_p">Membro desde 19/11/2022</p> <br>
-                                <p class="texto_p">Pontuação no Quiz: 235 [#10003]</p> <br>
-                                <p class="texto_p">13 análises concluídas
-                                </p>
-                                    <img src="assets/image/perfiluser/Nota 2.png" class="star"></p></td>
-                        </tr>
-                    </table>
-            </section>
+    
+    <main>
 
-            <section>
-                <h1 class="meu_perfil">SOBRE MIM</h1>
-                    <form >
-                        <textarea placeholder="Fale sobre você" id="form" ></textarea>
-                    </form>
-            </section>
-        
-            <section class="filmes_favoritos">
-                <h1 class="meu_perfil">MEUS FILMES FAVORITOS</h1>   
-                    
-                        <img src ="assets/image/perfiluser/365 DIAS.jpeg" alt="365 dias" height="250" width="200" class="poster" >
-                        <img src="assets/image/perfiluser/MONSTER INC.jpeg" alt="Monstros" height="250" width="200" class="poster">
-                        <img src="assets//image/perfiluser/EH.jpeg" alt="Enola Holmes" height="250" width="200" class="poster">
-                        <img src="assets/image/perfiluser/BATMAN.webp" alt="Batman" height="250" width="200" class="poster"> 
-                        <img src="assets/image/perfiluser/SENHOR DOS ANÉIS.webp" alt="Senhor dos Anéis" height="250" width="200" class="poster">
-                    
-                
-            </section>
+        <section class="perfil-user">
+            <div class="principal-perfiluser">
+                <div class="foto-perfiluser">
+                    <img src="assets/image/perfiluser/foto-perfiluser.png" alt="foto perfil" class="header_perfil_picture">
+                    <h1>Anna_123</h1>
+                    <button class="btn-principal-perfiluser">Seguir</button>
+                </div>
+                <div class="dados-perfiluser">
+                    <div>
+                        <h3>Anna D. Silva</h3>
+                    </div>
+                    <div class="historico-perfiluser">
+                        <h3>Membro desde 19/11/2022</h3>
+                        <h3>15 seguidores</h3>
+                        <h3>73 seguindo</h3> 
+                    </div>
+                    <div>
+                        <h3>Pontuação no quiz: 235 (#1003)</h3>
+                    </div>
+                    <div class="avaliacoes-perfiluser">
+                        <h3>13 avaliações concluídas</h3>
+                        <img src="assets/image/perfiluser/perfiluser-3estrelas.png" alt=""> 
+                    </div>
+                </div>
+            </div>
+            <div class="sobre-perfiluser">
+                <h1>Sobre mim</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia, nulla sit amet maximus molestie, ipsum massa mattis nunc, auctor finibus sapien eros et tellus. In ultricies augue ut justo commodo, vel efficitur ex eleifend. Nam et ipsum pharetra, efficitur tortor sed, tempus diam. Nam sit amet lorem et libero vehicula dapibus. Nullam cursus massa sit amet ante commodo posuere. Fusce accumsan quam id ante rhoncus, id convallis justo congue. Morbi pretium viverra semper. Fusce tempor semper augue, at rhoncus felis porttitor ut. Vestibulum eu vestibulum nisl. Nunc eu euismod erat.
+                </p>
+            </div>
+        </section>
 
-            <section class="series_favoritas">
-                <h1 class="meu_perfil">MINHAS SÉRIES FAVORITAS</h1>   
-                    
-                        <img src="assets/image/perfiluser/twd.jpeg" alt="The Walking Dead" height="250" width="200" class="poster">
-                        <img src="assets/image/perfiluser/TC.jpeg" alt="The Crown" height="250" width="200" class="poster">
-                        <img src="assets/image/perfiluser/stranger things.jpeg" alt="Stranger Things" height="250" width="200" class="poster">
-                        <img src="assets/image/perfiluser/GOT.jpeg" alt="Game Of Thrones" height="250" width="200" class="poster"> 
-                        <img src="assets/image/perfiluser/Breaking Bad.jpeg" alt="Breaking Bad" height="250" width="200" class="poster">   
-                    
-            </section>
+        <section class="tabs-perfiluser">
+            <div class="tabs">
+                <div class="tabs-head">
+                    <span class="tabs-toggle is-active">Resenhas lidas</span>
+                    <span class="tabs-toggle">Minhas avaliações</span>
+                    <span class="tabs-toggle">Quizes realizados</span>
+                </div>
+                <div class="tabs-body">
+                    <div class="tabs-content is-active">
+                        <section class="favoritos-user">                        
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filmetop_gun.webp" alt="" class="item"> 
+                                <h3>Top Gun Maverick</h3>
+                            </div>
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-serie-wandinha.jpeg" alt="" class="item"> 
+                                <h3>Wandinha</h3>
+                            </div> 
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filme-o_homem_do_norte.jpeg" alt="" class="item"> 
+                                <h3>O Homem do Norte</h3>                 
+                            </div>  
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-serie-bridgerton.jpeg" alt="" class="item"> 
+                                <h3>Bridgerton</h3>             
+                            </div>  
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filme-duna.webp" alt="" class="item"> 
+                                <h3>Duna</h3>                 
+                            </div> 
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-serie-stranger-things.jpeg" alt="" class="item"> 
+                                <h3>Stranger Things</h3>               
+                            </div>  
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filme-desencantada.jpeg" alt="" class="item">  
+                                <h3>Desencantada</h3>                
+                            </div> 
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-serie-euphoria.jpeg" alt="" class="item">   
+                                <h3>Euphoria</h3>             
+                            </div>
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filme-tudo_em_todo_lugar.jpeg" alt="" class="item"> 
+                               <h3>Tudo em Todo Lugar</h3>                
+                            </div>  
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-serie-outlander 2.jpeg" alt="" class="item"> 
+                                <h3>Outlander</h3>                
+                            </div> 
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filme-o-coringa.png" alt="" class="item"> 
+                                <h3>O Coringa</h3>                
+                            </div>  
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-serie-the-big-bang.jpeg" alt="" class="item">  
+                                <h3>The Big Bang Theory</h3>                
+                            </div> 
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filme-avatar.jpeg" alt="" class="item">   
+                                <h3>Avatar 2</h3>             
+                            </div>    
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-serie-the-last-of-us.jpeg" alt="" class="item">  
+                                <h3>The Last of Us</h3>                
+                            </div> 
+                            <div class="itens-favoritos-user">
+                                <img src="assets/image/perfiluser/vert-filme-wakanda.webp" alt="" class="item">   
+                                <h3>Wakanda Para Sempre</h3>             
+                            </div>                                   
+                        </section>
+                    </div>
+                  
+                    <div class="tabs-content">
+                        <section class="avaliacoes-user">                          
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filme-wakanda.webp" alt="" class="item"> 
+                                    <h3>Wakanda Para Sempre</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-4estrelas.png" alt="">
+                                </div>
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-serie-the-last-of-us.jpeg" alt="" class="item"> 
+                                    <h3>The Last of Us</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-3estrelas.png" alt="">
+                                </div> 
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filme-avatar.jpeg" alt="" class="item"> 
+                                    <h3>Avatar 2</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-1estrela.png" alt="">                  
+                                </div>  
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filme-desencantada.jpeg" alt="" class="item">
+                                    <h3>Desencantada</h3> 
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-3estrelas.png" alt="">                 
+                                </div>  
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filme-duna.webp" alt="" class="item"> 
+                                    <h3>Duna</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-5estrelas.png" alt="">                  
+                                </div> 
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filme-tudo_em_todo_lugar.jpeg" alt="" class="item"> 
+                                    <h3>Tudo em Todo Lugar</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-2estrelas.png" alt="">                  
+                                </div>  
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-serie-the-big-bang.jpeg" alt="" class="item">  
+                                    <h3>The Big Bang Theory</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-5estrelas.png" alt="">                 
+                                </div> 
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filme-o-coringa.png" alt="" class="item">  
+                                    <h3>O Coringa</h3> 
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-4estrelas.png" alt="">              
+                                </div>
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filme-o_homem_do_norte.jpeg" alt="" class="item"> 
+                                    <h3>O Homem do Norte</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-3estrelas.png" alt="">                  
+                                </div>  
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-filmetop_gun.webp" alt="" class="item"> 
+                                    <h3>Top Gun Maverick</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-3estrelas.png" alt="">                  
+                                </div> 
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-serie-bridgerton.jpeg" alt="" class="item"> 
+                                    <h3>Bridgerton</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-1estrela.png" alt="">                   
+                                </div>  
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/ret-serie-stranger-things.jpeg" alt="" class="item">  
+                                    <h3>Stranger Things</h3>
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-3estrelas.png" alt="">                 
+                                </div> 
+                                <div class="itens-avaliacoes-user">
+                                    <img src="assets/image/perfiluser/vert-serie-euphoria.jpeg" alt="" class="item">  
+                                    <h3>Euphoria</h3> 
+                                    <img class="img-avaliacao-user" src="assets/image/perfiluser/perfiluser-2estrelas.png" alt="">               
+                                </div>                           
+                        </section>
+                    </div>
 
-            <section class="notas">
-                 <h1 class="meu_perfil">NOTAS E CRÍTICAS DOS FILMES/SÉRIES</h1>
-                       
-                        <img src="assets/image/perfiluser/THE GODFATHER II.webp" alt="O Poderoso Chefão" height="250" width="200" class="poster">
-                        <img src="assets/image/perfiluser/E.T..jpeg" alt="E.T." height="250" width="200" class="poster">
-                        <img src="assets/image/perfiluser/CORRA.jpeg" alt="Corra" height="250" width="200" class="poster">
-                        <img src="assets/image/perfiluser/O EXORCISMO DE ER.jpeg" alt="O Exorcismo de Emily Rose" height="250" width="200" class="poster"> 
-                        <img src="assets/image/perfiluser/SW.jpeg" alt="Star Wars" height="250" width="200" class="poster"> 
-                    
-                            <br>
-                        <img src="assets/image/perfiluser/Nota 2.png" alt="Nota 2" height="50" width="200" class="star">
-                        <img src="assets/image/perfiluser/Nota4.png" alt="Nota 4" height="50" width="200" class="star">
-                        <img src="assets/image/perfiluser/Nota5.png" alt="Nota 5" height="50" width="200" class="star">
-                        <img src="assets/image/perfiluser/Nota3.png" alt="Nota 3" height="50" width="200" class="star">
-                        <img src="assets/image/perfiluser/Nota4.png" alt="Nota 4" height="50" width="200" class="star">
+                    <div class="tabs-content">
+                        <section class="quizes-user">
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-filme-duna.webp" alt="" class=" item item-fandom">               
+                                <h3>Duna</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-serie-stranger-things.jpeg" alt="" class=" item item-fandom"> 
+                                <h3>Stranger Things</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-serie-game-of-thrones.jpeg" alt="" class=" item item-fandom">                    
+                                <h3>Game Of Thrones</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-serie-dark.webp" alt="" class=" item item-fandom">                    
+                                <h3>Dark</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-filme-avatar2.webp" alt="" class=" item item-fandom">                    
+                                <h3>Avatar 2</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-filme-the-whale.jpeg" alt="" class=" item item-fandom">                    
+                                <h3>The Whale</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-serie-this-is-us.jpeg" alt="" class=" item item-fandom">                    
+                                <h3>This Is Us</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-serie-friends.jpeg" alt="" class=" item item-fandom">
+                                <h3>Friends</h3>
+                            </div>
+                            <div class="itens-quizes-user">
+                                <img src="assets/image/perfiluser/ret-filme-harry-potter.jpeg" alt="" class=" item item-fandom">                                                                                         
+                                <h3>Harry Potter</h3>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <nav class="footer_main">
+            <div>
+                <ul class="footer_main_menu">
+                    <li class="footer_main_menu_title">
+                        menu
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resenhas.html">
+                            resenhas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html">
+                            quiz
+                        </a>
+                    </li>
+                    <li>
+                        <a href="time.html">
+                            nosso time
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_search">
+                <form action="#" method="post" class="footer_search_icon">
+                    <label for="busca">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather-feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </label>
+                    <input type="search" autocomplete="off" spellcheck="false" role="combobox"
+                        placeholder="Quiz Harry Potter" id="busca" name="search" required>
+                </form>
+            </div>
+            <div>
+                <ul class="footer_help_center">
+                    <li class="footer_help_center_title">
+                        suporte
+                    </li>
+                    <li>
+                        <a href="#">
+                            dúvidas
+                        </a>
+                    </li>
+                    <li>
+                        <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="chat 24h"
+                            class="footer_help_center_button">
+                    </li>
+                    <li class="footer_help_center_contact">
+                        contato:
+                    </li>
+                    <li class="footer_help_center_email">
+                        contato@cinemundo.com.br
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav>
+            <div class="footer_social_media_title">
+                redes sociais:
+            </div>
+            <div>
+                <a href="." class="footer_social_media_link">
+                    <img src="assets/image/footer_twitter.png" alt="twitter" width="60"
+                        class="footer_social_media_image">
+                    <img src="assets/image/footer_facebook.png" alt="facebook" width="60"
+                        class="footer_social_media_image">
+                    <img src="assets/image/footer_instagram.png" alt="instagram" width="60"
+                        class="footer_social_media_image">
+                </a>
+            </div>
             </section>
-        </main>
-        
-        <footer class="footer">
-            <nav class="footer_main">
-                <div>
-                    <ul class="footer_main_menu">
-                        <li class="footer_main_menu_title">
-                            menu
-                        </li>
-                        <li>
-                            <a href="index.html">
-                                home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="resenhas.html">
-                                resenhas
-                            </a>
-                        </li>
-                        <li>
-                            <a href="quiz.html">
-                                quiz
-                            </a>
-                        </li>
-                        <li>
-                            <a href="time.html">
-                                nosso time
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_search">
-                    <form action="#" method="post" class="footer_search_icon">
-                        <label for="busca">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                class="feather-feather-search">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            </svg>
-                        </label>
-                        <input type="search" autocomplete="off" spellcheck="false" role="combobox"
-                            placeholder="Quiz Harry Potter" id="busca" name="search" required>
-                    </form>
-                </div>
-                <div>
-                    <ul class="footer_help_center">
-                        <li class="footer_help_center_title">
-                            suporte
-                        </li>
-                        <li>
-                            <a href="#">
-                                dúvidas
-                            </a>
-                        </li>
-                        <li>
-                            <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="chat 24h"
-                                class="footer_help_center_button">
-                        </li>
-                        <li class="footer_help_center_contact">
-                            contato:
-                        </li>
-                        <li class="footer_help_center_email">
-                            contato@cinemundo.com.br
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <nav>
-                <div class="footer_social_media_title">
-                    redes sociais:
-                </div>
-                <div>
-                    <a href="." class="footer_social_media_link">
-                        <img src="assets/image/footer_twitter.png" alt="twitter" width="60"
-                            class="footer_social_media_image">
-                        <img src="assets/image/footer_facebook.png" alt="facebook" width="60"
-                            class="footer_social_media_image">
-                        <img src="assets/image/footer_instagram.png" alt="instagram" width="60"
-                            class="footer_social_media_image">
-                    </a>
-                </div>
-                </section>
-                <div class="footer_copyrights">
-                    @2022 CINEMUNDO, LLC. todos os direitos reservados.
-                </div>
-            </nav>
-        </footer>
-    </body>
+            <div class="footer_copyrights">
+                @2022 CINEMUNDO, LLC. todos os direitos reservados.
+            </div>
+        </nav>
+    </footer>
+    
+</body>
+
 </html>

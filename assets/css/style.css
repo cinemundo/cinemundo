@@ -10,7 +10,7 @@ body {
   width: 100%;
  
   color: white;
-  background: linear-gradient(to bottom, black, #20052E);
+  background: radial-gradient(#352052, black);
 }
 
 a {
