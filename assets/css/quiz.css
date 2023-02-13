@@ -112,7 +112,7 @@
 }
 
 .card-background {
-  background-image: url(https://hbomax-images.warnermediacdn.com/images/GXdbR_gOXWJuAuwEAACVH/tileburnedin?size=1280x720&partner=hbomaxcom&v=6a409f09891f75549fdb8d07dc969b63&host=art-gallery.api.hbo.com&language=pt-br&w=1280);
+  background-image: url(../image/quiz/Background/_painel-02.jpg);
   opacity: 0.4;
   position: absolute;
   background-size: cover;
@@ -122,18 +122,13 @@
   z-index: -1;
 }
 
-/* #card_3d {
-  background-color: #171445;
-  min-width: 700px;
-  height: 510px;
-  position: absolute;
-  left: 10px;  
-  top: 10px;
-  border-radius: 12px;
-  z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
-} */
+.card-background-Friends {
+  background-image: url(../image/quiz/Background/Friends-bg.jpeg);
+}
+
+.card-background-StrangerThings {
+  background-image: url(../image/quiz/Background/StrangerThings-bg.jpg);
+}
 
 #card_logo {
   /* display: block; */
