@@ -120,7 +120,7 @@
 }
 
 .card-background {
-  background-image: url(../image/quiz/Background/_painel-02.jpg);
+  background-image: url(../image/quiz/Background/painel/painel-02.jpg);
   opacity: 0.4;
   position: absolute;
   background-size: cover;
@@ -167,7 +167,7 @@
 }
 
 .card-background-QualFilme {
-  background-image: url(../image/quiz/Background/_QualFilme.jpg);
+  background-image: url(../image/quiz/Background/QualFilme.jpg);
 }
 
 
