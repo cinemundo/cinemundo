@@ -14,11 +14,15 @@
 
 > ##### ✅ Sprint IV - JavaScript
 
-> ##### ⚠️ Sprint V - Banco de Dados
+> ##### ✅ Sprint V - Banco de Dados
 
 > ##### ⚠️ Sprint VI - Create e Read + Pitch do PI
 
 ## Link do Figma: https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1
+
+## Banco de dados disponível em: https://github.com/cinemundo/cinemundo/tree/dev/BD%20PerfilUser
+
+## Link da Apresentação: https://www.canva.com/design/DAFaeAAKhAw/YzpRZe5z7wEJt1k-zc03EA/view?utm_content=DAFaeAAKhAw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 #### CineMundo é um blog interativo de Cinema, que nasce com a intenção de se tornar uma rede social para pessoas que gostam de comentar, ver e saber mais sobre os seus filmes e série do momento ou favoritos.
 
@@ -52,3 +56,6 @@
 ### 5-Perfil do Usuário
 
 ##### O usuário poderá alterar sua imagem, sua descrição visível para o público, sua lista de filmes favoritos e séries, assim como suas principais resenhas sobre filmes e suas respectivas notas. É possível também seguir o usuário.
+
+### Agradecimentos Especiais:
+#### Juliana Sinnott, Edvan Sabino, Equipe e Colegas da Proz Educação, AWS e Meta.
