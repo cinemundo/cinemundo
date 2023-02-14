@@ -502,6 +502,16 @@
   letter-spacing: 0.5px;
 }
 
+#quiz-opcao_a:hover, #quiz-opcao_b:hover,
+#quiz-opcao_c:hover, #quiz-opcao_d:hover {
+  scale: 1.025;
+  /* background-color: white; */
+  transition: all 0.3s;    
+  /* -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(8px 8px 8px rgba(0,0,0,.9));
+  cursor: pointer; */
+}
+
 .jogo {
   display: none;
 }
