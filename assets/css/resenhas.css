@@ -1,6 +1,4 @@
 
-@import url('https://www.1001fonts.com/codec-pro-font.html');
-
 *{
     margin:0;
     padding:0;
@@ -8,7 +6,7 @@
 }
 
 .body-resenha h1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
     font-size: 35px;
     line-height: 11px;
     letter-spacing: 1.5px;
@@ -54,10 +52,11 @@ a {
     position: relative;
     top: 280px;
     padding: 5px 0;
-    font-family: 'Open Sauce Sans', sans-serif;
-    font-size: 1rem;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 300;
     text-align: center;
 }
   
@@ -79,7 +78,7 @@ a {
     color: white;
     font-weight: 600;
     font-size: 1.3rem;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
     line-height: 20px;
     letter-spacing: 1.5px;
     margin: 0 0 10px;
@@ -142,141 +141,7 @@ a {
     border-radius: 12px;  
 }*/
 
-
-
-/*--------------- SEÇÃO FORMULÁRIO, SELECT E REDES SOCIAIS ---------------*/
-
-.lateral-resenhas {
-    width: 30%;
-    padding: 0 0 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.autores-resenhas h2, .redes-sociais-resenhas h2, .form-resenhas h2 {
-    padding: 10px 0;
-    font-family: 'Codec Pro', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 15px;
-}
-
-/*----------------  FORMULÁRIO -----------------*/
-
-.form-resenhas {
-    width: 100%;
-    margin-bottom: 80px;
-    position: relative;
-}
-
-.label-form-resenha {
-    display: block;
-    position: relative;
-    font-family: 'Open Sauce Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.form-resenhas .label-form-resenha:first-child {
-    margin-top: 15px;
-}
-
-.input-form-resenha {
-    position: relative;
-    background: #E8C4FB;
-    border: none;
-    width: 100%;
-    height: 35px;
-    margin: 0 auto 20px;
-    padding: 15px;
-    font-family: 'Open Sauce Sans', sans-serif;
-    font-size: 1rem;
-}
-
-.input-form-resenha::-webkit-input-placeholder {
-    color: gray;
-    opacity: 0.7; 
-}
-
-.input-form-resenha:-webkit-autofill {  
-    -webkit-box-shadow: 0 0 0 30px #E8C4FB inset;
-}
- 
-.input-form-resenha:-webkit-autofill {
-    -webkit-text-fill-color: #434343 !important;
-}
-
-.botao-form-resenha {
-    display: block;
-    background: linear-gradient(to top left, #bd4cf7, #352052);
-    font-family: 'Open Sauce Sans', sans-serif;
-    color: white;
-    font-size: 15px;
-    text-transform: uppercase;
-    line-height: 25px;
-    font-weight: bold;
-    width: 50%;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    transition: 1s all;
-    cursor: pointer;
-    padding: 3px 5px;
-    margin: 0 auto;
-}
-
-.botao-form-resenha:hover {
-    transform: scale(1.2);
-}
-
-/*----------------  REDES SOCIAIS -----------------*/
-
-.redes-sociais-resenhas {
-    width: 100%;
-    margin-bottom: 80px;
-}
-
-.redes-sociais-resenhas img {
-    min-width: 80%;
-    height: 138px;
-    padding: 5px;
-    margin: 0 10%;
-}
-
-
-/*----------------  SELECT -----------------*/
-
-.autores-resenhas {
-    padding: 10px 10px;
-    border-left: solid 2px black;
-}
-
-.autores-resenhas select {
-    background: linear-gradient(to top left, #bd4cf7, #352052);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: white;
-    font-size: 18px;
-    width: 100%;
-    border-radius: 8px;
-    max-width: 15px 0 0;
-    padding: 10px 10px;
-}
-
-  .passa-página {
-    position: relative;
-    margin: 30px 0;
-    text-align: center;
-  }
-
-  /*---------------------  TABS ----------------------*/
+/*---------------------  TABS ----------------------*/
 
 .tabs {
     display: flex;
@@ -292,25 +157,34 @@ a {
 }
 
 .tabs-head span {
-    font-family: 'Codec Pro', sans-serif;
-    font-size: 1rem;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
 }
 
 .tabs-toggle {
     display: flex;
-    width: 50%;
+    width: 25%;
     height: 50px;
     align-items: center;
     justify-content: center;
-    background: #f2f2f2;
-    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
 }
 
+.tabs-toggle:hover {
+    color: #BD4CF7;
+    background-color: #E8C4FB;
+}
+
 .tabs-toggle.is-active {
-    background: #fff;
+    background: linear-gradient(to top left, #bd4cf7, #352052);
+    color: white;
+    font-weight: bolder;
+    opacity: 1;
 }
 
 .tabs-body {
@@ -334,6 +208,143 @@ a {
     padding-top: 30px;
 }
 
+/*--------------- SEÇÃO FORMULÁRIO, SELECT E REDES SOCIAIS ---------------*/
+
+.lateral-resenhas {
+    width: 30%;
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.autores-resenhas h2, .redes-sociais-resenhas h2, .form-resenhas h2 {
+    padding: 10px 0;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+/*----------------  FORMULÁRIO -----------------*/
+
+.form-resenhas {
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.label-form-resenha {
+    display: block;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.form-resenhas .label-form-resenha:first-child {
+    margin-top: 15px;
+}
+
+.input-form-resenha {
+    position: relative;
+    background: #E8C4FB;
+    border: none;
+    width: 100%;
+    height: 35px;
+    margin: 0 auto 20px;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.input-form-resenha::-webkit-input-placeholder {
+    color: gray;
+    opacity: 0.7; 
+}
+
+.input-form-resenha:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0 30px #E8C4FB inset;
+}
+ 
+.input-form-resenha:-webkit-autofill {
+    -webkit-text-fill-color: #434343 !important;
+}
+
+.botao-form-resenha {
+    display: block;
+    background: linear-gradient(to top left, #bd4cf7, #352052);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 25px;
+    font-weight: bolder;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    padding: 3px 5px;
+    margin: 0 auto;
+}
+
+.botao-form-resenha:hover {
+    transform: scale(1.2);
+}
+
+/*----------------  REDES SOCIAIS -----------------*/
+
+.redes-sociais-resenhas {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.redes-sociais-resenhas a:hover {
+  color: #BD4CF7;
+  cursor: pointer;
+}
+
+.redes-sociais-resenhas img {
+    min-width: 80%;
+    height: 138px;
+    padding: 5px;
+    margin: 0 10%;
+}
+
+
+/*----------------  SELECT -----------------*/
+
+.autores-resenhas {
+    padding: 10px 10px;
+    border-left: solid 2px black;
+}
+
+.autores-resenhas select {
+    background: linear-gradient(to top left, #bd4cf7, #352052);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 8px;
+    max-width: 15px 0 0;
+    padding: 10px 10px;
+}
+
+  .passa-página {
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
+  }
 
 /* -------------------- RESENHA COMPLETA -------------------- */
 
@@ -375,7 +386,7 @@ a {
     padding: 0 15px;
     width: 250px;
     max-height: 442px;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     text-align: justify;
     font-style: normal;
@@ -400,7 +411,7 @@ a {
 }
 
 .ficha_tecnica_resenha_completa p{
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: black;
     padding: 3px 0;
     text-shadow: darkgray 0.1em 0.1em 0.2em;
@@ -409,7 +420,7 @@ a {
 
 .ficha_tecnica_resenha_completa span{
     color: black;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 25px;
@@ -444,12 +455,13 @@ a {
 
 .informacoes_resenha_completa h3 {
     text-align: center;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
     color: #434343;
     text-transform: uppercase;
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
     line-height: 25px;
     margin-bottom: 20px;
 }
@@ -477,11 +489,12 @@ a {
 }
 
 .campo_avaliacao_resenha_completa h4 {
-    font-family: 'Codec Pro', sans-serif;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
     white-space: nowrap;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 25px;
 }
 
@@ -490,29 +503,38 @@ a {
     margin: 0 auto 60px;
 }
 
-.btn-onde-assistir {
-    border: 2px solid black;
-    border-radius: 8px;
-    cursor: pointer;
-
-}
-
 .img_ondeassistir_resenha_completa {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     width: 12%;
     height: 40px;
-    margin: 0 auto;
+    margin: 0 auto 15px;
+}
+
+.img_ondeassistir_resenha_completa img {
+    width: 50px;
+    height: 40px;
+}
+
+.img_ondeassistir_resenha_completa a {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 55px;
+    padding-top: 5px;
+}
+
+.img_ondeassistir_resenha_completa a:hover {
+    border: 2px solid #BD4CF7;
 }
 
 .onde_assistir_resenha_completa strong {
-    font-family: 'Open Sauce Sans', sans-serif;
-    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .onde_assistir_resenha_completa p {
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -522,6 +544,12 @@ a {
 
 .redes_sociais_resenha_completa {
     width: 100%;
+}
+
+.redes_sociais_resenha_completa h3:hover {
+    color: #BD4CF7;
+    cursor: pointer;
+    transition: all .4s;
 }
 
 .redes_sociais_resenha_completa img {
@@ -539,7 +567,8 @@ a {
 
 .secao_textos_resenha_completa h2 {
     text-align: center;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
     color: #434343;
     text-transform: uppercase;
     white-space: nowrap;
@@ -554,34 +583,38 @@ a {
 .secao_textos_resenha_completa p {
     text-align: justify;
     margin-bottom: 20px;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 25px;
 }
 
-.roteirista_resenha_completa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.avalia-resenha {
+    margin-bottom: 25px;
 }
 
 .roteirista_resenha_completa {
-    font-family: 'Open Sauce Sans', sans-serif;
-    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.textos-roteirista-resenha-completa {
+    padding-top: 22px;
 }
 
 .roteirista_resenha_completa img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #BD4CF7;
-    margin-right: 18px;
 }
 
 .roteirista_resenha_completa strong {
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
     font-style: normal;
     font-weight: bolder;
     font-size: 1.2rem;
@@ -590,7 +623,7 @@ a {
 }
 
 .roteirista_resenha_completa p {
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -607,7 +640,8 @@ a {
 
 .formulario_resenha_completa h3 {
     text-align: center;
-    font-family: 'Codec Pro', sans-serif;
+    font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -616,7 +650,7 @@ a {
 
 .formulario_resenha_completa h4 {
     text-align: center;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -627,10 +661,10 @@ a {
 .label-form-resenha-completa {
     display: block;
     position: relative;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 25px;
 }
 
@@ -642,7 +676,7 @@ a {
     height: 35px;
     margin: 0 auto;
     padding: 15px;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
 
@@ -653,7 +687,7 @@ a {
     width: 100%;
     height: 200px;
     padding: 15px;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     margin: 0 auto;
 }
@@ -677,7 +711,7 @@ a {
   
 .helper-text {
     display: none;
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.8rem;
     color: darkred;
 }
@@ -691,13 +725,13 @@ a {
     position: relative;
     display: block;
     background: linear-gradient(to top left, #bd4cf7, #352052);
-    font-family: 'Open Sauce Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 25px;
     font-weight: bold;
-    width: 60%;
+    width: 45%;
     height: 50px;
     border: none;
     border-radius: 10px;
