@@ -256,6 +256,7 @@
   font-size: 18px;
   top: 28%;
   right: 5%;
+  letter-spacing: 1.0px;
 }
 
 .jogadoresDTitulo {
@@ -479,7 +480,6 @@
   cursor: pointer;
   /* top: 50%; */
   letter-spacing: 0.5px;
-
 }
 
 #quiz-opcoes-container {

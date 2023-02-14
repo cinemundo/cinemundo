@@ -4,6 +4,7 @@ const opcaoB =  document.getElementById("quiz-opcao_b")
 const opcaoC =  document.getElementById("quiz-opcao_c")
 const opcaoD =  document.getElementById("quiz-opcao_d")
 let pontos =  document.getElementById("quiz-pontos")
+const pontosJogador = document.getElementsByClassName("quiz-pontos-jogador")
 const cardBG = document.getElementsByClassName("card-background")
 const contaTempo = document.getElementById("conta-tempo")
 const statusPergunta = document.getElementById("quiz-status_pergunta")
@@ -32,7 +33,7 @@ function escolheQuiz(escolhido,escolhido_string) {
     obra_string = escolhido_string
     numeroDaQuestao = 1
     indiceArrayEmbaralhado = 0
-    pontos.innerText = "00"
+    pontos.innerText = "00"    
     fimQuiz = false
     sortear()
     contaPontos("","")
@@ -116,6 +117,7 @@ function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
     if (obra[indiceArrayOriginal] != undefined && indiceArrayEmbaralhado <= 10) {
         if (opcaoEscolhida == obra[indiceArrayOriginal].respCorreta && fimQuiz == false) {
             pontos.innerHTML = parseInt(pontos.innerHTML) + 10
+            pontosJogador[5].innerHTML = parseInt(pontosJogador[5].innerHTML) + 10
         }
         if (indiceArrayEmbaralhado == 10) {
             fimQuiz = true
