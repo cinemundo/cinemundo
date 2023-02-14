@@ -96,7 +96,6 @@ function startTimer() {
 }
 
 function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
-
     if (indiceArrayEmbaralhado < 10) {
         statusPergunta.innerHTML = `${numeroDaQuestao++} / 10`
         resetTimer()
@@ -107,10 +106,10 @@ function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
     for (i=0; i < obra.length; i++) {
         if (obra[i].numero == embaralhadas[indiceArrayEmbaralhado] && indiceArrayEmbaralhado < 10) {
             pergunta.innerText = obra[i].pergunta
-            opcaoA.innerHTML = `<div onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
-            opcaoB.innerHTML = `<div onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
-            opcaoC.innerHTML = `<div onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
-            opcaoD.innerHTML = `<div onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
+            opcaoA.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
+            opcaoB.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
+            opcaoC.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
+            opcaoD.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
         }
     }
     
@@ -134,3 +133,5 @@ function resetTimer() {
     remainingTime = 9; // reinicia a contagem
     startTimer();
 }
+
+console.log(opcaoA.innerHTML)
