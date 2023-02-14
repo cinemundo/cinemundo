@@ -22,6 +22,8 @@
 
 ## Banco de dados disponível em: https://github.com/cinemundo/cinemundo/tree/dev/BD%20PerfilUser
 
+## Link da Apresentação: https://www.canva.com/design/DAFaeAAKhAw/YzpRZe5z7wEJt1k-zc03EA/view?utm_content=DAFaeAAKhAw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 #### CineMundo é um blog interativo de Cinema, que nasce com a intenção de se tornar uma rede social para pessoas que gostam de comentar, ver e saber mais sobre os seus filmes e série do momento ou favoritos.
 
 #### O usuário poderá ver e avaliar resenhas da equipe de analistas do blog, acompanhar os quizes sobre seus filmes e séries favoritos e subir no ranking mensal e diário referente aos quizes para ganhar prêmios. Poderá também personalizar o seu perfil de usuário, assim como seguir outros usuários que comentam e/ou avaliam resenhas do Blog.
