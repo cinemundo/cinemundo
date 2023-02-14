@@ -299,7 +299,6 @@ a:hover, a.active {
   align-items: center;
   max-width: 210px;
   height: 300px;
-  background: rgb(23 147 83);
   margin: 0 10px;
   color: #fff;
   text-align: center;
@@ -349,7 +348,6 @@ a:hover, a.active {
 
 .fandom, .genero {
  position: relative;
- 
  overflow-x: hidden;
  height: 200px;
  margin-bottom: 50px;
@@ -357,7 +355,6 @@ a:hover, a.active {
 
 .width-fandom {
  position: absolute;
- 
  display: flex;
  align-items: start;
  justify-content: start;
@@ -368,7 +365,6 @@ a:hover, a.active {
 
 .width-genero {
   position: absolute;
-  
   display: flex;
   align-items: start;
   justify-content: start;
