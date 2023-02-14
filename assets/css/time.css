@@ -90,13 +90,18 @@ h1 {
 p {
   font-size: 1.3em;
   font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+em {
+  font-family: 'Open Sans', sans-serif;
 }
 
 body a {
   text-decoration: none;
 }
 
-.fa-github, .fa-instagram {
+.fa-github, .fa-instagram, .fa-linkedin {
   font-size: 1.5em;
   color: #BD4CF7;
   margin: 3px 5px 0 0;
