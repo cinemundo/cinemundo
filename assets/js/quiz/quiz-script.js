@@ -4,6 +4,7 @@ const opcaoB =  document.getElementById("quiz-opcao_b")
 const opcaoC =  document.getElementById("quiz-opcao_c")
 const opcaoD =  document.getElementById("quiz-opcao_d")
 let pontos =  document.getElementById("quiz-pontos")
+const cardBG = document.getElementsByClassName("card-background")
 const contaTempo = document.getElementById("conta-tempo")
 const statusPergunta = document.getElementById("quiz-status_pergunta")
 const cardLogo = document.getElementById("card_logo")
@@ -15,20 +16,28 @@ let fimQuiz = false
 let indiceArrayEmbaralhado = 0
 let numeroDaQuestao = 1
 let remainingTime = 20
+let obra_string = false
 
 startTimer()
 
-function escolheQuiz(escolhido) {
+function escolheQuiz(escolhido,escolhido_string) {
     cardLogo.classList.add("invisible")
     jogo[0].classList.add("visible")
     document.getElementById("topo").scrollIntoView()
     obra = escolhido
+    if (obra_string != false) {
+        console.log(obra_string)
+        cardBG[0].classList.remove(`card-background-${obra_string}`)
+    }
+    obra_string = escolhido_string
     numeroDaQuestao = 1
     indiceArrayEmbaralhado = 0
     pontos.innerText = "00"
     fimQuiz = false
     sortear()
     contaPontos("","")
+    console.log(obra_string)
+    cardBG[0].classList.add(`card-background-${obra_string}`)
 }
 
 function sorteioPorNivel(nivel,nSorteadas) {
@@ -92,7 +101,7 @@ function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
         statusPergunta.innerHTML = `${numeroDaQuestao++} / 10`
         resetTimer()
     } else if (indiceArrayEmbaralhado = 10) {
-        contaTempo.innerHTML = "Fim do quiz"
+        contaTempo.innerHTML = "Fim"
     }
     
     for (i=0; i < obra.length; i++) {
