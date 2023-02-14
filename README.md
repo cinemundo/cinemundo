@@ -14,7 +14,7 @@
 
 > ##### ✅ Sprint IV - JavaScript
 
-> ##### ⚠️ Sprint V - Banco de Dados
+> ##### ✅ Sprint V - Banco de Dados
 
 > ##### ⚠️ Sprint VI - Create e Read + Pitch do PI
 
