@@ -80,7 +80,7 @@
     <main>   
         <section id="Quiz-Logo">
             <div>
-                <img src="assets/image/quiz/Logo.png" alt="Logo do Quiz" width="75">
+                <img src="assets/image/quiz/Logo.png" alt="Logo do Quiz" width="50">
             </div>
             <div>
                 <h1>Quiz</h1>
@@ -114,30 +114,34 @@
         </section>
                 
         <section id="quizTitulos" align="center">            
-            <a href="" class="topico" >Qual é a série?</a>
-            <a href="" class="topico">Descubra o<br>personagem</a>
-            <a href="" class="topico">Teste os seus<br>conhecimentos</a>
-            <a onclick="escolheQuiz(_QualFilme)" class="topico">Qual é o filme?</a>
-            <a href="" class="topico">Você é fã de terror?</a>            
+            <a class="topico" >Qual é a série?</a>
+            <a class="topico">Descubra o<br>personagem</a>
+            <a class="topico">Teste os seus<br>conhecimentos</a>
+            <a onclick="escolheQuiz(_QualFilme,'QualFilme')" class="topico">Qual é o filme?</a>
+            <a class="topico">Você é fã de terror?</a>            
         </section>
 
         <section id="main_fake">
             <section id="CardRankings">
                                 
                 <div id="card">
+                    <div class="card-background">
+                    </div>
                     <div id="card_3d"></div>
                     <div id="card_logo">
                         <img src="assets/image/quiz/Logo(c).png" alt="Logo do Quiz" width="350">
                     </div>
                     <div class="jogo">
-                        <div id="quiz-status_pergunta">1 / 10</div>
+                        <div id="quiz-status_pergunta">1/10</div>
                         <div id="conta-tempo">Tempo</div>
                         <div id="quiz-pergunta">Pergunta</div>
-                        <div class="quiz-opcoes" id="quiz-opcao_a">a) Primeira opção</div>
-                        <div class="quiz-opcoes" id="quiz-opcao_b">b) Segunda opção</div>
-                        <div class="quiz-opcoes" id="quiz-opcao_c">c) Terceira opção</div>
-                        <div class="quiz-opcoes" id="quiz-opcao_d">d) Quarta opção</div>
-                        <div class="quiz-opcoes" id="quiz-pontos">00</div>        
+                        <div id="quiz-opcoes-container">
+                            <div id="quiz-opcao_a">a) Primeira opção</div>
+                            <div id="quiz-opcao_b">b) Segunda opção</div>
+                            <div id="quiz-opcao_c">c) Terceira opção</div>
+                            <div id="quiz-opcao_d">d) Quarta opção</div>
+                        </div>
+                        <div id="quiz-pontos">00</div>        
                     </div>
                 </div>
                 
@@ -145,28 +149,44 @@
                     <div id="DoisRankings">
                         <nav>                    
                             <ul id="RankingDiario">                        
-                                <li class="jogadoresD" >                                
+                                <li class="jogadoresDTitulo" >                                
                                     <h2 align="center">Ranking<br>Diário</h5>
                                 </li>
-                                <li class="jogadoresD">
-                                    <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
-                                    <h5 align="center">2º<br>Fulano de tal<br>5030 pts</h5>
+                                <li class="jogadoresD" onclick="window.location.href='perfiluser.html'">                                 
+                                    <h4 class="quiz-posicao-jogador">1</h4>
+                                    <img class="quiz-imagem-jogador" src="assets/image/quiz/Avatar.png" alt="Foto do Usuário">
+                                    <h4 class="quiz-nome-jogador">Maria José</h4>
+                                    <h4 class="quiz-pontos-jogador">1200</h4>
                                 </li>
-                                <li class="jogadoresD">
-                                    <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
-                                    <h5 align="center">2º<br>Fulano de tal<br>5030 pts</h5>
+                                <li class="jogadoresD" onclick="window.location.href='perfiluser.html'">                                 
+                                    <h4 class="quiz-posicao-jogador">2</h4>
+                                    <img class="quiz-imagem-jogador" src="assets/image/quiz/Avatar.png" alt="Foto do Usuário">
+                                    <h4 class="quiz-nome-jogador">João Vicente</h4>
+                                    <h4 class="quiz-pontos-jogador">380</h4>
                                 </li>
-                                <li class="jogadoresD">
-                                    <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
-                                    <h5 align="center">3º<br>Fulano de tal<br>5030 pts</h5>
+                                <li class="jogadoresD" onclick="window.location.href='perfiluser.html'">                                 
+                                    <h4 class="quiz-posicao-jogador">3</h4>
+                                    <img class="quiz-imagem-jogador" src="assets/image/quiz/Avatar.png" alt="Foto do Usuário">
+                                    <h4 class="quiz-nome-jogador">Ana Carolina</h4>
+                                    <h4 class="quiz-pontos-jogador">170</h4>
                                 </li>
-                                <li class="jogadoresD">
-                                    <a href="perfiluser.html"><img src="assets/image/quiz/Avatar.png" alt="Foto do Usuário" width="50"></a>
-                                    <h5 align="center">4º<br>Fulano de tal<br>5030 pts</h5>
+                                <li class="jogadoresD" onclick="window.location.href='perfiluser.html'">                                 
+                                    <h4 class="quiz-posicao-jogador">4</h4>
+                                    <img class="quiz-imagem-jogador" src="assets/image/quiz/Avatar.png" alt="Foto do Usuário">
+                                    <h4 class="quiz-nome-jogador">Pedro Henrique</h4>
+                                    <h4 class="quiz-pontos-jogador">100</h4>
                                 </li>
-                                <li class="jogador_atual_D">
-                                    <a href="perfiluser.html"><img src="assets/image/quiz/RainhaElizabeth.png" alt="Foto do Usuário" width="50"></a>
-                                    <h5 align="center">37º<br>R. Elizabeth<br>5030 pts</h5>
+                                <li class="jogadoresD" onclick="window.location.href='perfiluser.html'">                                 
+                                    <h4 class="quiz-posicao-jogador">5</h4>
+                                    <img class="quiz-imagem-jogador" src="assets/image/quiz/Avatar.png" alt="Foto do Usuário">
+                                    <h4 class="quiz-nome-jogador">Gabriela Sofia</h4>
+                                    <h4 class="quiz-pontos-jogador">30</h4>
+                                </li>                                
+                                <li class="jogador_atual_D" onclick="window.location.href='perfiluser.html'">                                  
+                                    <h4 class="quiz-posicao-jogador">15</h4>
+                                    <img class="quiz-imagem-jogador" src="assets/image/quiz/RainhaElizabeth.png" alt="Foto do Usuário">
+                                    <h4 class="quiz-nome-jogador">Jogador Atual</h4>
+                                    <h4 class="quiz-pontos-jogador">0</h4>
                                 </li>
                             </ul>
                         </nav>
@@ -206,9 +226,9 @@
                     <div class="tres_obras">
                         <h2>Novidades</h2>
                     </div>
-                    <a><img class="poster" onclick="escolheQuiz(Duna)" src="assets/image/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
-                    <a><img class="poster" onclick="escolheQuiz(Avatar)" src="assets/image/quiz/Filmes&Series/Avatar.jpg" alt="" height="250"></a>
-                    <a><img class="poster" onclick="escolheQuiz(TheWhale)" src="assets/image/quiz/Filmes&Series/TheWhale.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Duna,'Duna')" src="assets/image/quiz/Filmes&Series/Duna.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Avatar,'Avatar')" src="assets/image/quiz/Filmes&Series/Avatar.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(TheWhale,'TheWhale')" src="assets/image/quiz/Filmes&Series/TheWhale.jpg" alt="" height="250"></a>
                 </div>
                 <div class="obras">
                     <div id="os_mais_jogados">
@@ -217,9 +237,9 @@
                     <div id="posicao1"><h2 align="center">1º</h2></div>
                     <div id="posicao2"><h2 align="center">2º</h2></div>
                     <div id="posicao3"><h2 align="center">3º</h2></div>
-                    <a><img class="poster" onclick="escolheQuiz(Dark)" src="assets/image/quiz/Filmes&Series/Dark.jpg" alt="" height="250"></a>
-                    <a><img class="poster" onclick="escolheQuiz(GameOfThrones)" src="assets/image/quiz/Filmes&Series/GameOfThrones.jpg" alt="" height="250"></a>
-                    <a><img class="poster" onclick="escolheQuiz(StrangerThings)" src="assets/image/quiz/Filmes&Series/StrangerThings.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Dark,'Dark')" src="assets/image/quiz/Filmes&Series/Dark.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(GameOfThrones,'GameOfThrones')" src="assets/image/quiz/Filmes&Series/GameOfThrones.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(StrangerThings,'StrangerThings')" src="assets/image/quiz/Filmes&Series/StrangerThings.jpg" alt="" height="250"></a>
                 </div>
             </section>
             <section class="filmes_e_series">
@@ -227,9 +247,9 @@
                     <div class="tres_obras">
                         <h2>SUGESTÕES</h2>
                     </div>
-                    <a><img class="poster" onclick="escolheQuiz(CentralDoBrasil)" src="assets/image/quiz/Filmes&Series/CentralDoBrasil.jpg" alt="" height="250"></a>
-                    <a><img class="poster" onclick="escolheQuiz(Friends)" src="assets/image/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
-                    <a><img class="poster" onclick="escolheQuiz(ThisIsUs)" src="assets/image/quiz/Filmes&Series/ThisIsUs.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(CentralDoBrasil,'CentralDoBrasil')" src="assets/image/quiz/Filmes&Series/CentralDoBrasil.jpg" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(Friends,'Friends')" src="assets/image/quiz/Filmes&Series/Friends.png" alt="" height="250"></a>
+                    <a><img class="poster" onclick="escolheQuiz(ThisIsUs,'ThisIsUs')" src="assets/image/quiz/Filmes&Series/ThisIsUs.jpg" alt="" height="250"></a>
                 </div>
                 <div id="podio" align="center">
                     <div id="premiacao_mensal">

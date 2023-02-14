@@ -4,6 +4,8 @@ const opcaoB =  document.getElementById("quiz-opcao_b")
 const opcaoC =  document.getElementById("quiz-opcao_c")
 const opcaoD =  document.getElementById("quiz-opcao_d")
 let pontos =  document.getElementById("quiz-pontos")
+const pontosJogador = document.getElementsByClassName("quiz-pontos-jogador")
+const cardBG = document.getElementsByClassName("card-background")
 const contaTempo = document.getElementById("conta-tempo")
 const statusPergunta = document.getElementById("quiz-status_pergunta")
 const cardLogo = document.getElementById("card_logo")
@@ -15,20 +17,28 @@ let fimQuiz = false
 let indiceArrayEmbaralhado = 0
 let numeroDaQuestao = 1
 let remainingTime = 20
+let obra_string = false
 
 startTimer()
 
-function escolheQuiz(escolhido) {
+function escolheQuiz(escolhido,escolhido_string) {
     cardLogo.classList.add("invisible")
     jogo[0].classList.add("visible")
     document.getElementById("topo").scrollIntoView()
     obra = escolhido
+    if (obra_string != false) {
+        console.log(obra_string)
+        cardBG[0].classList.remove(`card-background-${obra_string}`)
+    }
+    obra_string = escolhido_string
     numeroDaQuestao = 1
     indiceArrayEmbaralhado = 0
-    pontos.innerText = "00"
+    pontos.innerText = "00"    
     fimQuiz = false
     sortear()
     contaPontos("","")
+    console.log(obra_string)
+    cardBG[0].classList.add(`card-background-${obra_string}`)
 }
 
 function sorteioPorNivel(nivel,nSorteadas) {
@@ -87,27 +97,27 @@ function startTimer() {
 }
 
 function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
-
     if (indiceArrayEmbaralhado < 10) {
         statusPergunta.innerHTML = `${numeroDaQuestao++} / 10`
         resetTimer()
     } else if (indiceArrayEmbaralhado = 10) {
-        contaTempo.innerHTML = "Fim do quiz"
+        contaTempo.innerHTML = "Fim"
     }
     
     for (i=0; i < obra.length; i++) {
         if (obra[i].numero == embaralhadas[indiceArrayEmbaralhado] && indiceArrayEmbaralhado < 10) {
             pergunta.innerText = obra[i].pergunta
-            opcaoA.innerHTML = `<div onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
-            opcaoB.innerHTML = `<div onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
-            opcaoC.innerHTML = `<div onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
-            opcaoD.innerHTML = `<div onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
+            opcaoA.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
+            opcaoB.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
+            opcaoC.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
+            opcaoD.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
         }
     }
     
     if (obra[indiceArrayOriginal] != undefined && indiceArrayEmbaralhado <= 10) {
         if (opcaoEscolhida == obra[indiceArrayOriginal].respCorreta && fimQuiz == false) {
             pontos.innerHTML = parseInt(pontos.innerHTML) + 10
+            pontosJogador[5].innerHTML = parseInt(pontosJogador[5].innerHTML) + 10
         }
         if (indiceArrayEmbaralhado == 10) {
             fimQuiz = true
@@ -125,3 +135,5 @@ function resetTimer() {
     remainingTime = 9; // reinicia a contagem
     startTimer();
 }
+
+console.log(opcaoA.innerHTML)
