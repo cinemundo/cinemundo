@@ -6,7 +6,7 @@ const equipe = [
     imagem: "time_foto_roberto_zanin.png",
     instagram: "https://www.instagram.com/robertozanin",
     github: "https://github.com/raszanin",
-    linkedin: "https://www.linkedin.com/in/vinicius-marquess/"
+    linkedin: "https://www.linkedin.com/in/raszanin/"
   },
   {
     nome: "Rosângela Melanias",
@@ -79,11 +79,6 @@ const exibirDescricao = (index) => {
   }
 };
 
-
-
-
-
-
 const mosaicos = document.querySelectorAll(".mosaico");
 mosaicos.forEach((mosaico, index) => {
   mosaico.addEventListener("click", () => {
@@ -101,4 +96,3 @@ pessoas.forEach((pessoa, index) => {
     exibirDescricao(index);
   });
 });
-
