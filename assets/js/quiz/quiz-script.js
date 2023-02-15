@@ -3,7 +3,8 @@ const opcaoA =  document.getElementById("quiz-opcao_a")
 const opcaoB =  document.getElementById("quiz-opcao_b")
 const opcaoC =  document.getElementById("quiz-opcao_c")
 const opcaoD =  document.getElementById("quiz-opcao_d")
-let pontos =  document.getElementById("quiz-pontos")
+// let pontos =  document.getElementById("quiz-pontos")
+let pontos = document.getElementsByClassName("quiz-pontos")
 const pontosJogador = document.getElementsByClassName("quiz-pontos-jogador")
 const cardBG = document.getElementsByClassName("card-background")
 const contaTempo = document.getElementById("conta-tempo")
@@ -19,6 +20,7 @@ let numeroDaQuestao = 1
 let remainingTime = 20
 let obra_string = false
 
+
 startTimer()
 
 function escolheQuiz(escolhido,escolhido_string) {
@@ -33,7 +35,7 @@ function escolheQuiz(escolhido,escolhido_string) {
     obra_string = escolhido_string
     numeroDaQuestao = 1
     indiceArrayEmbaralhado = 0
-    pontos.innerText = "00"    
+    pontos[0].innerText = "00"    
     fimQuiz = false
     sortear()
     contaPontos("","")
@@ -97,6 +99,7 @@ function startTimer() {
 }
 
 function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
+    // console.log(pontos)
     if (indiceArrayEmbaralhado < 10) {
         statusPergunta.innerHTML = `${numeroDaQuestao++} / 10`
         resetTimer()
@@ -116,7 +119,13 @@ function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
     
     if (obra[indiceArrayOriginal] != undefined && indiceArrayEmbaralhado <= 10) {
         if (opcaoEscolhida == obra[indiceArrayOriginal].respCorreta && fimQuiz == false) {
-            pontos.innerHTML = parseInt(pontos.innerHTML) + 10
+            pontos[0].innerHTML = parseInt(pontos[0].innerHTML) + 10
+            // pontos[0].classList.remove("quiz-pontos-efeito")
+            pontos[0].classList.add("quiz-pontos-efeito")
+            setTimeout(function() {
+                pontos[0].classList.remove("quiz-pontos-efeito");
+              }, 600);
+            console.log(pontos)
             pontosJogador[5].innerHTML = parseInt(pontosJogador[5].innerHTML) + 10
         }
         if (indiceArrayEmbaralhado == 10) {
@@ -136,4 +145,9 @@ function resetTimer() {
     startTimer();
 }
 
-console.log(opcaoA.innerHTML)
+// function minhaFuncao(a,b) {
+//     // pontos[0].classList.add("quiz-pontos-efeito")
+//     console.log(pontos)
+    
+//     setTimeout(function() {contaPontos(a,b)}, 000)
+// }
