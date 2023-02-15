@@ -42,7 +42,7 @@ const equipe = [
     imagem: "time_foto_viviane_favato.png",
     instagram: "https://www.instagram.com/vifavato",
     github: "https://github.com/Vibarbara",
-    linkedin: "https://www.linkedin.com/in/vinicius-marquess/"
+    linkedin: "https://www.linkedin.com/in/viviane-favato/"
   },
 ];
 
