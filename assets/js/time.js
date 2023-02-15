@@ -15,7 +15,7 @@ const equipe = [
     imagem: "time_foto_rosangela_melanias.png",
     instagram: "https://www.instagram.com/rosangelazanza",
     github: "https://github.com/RoMelanias",
-    linkedin: "https://www.linkedin.com/in/vinicius-marquess/"
+    linkedin: "https://www.linkedin.com/in/rosangela-melanias/"
   },
   {
     nome: "Thiago Manfredi",
