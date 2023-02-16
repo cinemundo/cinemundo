@@ -5,13 +5,14 @@
     <title>CineMundo | Home</title>
     <link rel="icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <script src="assets/js/script.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7354d6851a.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/7354d6851a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -21,7 +22,7 @@
         <h1><img src="assets/image/home/ret-filme-avatar.webp" alt=""></h1>
         <div class="logo-cinemundo-home">
             <span>cinemundo</span> 
-            <img class="img-logo-home" src="assets/image/header_estrelas.png" alt="">
+            <img class="img-logo-home" src="assets/image/home/header_estrelas.png" alt="">
         </div>
         <div class="menu-home">
             <menu id="menuHeader">
@@ -31,10 +32,10 @@
                 </label>
                 
                 <ul>
-                    <li><a target="_blank" href="home.html">Home</a></li>
-                    <li><a target="_blank" href="resenhas.html">Resenhas</a></li>
-                    <li><a target="_blank" href="quiz.html">Quiz</a></li>
-                    <li><a target="_blank" href="time.html">Nosso Time</a></li>
+                    <li><a thref="index.html">Home</a></li>
+                    <li><a href="resenhas.html">Resenhas</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="time.html">Nosso Time</a></li>
                 </ul>
             </menu>
 
@@ -48,11 +49,11 @@
                     </svg>
                 </li>
                 <li class="header_perfil_name">
-                    <a target="_blank" href="perfiluser.html" class="header_perfil_reference">
+                    <a href="perfiluser.html" class="header_perfil_reference">
                         ANNA_123</a>
                 </li>
                 <li>
-                    <img src="assets/image/header_foto-perfil.png" alt="foto perfil" class="header_perfil_picture">
+                    <img src="assets/image/home/header_foto-perfil.png" alt="foto perfil" class="header_perfil_picture">
                 </li>
             </div>
           
@@ -62,7 +63,7 @@
            <h3>Avatar 2</h3> 
            <h4>Nova resenha</h4>
            <p>O nosso time analisa o mais novo fenômeno das bilheterias.</p>
-           <a target="_blank" href="avatar.html"><button class="btn-topo-home" type="submit">
+           <a href="avatar.html"><button class="btn-topo-home" type="submit">
                 Leia aqui
            </button></a>
         </div>
@@ -73,7 +74,7 @@
         <h2>Resenhas em alta no Cinemundo</h2>
         <section class="slider-home">
             <div class="slider-width-home">
-                <a target="_blank" href="terra-dos-sonhos.html"><img src="assets/image/home/vert-filme-terradossonhos2.jpeg" alt="" class="item"></a>                  
+                <a href="terra-dos-sonhos.html"><img src="assets/image/home/vert-filme-terradossonhos2.jpeg" alt="" class="item"></a>                  
                 <img src="assets/image/home/vert-serie-wandinha.jpeg" alt="" class="item">                    
                 <img src="assets/image/home/vert-filme-tudo_em_todo_lugar.jpeg" alt="" class="item">                    
                 <img src="assets/image/home/vert-serie-aneis_poder.jpeg" alt="" class="item">                    
@@ -89,11 +90,14 @@
                 <img src="assets/image/home/vert-serie-the_crown.jpeg" alt="" class="item">                        
                 <img src="assets/image/home/vert-filme-a_mulher_rei.jpeg" alt="" class="item">                       
                 <img src="assets/image/home/vert-serie-the-last-of-us.jpeg" alt="" class="item">
-            </div>   
-            <div class="botoes-home">
+            </div> 
+            
+            <div>
                 <i class="fa-solid fa-chevron-left" class="prev" onclick="prev(this)"></i>
                 <i class="fa-solid fa-chevron-right" class="next" onclick="next(this)"></i>
-            </div>   
+            </div>
+           
+           
         </section>
 
         <section class="quiz-home">
@@ -101,7 +105,7 @@
                 <h1>Desafie-se e faça o QUIZ do seu programa favorito!</h1>
                 <p>Além de se divertir, você concorre a prêmios.</p>
                 <button class="btn-quiz-home" type="submit">
-                    <a target="_blank" href="quiz.html">Bora lá</a>
+                    <a href="quiz.html">Bora lá</a>
                 </button>
             </div>
             <div class="banner-comunidade-home">
@@ -129,7 +133,7 @@
                 <img src="assets/image/home/vert-serie-the-boys.jpeg" alt="" class="item">                       
                 <img src="assets/image/home/vert-filme-superpets.jpeg" alt="" class="item">
             </div>   
-            <div class="botoes-home">
+            <div>
                 <i class="fa-solid fa-chevron-left" class="prev" onclick="prev(this)"></i>
                 <i class="fa-solid fa-chevron-right" class="next" onclick="next(this)"></i>
             </div>   
@@ -141,9 +145,9 @@
                 <img src="assets/image/home/ret-filme-duna.webp" alt="" class=" item item-fandom">               
                 <img src="assets/image/home/ret-serie-stranger-things.jpeg" alt="" class=" item item-fandom"> 
                 <img src="assets/image/home/ret-serie-game-of-thrones.jpeg" alt="" class=" item item-fandom">                    
-                <img src="assets/image/home/ret-serie-dark.webp" alt="" class=" item item-fandom">                    
-                <img src="assets/image/home/ret-filme-avatar2.webp" alt="" class=" item item-fandom">                    
                 <img src="assets/image/home/ret-filme-the-whale.jpeg" alt="" class=" item item-fandom">                    
+                <img src="assets/image/home/ret-filme-avatar2.webp" alt="" class=" item item-fandom">                    
+                <img src="assets/image/home/ret-serie-dark.webp" alt="" class=" item item-fandom">                    
                 <img src="assets/image/home/ret-serie-this-is-us.jpeg" alt="" class=" item item-fandom">                    
                 <img src="assets/image/home/ret-serie-friends.jpeg" alt="" class=" item item-fandom">
                 <img src="assets/image/home/ret-filme-harry-potter.jpeg" alt="" class=" item item-fandom">                        
@@ -154,7 +158,7 @@
                 <img src="assets/image/home/ret-filme-matrix.png" alt="" class=" item item-fandom">
                 <img src="assets/image/home/ret-filmes-dc.avif" alt="" class=" item item-fandom">                        
             </div>
-            <div class="botoes-home">
+            <div>
                 <i class="fa-solid fa-chevron-left" class="prev" onclick="prev(this)"></i>
                 <i class="fa-solid fa-chevron-right" class="next" onclick="next(this)"></i>
             </div>
@@ -167,7 +171,7 @@
             <div class="chamada-comunidade-home">
                 <h1>Crie sua conta e faça parte da comunidade mais descolada de cinéfilos do mundo!</h1>
                 <button class="btn-comunidade-home" type="submit">
-                    <a target="_blank" href="register.html">Cadastre-se aqui</a>
+                    <a href="register.html">Cadastre-se aqui</a>
                 </button>
             </div>
             
@@ -209,7 +213,7 @@
                     <span>Clássico</span>               
                 </div>  
             </div>
-            <div class="botoes-home">
+            <div>
                 <i class="fa-solid fa-chevron-left" class="ant" onclick="ant()"></i>
                 <i class="fa-solid fa-chevron-right" class="prox" onclick="prox()"></i>
             </div>
@@ -319,11 +323,11 @@
             </div>
             <div>
                 <a href="." class="footer_social_media_link">
-                    <img src="assets/image/footer_twitter.png" alt="twitter" width="60"
+                    <img src="assets/image/home/footer_twitter.png" alt="twitter" width="60"
                         class="footer_social_media_image">
-                    <img src="assets/image/footer_facebook.png" alt="facebook" width="60"
+                    <img src="assets/image/home/footer_facebook.png" alt="facebook" width="60"
                         class="footer_social_media_image">
-                    <img src="assets/image/footer_instagram.png" alt="instagram" width="60"
+                    <img src="assets/image/home/footer_instagram.png" alt="instagram" width="60"
                         class="footer_social_media_image">
                 </a>
             </div>
@@ -336,3 +340,4 @@
 
 </body>
 
+</html>

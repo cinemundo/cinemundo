@@ -1,124 +1,113 @@
 main {
+  margin-top: 35px;
+  margin-bottom: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #fff;
 }
 
-main {
-  margin: 40px auto;
-  max-width: 400px;
+h1 {
+  font-size: 2.2em;
+  cursor: default;
 }
 
-main .colaboratorleft {
+.mosaic {
   display: flex;
-  align-items: center;
-  gap: 38px;
-  margin-bottom: 55px;
 }
 
-main .colaboratorleft .photoleft {
-  width: 190px;
-  height: 190px;
-  border: 10px solid #bd4cf7;
-  border-radius: 50%;
+.person {
+  width: 20%;
+  cursor: pointer;
 }
 
-main .colaboratorleft .photoleft:hover {
-  scale: 1.3;
-  transition: all 0.5s ease-in-out;
-  box-shadow: 20px 20px 50px grey;
-}
-
-main .colaboratorleft .descriptionleft {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 576px;
-  height: 160px;
-  padding: 12px 18px 18px 18px;
-  background: #bd4cf7;
-  color: #fff;
-  border-radius: 20px;
-  margin-right: 160px;
-  box-shadow: 20px 20px 50px grey;
-}
-
-main .colaboratorleft .descriptionleft h1 {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-main .colaboratorleft .descriptionleft p {
-  font-size: 18px;
-  margin-top: 16px;
-  font-family: "Montserrat";
-  line-height: 22px;
-}
-
-main .link {
-  display: flex;
+.person img {
   width: 100%;
-  margin-top: 16px;
-  gap: 10px;
 }
 
-main .link .circulo {
-  background: transparent;
-  border: 0;
-  padding: 0;
+.descricao-pessoa {
+  display: none;
 }
 
-main .link .envelope {
-  background: transparent;
-  border: 0;
-  padding: 0;
-}
-
-main .colaboratorright {
+.equipe {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 38px;
-  margin-bottom: 55px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-main .colaboratorright .photoright {
-  width: 190px;
-  height: 190px;
-  border: 10px solid #352052;
-  border-radius: 50%;
-}
-
-main .colaboratorright .photoright:hover {
-  scale: 1.3;
-  transition: all 0.5s ease-in-out;
-  box-shadow: 20px 20px 50px grey;
-}
-
-main .colaboratorright .descriptionright {
+.pessoa {
+  width: 18%;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 576px;
-  height: 160px;
-  padding: 12px 18px 18px 18px;
-  background: #352052;
-  color: #fff;
-  border-radius: 20px;
-  margin-left: 160px;
-  box-shadow: 20px 20px 50px grey;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
-main .colaboratorright .descriptionright h1 {
-  font-size: 24px;
-  font-weight: 400;
+.foto-pessoa {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #352052;
+  margin-bottom: 20px;
 }
 
-main .colaboratorright .descriptionright p {
-  font-size: 18px;
-  margin-top: 16px;
-  font-family: "Montserrat";
-  line-height: 22px;
+.foto-pessoa:hover {
+  filter: brightness(0.9);
+  border: 4px solid #BD4CF7; 
+}
+
+
+.pessoa.ativo img {
+  filter: brightness(0.8);
+  border: 4px solid #BD4CF7; 
+}
+
+.nome-pessoa {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  border-bottom: 3px solid whitesmoke;
+  border-image: linear-gradient(to right, #352052, #BD4CF7) 1;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------DESCRIÇÃO------------- */
+
+#descricao-pessoa {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin: 0 20px;
+  font-size: 1.3em;
+}
+
+.ativo 
+
+p {
+  font-size: 1.3em;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+em {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.fa-github, .fa-instagram, .fa-linkedin {
+  font-size: 1.5em;
+  color: #BD4CF7;
+  margin: 3px 5px 0 0;
+}
+
+.fa-star {
+  color: #FFC107;
+  cursor: default;
 }

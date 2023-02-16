@@ -1,4 +1,52 @@
+.li-menus, .li-menus ul{
+  list-style: none;
+}
+
+.li-menus ul{
+  /* display: none; */
+  position: absolute;
+  /* margin-top: 10px; */
+}
+
+.subtopico {
+  position: relative;
+  background-color: white;
+  border: 2px solid  #BD4CF7;
+  color: #551A8B;
+  border-radius: 5px;
+  padding: 15px;
+  width: 175px;
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  font-size: large;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin-top: 3px;
+  z-index: 2;
+  /* display: none;   */
+}
+
+.subtopico:hover {
+  scale: 1.05;
+  transition: all 0.2s;    
+}
+
+.sublista, .sublista1 {
+  display: none;
+  /* display: block; */
+}
+
+.texto {
+  text-decoration: none;
+}
+
 #Quiz-Logo {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +57,19 @@
   display: flex;
   justify-content: center;  
   gap: 75px;
-  padding: 15px;  
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.titulos {
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.titulos:hover {
+  transition: all 0.2s; 
+  scale: 1.04;
 }
 
 .quiz-imput {
@@ -18,7 +78,7 @@
   font-size: 15px;
   border-color: #171445;
   border-width: 2px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 #quiz-pesquisar {    
@@ -26,30 +86,47 @@
   color: #171445;
 }
 
-#quizTitulos {
+.quizTitulos, .quizTitulosGeneros, .quizTitulosLetras {
   display: flex;
   justify-content: space-evenly;
-  background-color: #171445;
+  background-image: linear-gradient(to right,   
+  #BD4CF7,
+  black, 
+  #BD4CF7);
   padding: 10px;
   padding-left: 10%;
   padding-right: 10%;
   gap: 15px;
 }
 
+.quizTitulosGeneros {
+  display: none;  
+}
+
+.quizTitulosLetras {
+  display: none;  
+}
+
 .topico {
   background-color: white;
-  border-radius: 20px;
+  color: #551A8B;
+  border-radius: 5px;
   padding: 15px;
   width: 175px;
+  height: 65px;
   text-decoration: none;
   display: flex;
   align-items: center;    
   justify-content: center;
   font-size: large;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
 }
 
 .topico:hover {
-  scale: 1.14;
+  scale: 1.05;
   transition: all 0.2s;    
   -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
   filter: drop-shadow(8px 8px 8px rgba(0,0,0,.9));
@@ -67,34 +144,82 @@
   display: flex;  
   justify-content: space-evenly;
   gap: 75px;
-  margin-bottom: 30px;    
+  margin-bottom: 30px;   
+}
+
+.conteinerLinha {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.linhaDivisoria {
+  border-bottom: 1px solid whitesmoke;
+  border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
 }
 
 #card {
-  background-color: #BD4CF7;
-  min-width: 700px;
-  height: 510px;
+  width: 750px;
+  min-width: 350px;
+  height: 525px;
   position: relative;
   left: 0px;
   top: 0px;
   border: 5px solid #171445;
-  border-radius: 12px;  
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
+  border-radius: 5px;  
+  box-shadow: rgba(0, 0, 0, 0.75) 10px 15px 15px;
 }
 
-#card_3d {
-  background-color: #171445;
-  min-width: 700px;
-  height: 510px;
+.card-background {
+  background-image: url(../image/quiz/Background/painel/painel-02.jpg);
+  opacity: 0.4;
   position: absolute;
-  left: 10px;  
-  top: 10px;
-  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
   z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
 }
+
+.card-background-Duna {
+  background-image: url(../image/quiz/Background/Duna-bg.jpg);
+}
+
+.card-background-Avatar {
+  background-image: url(../image/quiz/Background/Avatar-bg.jpg);
+}
+
+.card-background-TheWhale {
+  background-image: url(../image/quiz/Background/TheWhale-bg.jpg);
+}
+
+.card-background-Dark {
+  background-image: url(../image/quiz/Background/Dark-bg.jpg);
+}
+
+.card-background-GameOfThrones {
+  background-image: url(../image/quiz/Background/GameOfThrones-bg.jpg);
+}
+
+.card-background-CentralDoBrasil {
+  background-image: url(../image/quiz/Background/CentraDoBrasil-bg.jpg);
+}
+
+.card-background-ThisIsUs {
+  background-image: url(../image/quiz/Background/ThisIsUs-bg.jpg);
+}
+
+.card-background-Friends {
+  background-image: url(../image/quiz/Background/Friends-bg.jpeg);
+}
+
+.card-background-StrangerThings {
+  background-image: url(../image/quiz/Background/StrangerThings-bg.jpg);
+}
+
+.card-background-QualFilme {
+  background-image: url(../image/quiz/Background/QualFilme.jpg);
+}
+
 
 #card_logo {
   /* display: block; */
@@ -115,28 +240,82 @@
 #RankingDiario, #RankingMensal {
   display: flex;
   flex-direction: column;
-  width: 175px;
+  width: 300px;
   height: 525px;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 5px;
   gap: 10px;
   justify-content: space-evenly;
 }
 
 #RankingDiario {
-  background-color: #171445;
+  /* background-color: #171445; */
+  background-color: #BD4CF7;
+  background-image: linear-gradient(to top,
+  #171445,   
+  #BD4CF7);
+  list-style-type: none;
+  /* border-radius: 5px;   */
+  border: 3px solid #171445;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.75) 10px 15px 15px;
 }
 
 #RankingMensal {
+  display: none;
   background-color: #BD4CF7;
 }
 
-.jogadoresD, .jogadoresM {
-  display: flex;
+.jogadoresD, .jogadoresM, .jogador_atual_D {
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
   color: white;
-  border-radius: 30px;
+  height: 55px;
+  border-radius: 5px;
   justify-content: space-around;
   border: 2px solid #ffffffff;
-  box-shadow: rgba(229, 95, 241, 0.342) 0px 5px 15px;  
+  background-color: rgba(255, 255, 255, 0.185);
+  cursor: pointer;
+}
+
+.quiz-posicao-jogador {
+  position: absolute;
+  font-size: 18px;
+  top: 28%;
+  left: 5%;
+}
+
+.quiz-imagem-jogador {
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  width: 40px;
+}
+
+.quiz-nome-jogador {
+  position: absolute;
+  font-size: 18px;
+  top: 28%;
+  left: 33%;
+  letter-spacing: 1.0px;
+}
+
+.quiz-pontos-jogador {
+  position: absolute;
+  font-size: 18px;
+  top: 28%;
+  right: 5%;
+  letter-spacing: 1.0px;
+}
+
+.jogadoresDTitulo {
+  position: relative;
+  font-size: 18px;
+  top: 5px;
+  left: -60px;
+  color: #171445;
+  margin-bottom: 5px;
 }
 
 .jogadoresM {
@@ -152,12 +331,10 @@
 }
 
 .jogador_atual_D, .jogador_atual_M {
-  display: flex;
-  color: white;
-  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
   justify-content: space-around;
-  border: 2px solid #BD4CF7;
-  box-shadow: rgba(229, 95, 241, 0.342) 0px 5px 15px;
+  background-color: rgba(255, 255, 255, 0.185);
 }
 
 .jogador_atual_M {
@@ -180,6 +357,7 @@
   transition: all 0.3s;    
   -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
   filter: drop-shadow(8px 8px 8px rgba(0,0,0,.9));
+  cursor: pointer;
 }
 
 .filmes_e_series {
@@ -205,14 +383,17 @@
 
 .tres_obras {
   left: 230px;
+  letter-spacing: 0.5px;
 }
 
 #os_mais_jogados {
   left: 210px;
+  letter-spacing: 0.5px;
 }
 
 #premiacao_mensal {
   left: 195px;
+  letter-spacing: 0.5px;
 }
 
 #posicao1, #posicao2, #posicao3 {
@@ -250,6 +431,7 @@
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: -2;
+  /* letter-spacing: 0.5px; */
 }
 
 .premio_3d {
@@ -275,6 +457,8 @@
   left: -10px;
 }
 
+
+
 #posicao2_ranking {
   left: 175px;
 }
@@ -286,65 +470,128 @@
 /* Área do jogo */
 
 #quiz-status_pergunta {
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  font-weight: bold;
   background-color: rgba(255, 255, 255, 0.719);
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 10px;
-  width: 10%;
+  width: 80px;
+  height: 50px;
+  top: 2.5%;
+  left: 125px;
 }
 
 #conta-tempo {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
   padding: 10px;
   margin-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   background-color: rgba(255, 255, 255, 0.719);
-  border-radius: 20px;
+  border-radius: 50%;
   margin: 10px;
-  width: 15%;
+  width: 55px;
+  height: 55px;
+  left: 290px;
+  top: 2.5%;
+}
+
+.quiz-pontos {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.253);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  top: 10%;
+  left: 10px;
+  top: 4%;
+  outline: 3px solid;
+  outline-color: rgba(255, 255, 255, 0.719);
+  /* outline-offset: -3px;  */
+}
+
+.quiz-pontos-efeito {
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  outline-offset: 75px;
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 75px;
 }
 
 #quiz-pergunta {
+  position: absolute;
+  top: 16%;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(255, 255, 255, 0.719);
-  height: 60px;
-  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background-color: rgba(0, 0, 0, 0.562);
+  min-width: 350px;
+  height: 75px;
+  border-radius: 10px;
   margin: 10px;
+  cursor: pointer;
+  /* top: 50%; */
+  letter-spacing: 0.5px;
+}
+
+#quiz-opcoes-container {
+  position: absolute;  
+  top: 32%;
 }
 
 .quiz-opcoes {
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
-  border-radius: 20px;
-  width: 50%;  
+  color: white;
+  font-size: 18px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background-color: rgba(0, 0, 0, 0.253);
+  border-radius: 5px;
+  width: 350px;
+  height: 55px;  
   margin: 20px;
   margin-left: 10px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  
 }
 
-#quiz-pontos {
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.719);
-  border-radius: 20px;
-  margin: 10px;
-  width: 10%;
+/* #quiz-opcao_a:hover, #quiz-opcao_b:hover,
+#quiz-opcao_c:hover, #quiz-opcao_d:hover {
+  background-color: rgba(0, 0, 0, 0.253);
+  transition: all 0.325s;    
+} */
+
+.quiz-opcoes:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.325s;    
 }
 
 .jogo {
   display: none;
 }
 
+  /* ---------------------- */
+ /* Chaves de Visibilidade */
+/* ---------------------- */
+
 .visible {
   display: block;
+}
+
+.visibleFlex {
+  display: flex;
 }
 
 .invisible {
   display: none;
 }
-
-
-
-

@@ -183,11 +183,15 @@ celularInput.oninput = function() {
   const anyFalse = values.filter((value) => value === false)
   
   if(!anyFalse.length) {
+    const headerPerfilName = document.querySelector('.header_perfil_name a');
+    headerPerfilName.textContent = document.getElementById("username").value;
     alert('Formulário enviado com sucesso!') 
   } else {
     alert('Preencha todos os campos.')
   }
  })
+
+ 
 
  //---------------  APARECER O FORMULÁRIO DE REGISTRO/LOGIN ----------------
 
@@ -265,6 +269,8 @@ function handleSubmitLogin(event) {
 
   const hasErrors = Object.values(inputLoginStatus).includes(false);
   if (!hasErrors) {
+    const headerPerfilName = document.querySelector('.header_perfil_name a');
+    headerPerfilName.textContent = document.getElementById("username2").value;
     alert("Formulário enviado com sucesso!");
   } else {
     alert("Preencha todos os campos corretamente");

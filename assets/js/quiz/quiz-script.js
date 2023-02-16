@@ -1,9 +1,17 @@
+const quizTitulosTemas = document.getElementsByClassName("quizTitulos")
+const quizTitulosGeneros = document.getElementsByClassName("quizTitulosGeneros")
+const quizTitulosLetras = document.getElementsByClassName("quizTitulosLetras")
+const sublista = document.getElementsByClassName("sublista")
+// const sublista = document.getElementsByClassName("sublista")
 const pergunta = document.getElementById("quiz-pergunta")
 const opcaoA =  document.getElementById("quiz-opcao_a")
 const opcaoB =  document.getElementById("quiz-opcao_b")
 const opcaoC =  document.getElementById("quiz-opcao_c")
 const opcaoD =  document.getElementById("quiz-opcao_d")
-let pontos =  document.getElementById("quiz-pontos")
+// let pontos =  document.getElementById("quiz-pontos")
+let pontos = document.getElementsByClassName("quiz-pontos")
+const pontosJogador = document.getElementsByClassName("quiz-pontos-jogador")
+const cardBG = document.getElementsByClassName("card-background")
 const contaTempo = document.getElementById("conta-tempo")
 const statusPergunta = document.getElementById("quiz-status_pergunta")
 const cardLogo = document.getElementById("card_logo")
@@ -15,20 +23,57 @@ let fimQuiz = false
 let indiceArrayEmbaralhado = 0
 let numeroDaQuestao = 1
 let remainingTime = 20
+let obra_string = false
+
 
 startTimer()
 
-function escolheQuiz(escolhido) {
+function revelaMenu(parametro) {
+    sublista[parametro].classList.toggle("visible")
+    for (i=0; i < 11; i++) {
+        if (sublista[i] != sublista[parametro]) {
+            sublista[i].classList.remove("visible")
+        }
+    }
+}
+
+function escolheTema() {
+    quizTitulosTemas[0].classList.remove("invisible")
+    quizTitulosGeneros[0].classList.remove("visibleFlex")
+    quizTitulosLetras[0].classList.remove("visibleFlex")
+}
+
+function escolheGenero() {
+    quizTitulosTemas[0].classList.add("invisible")
+    quizTitulosGeneros[0].classList.add("visibleFlex")
+    quizTitulosLetras[0].classList.remove("visibleFlex")
+}
+
+function escolheNome() {
+    quizTitulosTemas[0].classList.add("invisible")
+    quizTitulosGeneros[0].classList.remove("visibleFlex")
+    quizTitulosLetras[0].classList.add("visibleFlex")
+}
+
+
+function escolheQuiz(escolhido,escolhido_string) {
     cardLogo.classList.add("invisible")
     jogo[0].classList.add("visible")
     document.getElementById("topo").scrollIntoView()
     obra = escolhido
+    if (obra_string != false) {
+        console.log(obra_string)
+        cardBG[0].classList.remove(`card-background-${obra_string}`)
+    }
+    obra_string = escolhido_string
     numeroDaQuestao = 1
     indiceArrayEmbaralhado = 0
-    pontos.innerText = "00"
+    pontos[0].innerText = "00"    
     fimQuiz = false
     sortear()
     contaPontos("","")
+    console.log(obra_string)
+    cardBG[0].classList.add(`card-background-${obra_string}`)
 }
 
 function sorteioPorNivel(nivel,nSorteadas) {
@@ -87,27 +132,34 @@ function startTimer() {
 }
 
 function contaPontos(opcaoEscolhida,indiceArrayOriginal) {
-
+    // console.log(pontos)
     if (indiceArrayEmbaralhado < 10) {
         statusPergunta.innerHTML = `${numeroDaQuestao++} / 10`
         resetTimer()
     } else if (indiceArrayEmbaralhado = 10) {
-        contaTempo.innerHTML = "Fim do quiz"
+        contaTempo.innerHTML = "Fim"
     }
     
     for (i=0; i < obra.length; i++) {
         if (obra[i].numero == embaralhadas[indiceArrayEmbaralhado] && indiceArrayEmbaralhado < 10) {
             pergunta.innerText = obra[i].pergunta
-            opcaoA.innerHTML = `<div onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
-            opcaoB.innerHTML = `<div onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
-            opcaoC.innerHTML = `<div onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
-            opcaoD.innerHTML = `<div onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
+            opcaoA.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('a',${i})"> a) ${obra[i].a}</div>`
+            opcaoB.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('b',${i})"> b) ${obra[i].b}</div>`
+            opcaoC.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('c',${i})"> c) ${obra[i].c}</div>`
+            opcaoD.innerHTML = `<div class="quiz-opcoes" onclick="contaPontos('d',${i})"> d) ${obra[i].d}</div>`
         }
     }
     
     if (obra[indiceArrayOriginal] != undefined && indiceArrayEmbaralhado <= 10) {
         if (opcaoEscolhida == obra[indiceArrayOriginal].respCorreta && fimQuiz == false) {
-            pontos.innerHTML = parseInt(pontos.innerHTML) + 10
+            pontos[0].innerHTML = parseInt(pontos[0].innerHTML) + 10
+            // pontos[0].classList.remove("quiz-pontos-efeito")
+            pontos[0].classList.add("quiz-pontos-efeito")
+            setTimeout(function() {
+                pontos[0].classList.remove("quiz-pontos-efeito");
+              }, 600);
+            console.log(pontos)
+            pontosJogador[5].innerHTML = parseInt(pontosJogador[5].innerHTML) + 10
         }
         if (indiceArrayEmbaralhado == 10) {
             fimQuiz = true
@@ -125,3 +177,10 @@ function resetTimer() {
     remainingTime = 9; // reinicia a contagem
     startTimer();
 }
+
+// function minhaFuncao(a,b) {
+//     // pontos[0].classList.add("quiz-pontos-efeito")
+//     console.log(pontos)
+    
+//     setTimeout(function() {contaPontos(a,b)}, 000)
+// }
