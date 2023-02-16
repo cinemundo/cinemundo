@@ -1,6 +1,8 @@
 const quizTitulosTemas = document.getElementsByClassName("quizTitulos")
 const quizTitulosGeneros = document.getElementsByClassName("quizTitulosGeneros")
 const quizTitulosLetras = document.getElementsByClassName("quizTitulosLetras")
+const sublista = document.getElementsByClassName("sublista")
+// const sublista = document.getElementsByClassName("sublista")
 const pergunta = document.getElementById("quiz-pergunta")
 const opcaoA =  document.getElementById("quiz-opcao_a")
 const opcaoB =  document.getElementById("quiz-opcao_b")
@@ -25,6 +27,15 @@ let obra_string = false
 
 
 startTimer()
+
+function revelaMenu(parametro) {
+    sublista[parametro].classList.toggle("visible")
+    for (i=0; i < 11; i++) {
+        if (sublista[i] != sublista[parametro]) {
+            sublista[i].classList.remove("visible")
+        }
+    }
+}
 
 function escolheTema() {
     quizTitulosTemas[0].classList.remove("invisible")

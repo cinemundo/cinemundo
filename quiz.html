@@ -102,7 +102,7 @@
                 <h1>|</h1>
                 <div>
                     <h2 class="titulos">
-                        <a onclick="escolheNome()">Busca por obra</a>                        
+                        <a onclick="escolheNome()">Busca por Nome</a>                        
                     </h2>
                 </div>            
         </section>
@@ -116,20 +116,126 @@
         </section>
 
         <section class="quizTitulosGeneros" align="center">            
-            <a class="topico" >Comédia</a>
-            <a class="topico">Terror</a>
-            <a class="topico">Drama</a>
-            <a onclick="escolheQuiz(_QualFilme,'QualFilme')" class="topico">Ficção Científica</a>
-            <a class="topico">Aventura</a>            
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(0)">Comédia</a>
+                <ul class="sublista">
+                    <a onclick="" class="subtopico" href="#">Se Beber, Não Case!</a>
+                    <a onclick="" class="subtopico" href="#">Todo Mundo em Pânico</a>
+                    <a onclick="" class="subtopico" href="#">As Branquelas</a>
+                    <a onclick="" class="subtopico" href="#">O Mentiroso</a>
+                    <a onclick="" class="subtopico" href="#">Uma Noite no Museu</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(1)">Terror</a>
+                <ul class="sublista">
+                    <a onclick="" class="subtopico" href="#">O Iluminado</a>
+                    <a onclick="" class="subtopico" href="#">O Exorcista</a>
+                    <a onclick="" class="subtopico" href="#">O Chamado</a>
+                    <a onclick="" class="subtopico" href="#">Psicose</a>
+                    <a onclick="" class="subtopico" href="#">O Sexto Sentido</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(2)">Drama</a>
+                <ul class="sublista">
+                    <a onclick="" class="subtopico" href="#">O Poderoso Chefão</a>
+                    <a onclick="" class="subtopico" href="#">Forrest Gump</a>
+                    <a onclick="" class="subtopico" href="#">Cidade de Deus</a>
+                    <a onclick="" class="subtopico" href="#">Um Sonho de Liberdade</a>
+                    <a onclick="" class="subtopico" href="#">Clube da Luta</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(3)">Ficção Científica</a>
+                <ul class="sublista">
+                    <a onclick="" class="subtopico" href="#">Contato</a>
+                    <a onclick="" class="subtopico" href="#">Blade Runner (1982)</a>
+                    <a onclick="" class="subtopico" href="#">Interestelar</a>
+                    <a onclick="" class="subtopico" href="#">De Volta para o Futuro</a>
+                    <a onclick="" class="subtopico" href="#">Matrix</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(4)">Aventura</a>
+                <ul class="sublista">
+                    <a onclick="" class="subtopico" href="#">A Múmia</a>
+                    <a onclick="" class="subtopico" href="#">Missão Impossível</a>
+                    <a onclick="" class="subtopico" href="#">Goonies</a>
+                    <a onclick="" class="subtopico" href="#">Jumanji</a>
+                    <a onclick="escolheQuiz(Avatar,'Avatar')" class="subtopico" href="#">Avatar</a>
+                </ul>
+            </li>            
+
         </section>
 
         <section class="quizTitulosLetras" align="center">
-            <a class="topico" >0 ... 9</a>            
-            <a class="topico" >A ... F</a>
-            <a class="topico">G ... K</a>
-            <a class="topico">L ... P</a>
-            <a onclick="escolheQuiz(_QualFilme,'QualFilme')" class="topico">Q ... U</a>
-            <a class="topico">V ... Z</a>            
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(5)">0 ... 9</a>
+                <ul class="sublista">
+                    <a class="subtopico" href="#">0</a>
+                    <a class="subtopico" href="#">1</a>
+                    <a class="subtopico" href="#">2</a>
+                    <a class="subtopico" href="#">3</a>
+                    <a class="subtopico" href="#">4</a>
+                    <a class="subtopico" href="#">5</a>
+                    <a class="subtopico" href="#">6</a>
+                    <a class="subtopico" href="#">7</a>
+                    <a class="subtopico" href="#">8</a>
+                    <a class="subtopico" href="#">9</a>          
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(6)">A ... F</a>
+                <ul class="sublista">
+                    <a class="subtopico" href="#">A</a>
+                    <a class="subtopico" href="#">B</a>
+                    <a class="subtopico" href="#">C</a>
+                    <a class="subtopico" href="#">D</a>
+                    <a class="subtopico" href="#">E</a>
+                    <a class="subtopico" href="#">F</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(7)">G ... K</a>
+                <ul class="sublista">
+                    <a class="subtopico" href="#">G</a>
+                    <a class="subtopico" href="#">H</a>
+                    <a class="subtopico" href="#">I</a>
+                    <a class="subtopico" href="#">J</a>
+                    <a class="subtopico" href="#">K</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(8)">L ... P</a>
+                <ul class="sublista">
+                    <a class="subtopico" href="#">L</a>
+                    <a class="subtopico" href="#">M</a>
+                    <a class="subtopico" href="#">N</a>
+                    <a class="subtopico" href="#">O</a>
+                    <a class="subtopico" href="#">P</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(9)">Q ... U</a>
+                <ul class="sublista">
+                    <a class="subtopico" href="#">Q</a>
+                    <a class="subtopico" href="#">R</a>
+                    <a class="subtopico" href="#">S</a>
+                    <a class="subtopico" href="#">T</a>
+                    <a class="subtopico" href="#">U</a>
+                </ul>
+            </li>
+            <li class="li-menus">
+                <a class="topico" onmouseover="revelaMenu(10)">V ... Z</a>
+                <ul class="sublista">
+                    <a class="subtopico" href="#">V</a>
+                    <a class="subtopico" href="#">W</a>
+                    <a class="subtopico" href="#">X</a>
+                    <a class="subtopico" href="#">Y</a>
+                    <a class="subtopico" href="#">Z</a>
+                </ul>
+            </li>       
         </section>
 
         <section id="main_fake">

@@ -1,3 +1,50 @@
+.li-menus, .li-menus ul{
+  list-style: none;
+}
+
+.li-menus ul{
+  /* display: none; */
+  position: absolute;
+  /* margin-top: 10px; */
+}
+
+.subtopico {
+  position: relative;
+  background-color: white;
+  border: 2px solid  #BD4CF7;
+  color: #551A8B;
+  border-radius: 5px;
+  padding: 15px;
+  width: 175px;
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+  font-size: large;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  margin-top: 3px;
+  z-index: 2;
+  /* display: none;   */
+}
+
+.subtopico:hover {
+  scale: 1.05;
+  transition: all 0.2s;    
+}
+
+.sublista, .sublista1 {
+  display: none;
+  /* display: block; */
+}
+
+.texto {
+  text-decoration: none;
+}
+
 #Quiz-Logo {
   margin-top: 30px;
   display: flex;
@@ -76,7 +123,6 @@
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 0.5px;
-
 }
 
 .topico:hover {
