@@ -574,4 +574,19 @@ cursor: pointer;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+/* --------------- RESENHA POR AUTOR --------------- */
 
+.resenha-por-autor {
+  margin: 0;
+  height: 60vh;
+  font-family: "Bebas Neue", cursive, "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.resenha-por-autor h1 {
+  color: #434343;
+  text-align: center;
+  position: relative;
+  top: 25vh;
+  font-size: 4rem;
+}
