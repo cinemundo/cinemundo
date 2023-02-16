@@ -1,3 +1,6 @@
+const quizTitulosTemas = document.getElementsByClassName("quizTitulos")
+const quizTitulosGeneros = document.getElementsByClassName("quizTitulosGeneros")
+const quizTitulosLetras = document.getElementsByClassName("quizTitulosLetras")
 const pergunta = document.getElementById("quiz-pergunta")
 const opcaoA =  document.getElementById("quiz-opcao_a")
 const opcaoB =  document.getElementById("quiz-opcao_b")
@@ -22,6 +25,25 @@ let obra_string = false
 
 
 startTimer()
+
+function escolheTema() {
+    quizTitulosTemas[0].classList.remove("invisible")
+    quizTitulosGeneros[0].classList.remove("visibleFlex")
+    quizTitulosLetras[0].classList.remove("visibleFlex")
+}
+
+function escolheGenero() {
+    quizTitulosTemas[0].classList.add("invisible")
+    quizTitulosGeneros[0].classList.add("visibleFlex")
+    quizTitulosLetras[0].classList.remove("visibleFlex")
+}
+
+function escolheNome() {
+    quizTitulosTemas[0].classList.add("invisible")
+    quizTitulosGeneros[0].classList.remove("visibleFlex")
+    quizTitulosLetras[0].classList.add("visibleFlex")
+}
+
 
 function escolheQuiz(escolhido,escolhido_string) {
     cardLogo.classList.add("invisible")
