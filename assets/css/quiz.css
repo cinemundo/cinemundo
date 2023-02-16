@@ -72,9 +72,7 @@
   align-items: center;    
   justify-content: center;
   font-size: large;
-  /* font-size: 30px; */
   padding: 10px;
-  /* margin-bottom: 0px; */
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 0.5px;
@@ -100,28 +98,22 @@
   display: flex;  
   justify-content: space-evenly;
   gap: 75px;
-  margin-bottom: 30px;    
+  margin-bottom: 30px;   
 }
 
-/* #card::before {
-  content: "";
-  display: block;
-  background-image: url(https://hbomax-images.warnermediacdn.com/images/GXdbR_gOXWJuAuwEAACVH/tileburnedin?size=1280x720&partner=hbomaxcom&v=6a409f09891f75549fdb8d07dc969b63&host=art-gallery.api.hbo.com&language=pt-br&w=1280);
-  opacity: 0.40;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
+.conteinerLinha {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.linhaDivisoria {
+  border-bottom: 1px solid whitesmoke;
+  border-image: linear-gradient(to right, #BD4CF7, #352052) 1;
+}
 
 #card {
-  /* background-color: #BD4CF7; */
   width: 750px;
   min-width: 350px;
-  /* max-width: 700px; */
   height: 525px;
   position: relative;
   left: 0px;
@@ -129,8 +121,6 @@
   border: 5px solid #171445;
   border-radius: 5px;  
   box-shadow: rgba(0, 0, 0, 0.75) 10px 15px 15px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-  /* cursor: pointer; */
 }
 
 .card-background {
