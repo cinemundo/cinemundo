@@ -11,7 +11,7 @@
 > ##### ✅ Sprint V - Banco de Dados
 > ##### ✅ Sprint VI - Create e Read + Pitch do PI
 
-#### - Layout - [Figma](https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1)
+#### - Layout: [Figma](https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1)
 #### - [Banco de dados](https://github.com/cinemundo/cinemundo/tree/dev/BD%20PerfilUser)
 #### - [Apresentação](https://www.canva.com/design/DAFaeAAKhAw/YzpRZe5z7wEJt1k-zc03EA/view?utm_content=DAFaeAAKhAw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
