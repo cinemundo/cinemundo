@@ -1,6 +1,6 @@
 //-------------------------------- SELEÇÃO POR AUTOR - RESENHAS ---------------------------------//
 
-const newTab = 'resenha-completa.html';
+const newTab = 'resenha-por-autor.html';
 
 function openNewTab(newTab) {
   const win = window.open(newTab, 'blank');
