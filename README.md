@@ -1,28 +1,19 @@
 # projeto_CineMundo 🎬
 
-### Equipe de Devs: Roberto Zanin, Rosângela Melanias, Thiago Manfredi, Vinícius Marques, Viviane Favato.
-
-#### Status: Versão 1.0 disponível
+### Status: Versão 1.0 disponível
 
 #### Etapas:
 
 > ##### ✅ Sprint I - Layout no Figma.
-
 > ##### ✅ Sprint II - HTML.
-
 > ##### ✅ Sprint III - CSS.
-
 > ##### ✅ Sprint IV - JavaScript
-
 > ##### ✅ Sprint V - Banco de Dados
-
 > ##### ✅ Sprint VI - Create e Read + Pitch do PI
 
-## Layout - [Figma](https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1)
-
-## [Banco de dados](https://github.com/cinemundo/cinemundo/tree/dev/BD%20PerfilUser)
-
-## [Apresentação](https://www.canva.com/design/DAFaeAAKhAw/YzpRZe5z7wEJt1k-zc03EA/view?utm_content=DAFaeAAKhAw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+### - Layout - [Figma](https://www.figma.com/file/QgnqLKvcRyXeTjYcKInZlI/Untitled?node-id=0%3A1&t=NQvrrG8jcw8Tdw9Z-1)
+### - [Banco de dados](https://github.com/cinemundo/cinemundo/tree/dev/BD%20PerfilUser)
+### - [Apresentação](https://www.canva.com/design/DAFaeAAKhAw/YzpRZe5z7wEJt1k-zc03EA/view?utm_content=DAFaeAAKhAw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 #### CineMundo é um blog interativo de Cinema, que nasce com a intenção de se tornar uma rede social para pessoas que gostam de comentar, ver e saber mais sobre os seus filmes e série do momento ou favoritos.
 
@@ -41,4 +32,5 @@ Viviane Favato  [![Github Badge](https://img.shields.io/badge/-Github-000?style=
 
 
 ### Agradecimentos Especiais:
-#### Juliana Sinnott, Edvan Sabino, Equipe e Colegas da Proz Educação, AWS e Meta.
+#### Juliana Sinnott [![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/julianasinnott)](https://github.com/julianasinnott),
+Edvan Sabino, Equipe e Colegas da Proz Educaçãoe Projeto Portal Tech, AWS e Meta.
